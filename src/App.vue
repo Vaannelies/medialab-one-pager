@@ -5,16 +5,18 @@
   </div>
   <router-view/> -->
   <TopBlock/>
-  <TopBlock/>
+  <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
 import TopBlock from './components/TopBlock.vue'
+import SubBlock from './components/SubBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
   components: {
-      TopBlock
+      TopBlock,
+      SubBlock
   }
 })
 

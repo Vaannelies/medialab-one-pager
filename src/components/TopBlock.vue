@@ -1,37 +1,94 @@
 <template>
-    <div class="wide__container">
-        <h1 class="title">Design Challenge</h1>
-        <h2 class="subtitle">Scheveningen</h2>
+    <div class="long__container">
+        <div class="layer">
+            <div class="wide__container">
+                <h1 class="title">Design Challenge</h1>
+                <h2 class="subtitle">Scheveningen</h2>
+                <div class="arrow-bottom">
+                    <arrow-down/>
+                </div>
+            </div>
+            <div class="wide__container --second">
+                <h1 class="title">Hey bezoeker</h1>
+                <h2 class="subtitle">Welkom op deze pagina ;)</h2>
+            </div>
+        </div>
     </div>
 </template>
 
-<style scoped>
-    .wide__container {
+<script lang="ts">
+import { Options, Vue} from 'vue-class-component'
+import ArrowDown from './ArrowDown.vue'
+
+@Options({
+    components: {
+        ArrowDown
+    }
+})
+export default class TopBlock extends Vue {
+    
+}
+</script>
+
+<style lang='less' scoped>
+
+    .long__container {
         width: 100%;
-        height: 100vh;
-        background-image: url('../assets/hero_image.jpg'), url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80');
+        height: 150vh;
+        background-image: url('../assets/hero_image.jpg'), url('../assets/beach_flush.jpg');
         text-align: center;
         background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        background-blend-mode: lighten;
+    }
+
+    .layer {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+         180deg,
+         #ff3c0045 0%,
+         #00000052 40%,
+         #00000036 65%,
+         #fafafa00 75%,
+         #3a1f136b 100%
+      );
+    }
+
+    .wide__container {
+        height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-size: 1700px;
-        background-blend-mode: lighten;
-        /* background-color: b; */
+
+        &.--second {
+            height: 50vh;
+        }
     }
 
     .title {
-        font-family: "Cabin";
-        font-weight: bold;
-        font-size: 140px;
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 80px;
         margin: 0;
         color: white;
+        z-index: 10px;
+        position: relative;
     }
     .subtitle {
-        font-family: "Cabin";
-        font-weight: bold;
-        font-size: 120px;
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 40px;
         margin: 0;
         color: white;
     }
+
+    @media(max-width: 100px) {
+        // .long__container {
+        //     background-position: center;
+        // }
+    }
+
 </style>
