@@ -26,7 +26,8 @@
     "less-loader": "^7.3.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
-    "typescript": "~3.9.3"
+    "typescript": "~3.9.3",
+    "vue-animate-onscroll": "^1.0.8"
   },
   "browserslist": [
     "> 1%",

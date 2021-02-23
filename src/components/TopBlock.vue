@@ -52,7 +52,8 @@ export default class TopBlock extends Vue {
          #ff3c0045 0%,
          #00000052 40%,
          #00000036 65%,
-         #fafafa00 75%
+         #fafafa00 75%,
+         #3a1f136b 100%
       );
     }
 

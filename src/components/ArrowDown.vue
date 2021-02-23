@@ -1,10 +1,23 @@
 <template>
     <transition name="attention">
+        <!-- <div v-animate-onscroll="{down: 'animated flip'}"> -->
         <div>
             <img class="arrow" src="../assets/arrow_down_white.png"/>
         </div>
     </transition>
 </template>
+
+<script lang="ts">
+
+import { Vue } from 'vue-class-component'
+// import VueAnimateOnScroll from 'vue-animate-onscroll'
+// Vue.use(VueAnimateOnScroll)
+
+export default class ArrowDown extends Vue{
+    
+}
+
+</script>
 
 <style lang="less" scoped>
  .arrow {
