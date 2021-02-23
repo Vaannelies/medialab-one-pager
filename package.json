@@ -10,12 +10,14 @@
   "dependencies": {
     "core-js": "^3.6.5",
     "register-service-worker": "^1.7.1",
-    "vue": "^3.0.0",
+    "vue": "^3.0.5",
     "vue-class-component": "^8.0.0-0",
+    "vue-property-decorator": "^9.1.2",
     "vue-router": "^4.0.0-0",
     "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
+    "@types/vue": "^2.0.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-pwa": "~4.5.0",
     "@vue/cli-plugin-router": "~4.5.0",
@@ -27,7 +29,7 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
-    "vue-animate-onscroll": "^1.0.8"
+    "vue-animate-onscroll": "^1.0.1"
   },
   "browserslist": [
     "> 1%",

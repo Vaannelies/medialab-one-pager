@@ -5,19 +5,25 @@
   </div>
   <router-view/> -->
   <TopBlock/>
+  <div class="triangle">
+  </div>
+  <ConceptBlock/>
+  <slide-show-block/>
   <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
 import TopBlock from './components/TopBlock.vue'
-import SubBlock from './components/SubBlock.vue'
+import ConceptBlock from './components/ConceptBlock.vue'
+import SlideShowBlock from './components/SlideShowBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
   components: {
       TopBlock,
-      SubBlock
-  }
+      ConceptBlock,
+      SlideShowBlock
+  } 
 })
 
 // @Component({
@@ -36,6 +42,15 @@ body {
   margin: 0;
 }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -100px;
+  border-width: 0 0 100px 100vw;
+  border-color: transparent transparent white transparent;
+
+}
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
   // -webkit-font-smoothing: antialiased;
