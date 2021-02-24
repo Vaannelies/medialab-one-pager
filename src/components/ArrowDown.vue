@@ -1,25 +1,31 @@
 <template>
-    <transition name="attention">
-        <!-- <div v-animate-onscroll="{down: 'animated flip'}"> -->
-        <div>
-            <img class="arrow" src="../assets/arrow_down_white.png"/>
-        </div>
+    <transition name="fade-fast">
+		<a href="#concept" v-if="attentionScrollDown">
+			<img class="arrow" :class="{'--shake': attentionScrollDown}" src="../assets/arrow_down_white.png"/>
+		</a>
     </transition>
 </template>
 
 <script lang="ts">
 
 import { Vue } from 'vue-class-component'
-// import VueAnimateOnScroll from 'vue-animate-onscroll'
-// Vue.use(VueAnimateOnScroll)
 
-export default class ArrowDown extends Vue{
-    
+export default class ArrowDown extends Vue {
+    attentionScrollDown: boolean = true
+
+	created() {
+		window.addEventListener('scroll', this.checkArea)
+	}
+	checkArea() {
+		this.attentionScrollDown = window.scrollY > 100 ? false : true
+	}
 }
 
 </script>
 
 <style lang="less" scoped>
+
+
  .arrow {
     width: 80px;
     position: absolute;
@@ -27,16 +33,14 @@ export default class ArrowDown extends Vue{
     left: 50%;
     bottom: 20px;
     transform: translate(-50%,0);
-    animation: shake linear infinite 1.5s;
+	&.--shake {
+		animation: shake linear infinite 1.5s;
+	}
    
-	// -webkit-animation: swing-in-bottom-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-	//         animation: swing-in-bottom-bck 0.6s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-
  }
  @keyframes shake {
 	0% {
 		transform: translate(-50%,0);
-        
 	}
 	
 	25% {
@@ -55,41 +59,19 @@ export default class ArrowDown extends Vue{
 		transform: translate(-50%,0);
 	}
 }
- 
-		// &--shake {
-		// 	animation: shake linear infinite .2s;
-		// }
 
-// @-webkit-keyframes swing-in-bottom-bck {
-//   0% {
-//     -webkit-transform: rotateX(-70deg);
-//             transform: rotateX(-70deg);
-//     -webkit-transform-origin: bottom;
-//             transform-origin: bottom;
-//     opacity: 0;
-//   }
-//   100% {
-//     -webkit-transform: rotateX(0);
-//             transform: rotateX(0);
-//     -webkit-transform-origin: bottom;
-//             transform-origin: bottom;
-//     opacity: 1;
-//   }
-// }
-// @keyframes swing-in-bottom-bck {
-//   0% {
-//     -webkit-transform: rotateX(-70deg);
-//             transform: rotateX(-70deg);
-//     -webkit-transform-origin: bottom;
-//             transform-origin: bottom;
-//     opacity: 0;
-//   }
-//   100% {
-//     -webkit-transform: rotateX(0);
-//             transform: rotateX(0);
-//     -webkit-transform-origin: bottom;
-//             transform-origin: bottom;
-//     opacity: 1;
-//   }
-// }
+ 
+// FADES
+.fade-fast-enter {
+	opacity: 0;
+}
+
+.fade-fast-enter-to {
+	transition-duration: .25s !important;
+}
+
+.fade-fast-leave-to {
+	opacity: 0;
+	transition-duration: .25s !important;
+}
 </style>
