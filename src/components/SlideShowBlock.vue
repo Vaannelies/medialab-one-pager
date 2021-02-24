@@ -2,7 +2,7 @@
     <!-- <div class="fade"></div> -->
     <div class="wide__container">
         <h1 class="title">Concept</h1>
-        <h2 class="subtitle">Scheveningen</h2>
+        <h2 class="subtitle"></h2>
     </div>
 </template>
 
