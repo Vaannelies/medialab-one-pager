@@ -67,6 +67,10 @@ body {
   // color: #2c3e50;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 #nav {
   // padding: 30px;
 
@@ -82,7 +86,7 @@ body {
 
     @media(max-width: 400px) {
        body {
-         font-size: 50px;
+        //  font-size: 50px;
        }
     }
 </style>
