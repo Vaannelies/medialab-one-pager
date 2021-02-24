@@ -1,8 +1,8 @@
 <template>
     <transition name="fade-fast">
-		<div v-if="attentionScrollDown">
+		<a href="#concept" v-if="attentionScrollDown">
 			<img class="arrow" :class="{'--shake': attentionScrollDown}" src="../assets/arrow_down_white.png"/>
-		</div>
+		</a>
     </transition>
 </template>
 
@@ -24,6 +24,8 @@ export default class ArrowDown extends Vue {
 </script>
 
 <style lang="less" scoped>
+
+
  .arrow {
     width: 80px;
     position: absolute;
