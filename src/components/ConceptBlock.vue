@@ -1,17 +1,21 @@
 <template>
-    <div class="wide__container">
+    <div id="concept" class="wide__container">
         <h1 class="title">Concept</h1>
         <h2 class="subtitle">Scheveningen</h2>
+        <sticky-notes/>
+
     </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-import StickyNotes from 'StickyNotes.vue'
+import StickyNotes from './StickyNotes.vue'
+
 
 @Options({
     components: {
-        StickyNotes
+        StickyNotes,
+   
     }
 })
 export default class ConceptBlock extends Vue {
