@@ -1,5 +1,5 @@
 <template>
-    <div class="long__container">
+    <div id="home" class="long__container">
         <div class="layer">
             <div class="wide__container">
                 <h1 class="title">Design Challenge</h1>
@@ -26,7 +26,7 @@ import ArrowDown from './ArrowDown.vue'
     }
 })
 export default class TopBlock extends Vue {
-    
+
 }
 </script>
 

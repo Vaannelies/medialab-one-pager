@@ -1,9 +1,12 @@
 <template>
-  <!-- <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div id="nav">
+    <div class="menu">
+    <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
+    <a href="#concept">Concept</a> |
+    <a href="#proces">Proces</a>
+    </div>
   </div>
-  <router-view/> -->
+  <!-- <router-view/> -->
   <TopBlock/>
   <div id="triangle-box">
   <div class="triangle">
@@ -11,21 +14,21 @@
 
   </div>
   <ConceptBlock/>
-  <slide-show-block/>
+  <ProcessBlock/>
   <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
 import TopBlock from './components/TopBlock.vue'
 import ConceptBlock from './components/ConceptBlock.vue'
-import SlideShowBlock from './components/SlideShowBlock.vue'
+import ProcessBlock from './components/ProcessBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
   components: {
       TopBlock,
       ConceptBlock,
-      SlideShowBlock
+      ProcessBlock
   } 
 })
 
@@ -35,7 +38,28 @@ import { Options, Vue } from 'vue-class-component'
 //   }
 // })
 export default class App extends Vue {
-  
+      conceptSection: boolean = false
+
+      // created() {
+      //   window.addEventListener('scroll', this.checkConceptSection)
+      // }
+//       checkConceptSection() {
+//         const rect = document.querySelector('#concept')?.getBoundingClientRect(); 
+//         // console.log(document.querySelector('#concept'))
+//         if(rect) {
+//         //   console.log( rect.top >= 0 &&
+//         //         // rect.left >= 0 &&
+//         //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+//         //         // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//         //  )
+//            this.conceptSection = 
+//                 rect.top <= 0 ||
+//                 // rect.left >= 0 &&
+//                 rect.top >= (window.innerHeight)
+//                 // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            
+//         }
+//     }
 }
 </script>
 <style lang="scss">
@@ -72,16 +96,30 @@ html {
 }
 
 #nav {
-  // padding: 30px;
+    padding: 30px;
+    width: 100vw;
+    position: fixed;
+    display:flex;
+    justify-content: flex-end;
 
-  // a {
-  //   font-weight: bold;
-  //   color: #2c3e50;
+  .menu {
+    transform: translate(-100%,0);
+    color: white;
 
-  //   &.router-link-exact-active {
-  //     color: #42b983;
-  //   }
-  // }
+  }
+  a {
+    color: white;
+    font-weight: normal;
+    font-family: "Bebas Neue";
+    text-decoration: none;
+
+    &.--dark {
+      color: blue;
+    }
+    &:active {
+      color: rgb(80, 80, 80);
+    }
+  }
 }
 
     @media(max-width: 400px) {

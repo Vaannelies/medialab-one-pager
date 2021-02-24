@@ -1,22 +1,32 @@
 <template>
     <div id="concept" class="wide__container">
         <h1 class="title">Concept</h1>
-        <h2 class="subtitle"></h2>
-        <sticky-notes/>
+        <h2 class="subtitle">Ons concept is blab
+            labla Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae
+            nean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+            et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, u
+            ltricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
+            enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+             enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+              felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus el
+              ementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+               porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, da
+               pibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut me
+               tus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nis
+               i vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+               
+               <br><br>
+               Misschien kan ik hieronder toch maar beter een strakke slideshow maken (past er beter bij)
+               en af en toe een kleine sticky note 'plakken' bij de stukjes die we in het 'proces' deel schrijven.</h2>
 
     </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-import StickyNotes from './StickyNotes.vue'
-
 
 @Options({
-    components: {
-        StickyNotes,
-   
-    }
+    components: {}
 })
 export default class ConceptBlock extends Vue {
 
@@ -63,17 +73,20 @@ export default class ConceptBlock extends Vue {
 
     .title {
         font-family: "Bebas Neue";
-        font-weight: bold;
+        font-weight: normal;
         font-size: 140px;
         margin: 0;
         color: #064554;
     }
     .subtitle {
-        font-family: "Cabin";
-        font-weight: bold;
-        font-size: 120px;
+        font-family: "Source Sans Pro";
+        font-weight: normal;
+        font-size: 20px;
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-bottom: 30px;
         margin: 0;
-        color: white;
+        color: rgb(80, 80, 80);
     }
     
     @media(max-width: 400px) {

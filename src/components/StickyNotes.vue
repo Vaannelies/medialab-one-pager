@@ -112,7 +112,7 @@ export default class StickyNotes extends Vue {
     }
 
     ul li a:hover,ul li a:focus {
-        box-shadow:10px 10px 7px rgba(0,0,0,.7);
+        box-shadow:10px 10px 7px rgba(0, 0, 0, 0.473);
         transform: scale(1.25);
         position:relative;
         z-index:5;
