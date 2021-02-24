@@ -5,7 +5,10 @@
   </div>
   <router-view/> -->
   <TopBlock/>
+  <div id="triangle-box">
   <div class="triangle">
+  </div>
+
   </div>
   <ConceptBlock/>
   <slide-show-block/>
@@ -42,14 +45,19 @@ body {
   margin: 0;
 }
 
+#triangle-box {
+  overflow-x: hidden;
+  overflow-y: visible;
+  margin-top: -10vh;
+}
+
 .triangle {
   width: 0;
   height: 0;
   border-style: solid;
-  margin-top: -100px;
-  border-width: 0 0 100px 100vw;
+  border-width: 0 0 10vh 100vw;
+  overflow: hidden;
   border-color: transparent transparent white transparent;
-
 }
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -71,4 +79,10 @@ body {
   //   }
   // }
 }
+
+    @media(max-width: 400px) {
+       body {
+         font-size: 50px;
+       }
+    }
 </style>
