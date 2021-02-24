@@ -1,7 +1,7 @@
 <template>
     <div id="concept" class="wide__container">
         <h1 class="title">Concept</h1>
-        <h2 class="subtitle">Scheveningen</h2>
+        <h2 class="subtitle"></h2>
         <sticky-notes/>
 
     </div>
@@ -74,5 +74,11 @@ export default class ConceptBlock extends Vue {
         font-size: 120px;
         margin: 0;
         color: white;
+    }
+    
+    @media(max-width: 400px) {
+       .title {
+         font-size: 80px;
+       }
     }
 </style>
