@@ -1,10 +1,18 @@
 <template>
-    <a href="#">
-      <h2>Title #2</h2>
-      <p>Text Content #2</p>
+    <a href="#concept">
+      <h2>{{title}}</h2>
+      <p>{{content}}</p>
     </a>
 </template>
-
+ 
+<script lang="ts">
+import { Vue } from 'vue-class-component'
+import { Prop } from 'vue-property-decorator'
+export default class StickyNote extends Vue {
+    @Prop({required: false}) title!: string
+    @Prop({required: false}) content!: string
+}
+</script>
 <style scoped>
     body {
     margin: 20px auto;
@@ -20,32 +28,14 @@
     
     h2 {
     font-weight: bold;
+    font-family: 'Reenie Beanie';
     font-size: 2rem;
     }
     
     p {
-    font-size: 1rem;
+    font-family: 'Reenie Beanie';
+    font-size: 1.2rem;
     font-weight: normal;
     }
-    
-    ul,li{
-    list-style:none;
-    }
-    ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    }
-    ul li a{
-    text-decoration:none;
-    color:#000;
-    background:#ffc;
-    display:block;
-    height:10em;
-    width:10em;
-    padding:1em;
-    }
-    ul li{
-    margin:1em;
-    }
+
 </style>
