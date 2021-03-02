@@ -2,7 +2,7 @@
 <div id="proces">
     <div class="fade"></div>
     <div class="wide__container">
-        <h1 class="title">Process</h1>
+        <h1 class="title">Proces</h1>
         <sticky-notes/>
         <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae
             nean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 

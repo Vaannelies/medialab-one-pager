@@ -1,9 +1,9 @@
 <template>
   <div id="nav">
     <div class="menu">
-    <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
-    <a href="#concept">Concept</a> |
-    <a href="#proces">Proces</a>
+      <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
+      <a href="#concept">Concept</a> |
+      <a href="#proces">Proces</a>
     </div>
   </div>
   <!-- <router-view/> -->
@@ -101,9 +101,10 @@ html {
     position: fixed;
     display:flex;
     justify-content: flex-end;
+    font-size: 20px;
 
   .menu {
-    transform: translate(-100%,0);
+    transform: translate(-50%,0);
     color: white;
 
   }
@@ -122,9 +123,7 @@ html {
   }
 }
 
-    @media(max-width: 400px) {
-       body {
-        //  font-size: 50px;
-       }
+    @media(max-width: 640px) {
+
     }
 </style>

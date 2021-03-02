@@ -1,5 +1,5 @@
 <template>
-    <a href="#concept">
+    <a href="#proces">
       <h2>{{title}}</h2>
       <p>{{content}}</p>
     </a>

@@ -19,14 +19,18 @@
                Misschien kan ik hieronder toch maar beter een strakke slideshow maken (past er beter bij)
                en af en toe een kleine sticky note 'plakken' bij de stukjes die we in het 'proces' deel schrijven.</h2>
 
+         <Slideshow/>
     </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
+import Slideshow from './Slideshow.vue'
 
 @Options({
-    components: {}
+    components: {
+        Slideshow
+    }
 })
 export default class ConceptBlock extends Vue {
 
@@ -48,10 +52,14 @@ export default class ConceptBlock extends Vue {
     } */
     .wide__container {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         text-align: center;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
+
 
     /* .layer {
         z-index: -2;
@@ -82,14 +90,21 @@ export default class ConceptBlock extends Vue {
         font-family: "Source Sans Pro";
         font-weight: normal;
         font-size: 20px;
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-bottom: 30px;
+        padding-left: 20vw;
+        padding-right: 20vw;
+        padding-bottom: 60px;
+        text-align: left;
         margin: 0;
         color: rgb(80, 80, 80);
     }
     
-    @media(max-width: 400px) {
+    @media(max-width: 640px) {
+        .subtitle {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 30px;
+
+        }
        .title {
          font-size: 80px;
        }
