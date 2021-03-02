@@ -2,23 +2,10 @@
     <div id="concept" class="wide__container">
         <h1 class="title">Concept</h1>
         <div class="content">
-            <h2 class="subtitle">Ons concept is blab
-                labla Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae
-                nean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
-                et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, u
-                ltricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
-                enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
-                enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
-                felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus el
-                ementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-                porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, da
-                pibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut me
-                tus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nis
-                i vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-                
+            <h2 class="subtitle"> Nou we hebben dus nog niet echt een concept maar dat is niet heel gek want we zijn nog niet zo lang met het project bezig. We zijn hard aan het werk om iets cools te verzinnen en de CMD'ers hebben een hele coole aanpak met marktonderzoek en analyse's enzo en het gaat heel goed. Dus stay tuned want er komt iets cools hier. Ik heb geen zin om hier lorum ipsum neer te zetten. Sterker nog: dat stond er al. Maar ik ben het zat. Ik wil nu gewoon dat hier andere tekst staat, dus daarom schrijf ik dit. 
                 <br><br>
-                Misschien kan ik hieronder toch maar beter een strakke slideshow maken (past er beter bij)
-                en af en toe een kleine sticky note 'plakken' bij de stukjes die we in het 'proces' deel schrijven.</h2>
+                Hieronder komen foto's te staan die met het concept te maken hebben.
+               Idee: af en toe een kleine sticky note 'plakken' bij de stukjes die we in het 'proces' deel schrijven.</h2>
 
             <Slideshow class="slideshow"/>
         </div>
@@ -92,12 +79,15 @@ export default class ConceptBlock extends Vue {
         font-family: "Source Sans Pro";
         font-weight: normal;
         font-size: 20px;
-        width: 70%;
-        padding-bottom: 60px;
+        width: 64%;
+        padding: 30px;
         text-align: left;
         position: relative;
         margin: 0;
         color: rgb(80, 80, 80);
+        border: 2px solid #7FC0BF;
+        border-radius: 10px;
+        margin-bottom: 40px;
     }
     
     .content {
