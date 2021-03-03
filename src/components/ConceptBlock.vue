@@ -1,21 +1,24 @@
 <template>
     <div id="concept" class="wide__container">
         <h1 class="title">Concept</h1>
-        <h2 class="subtitle"></h2>
-        <sticky-notes/>
+        <div class="content">
+            <h2 class="subtitle"> Nou we hebben dus nog niet echt een concept maar dat is niet heel gek want we zijn nog niet zo lang met het project bezig. We zijn hard aan het werk om iets cools te verzinnen en de CMD'ers hebben een hele coole aanpak met marktonderzoek en analyse's enzo en het gaat heel goed. Dus stay tuned want er komt iets cools hier. Ik heb geen zin om hier lorum ipsum neer te zetten. Sterker nog: dat stond er al. Maar ik ben het zat. Ik wil nu gewoon dat hier andere tekst staat, dus daarom schrijf ik dit. 
+                <br><br>
+                Hieronder komen foto's te staan die met het concept te maken hebben.
+               Idee: af en toe een kleine sticky note 'plakken' bij de stukjes die we in het 'proces' deel schrijven.</h2>
 
+            <Slideshow class="slideshow"/>
+        </div>
     </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-import StickyNotes from './StickyNotes.vue'
-
+import Slideshow from './Slideshow.vue'
 
 @Options({
     components: {
-        StickyNotes,
-   
+        Slideshow
     }
 })
 export default class ConceptBlock extends Vue {
@@ -38,10 +41,14 @@ export default class ConceptBlock extends Vue {
     } */
     .wide__container {
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         text-align: center;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
+
 
     /* .layer {
         z-index: -2;
@@ -63,20 +70,40 @@ export default class ConceptBlock extends Vue {
 
     .title {
         font-family: "Bebas Neue";
-        font-weight: bold;
+        font-weight: normal;
         font-size: 140px;
         margin: 0;
         color: #064554;
     }
-    .subtitle {
-        font-family: "Cabin";
-        font-weight: bold;
-        font-size: 120px;
+    .subtitle { 
+        font-family: "Source Sans Pro";
+        font-weight: normal;
+        font-size: 20px;
+        width: 64%;
+        padding: 30px;
+        text-align: left;
+        position: relative;
         margin: 0;
-        color: white;
+        color: rgb(80, 80, 80);
+        border: 2px solid #7FC0BF;
+        border-radius: 10px;
+        margin-bottom: 40px;
     }
     
-    @media(max-width: 400px) {
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media(max-width: 640px) {
+        .subtitle {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            padding-bottom: 30px;
+
+        }
        .title {
          font-size: 80px;
        }
