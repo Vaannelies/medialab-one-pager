@@ -8,12 +8,10 @@
           get dui.</h2> -->
         <div class="timeline__container">
             <div class="timeline">
-                    <timeline-card class="timeline-card"/>
-                    <timeline-card class="timeline-card"/>
-                    <timeline-card class="timeline-card"/>
-                    <timeline-card class="timeline-card"/>
-                    <timeline-card class="timeline-card"/>
-                    <timeline-card class="timeline-card"/>
+                    <timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/>
+                    <timeline-card :title="'Week 2'" :content="'We hebben bedacht welke onderwerpen we interessant vinden'" class="timeline-card"/>
+                    <timeline-card :title="'Week 3'" :content="'Enquete en brainstormen en een interview'" class="timeline-card"/>
+                    <timeline-card :title="'Week 4'" :content="'Weet ik nog niet lol'" class="timeline-card"/>
             </div>
         </div>
       </div>
@@ -42,22 +40,33 @@ export default class ProcessBlock extends Vue {
         width: 100%;
         height: 50px;
         /* margin-top: -50px; */
-        background: linear-gradient(
+        /* background: linear-gradient(
             180deg,
             #176477 0%,
             #4c99ac 100%
-        )
+        ) */
     }
     .wide__container {
         width: 100%;
-        background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80');
+        /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
         text-align: center;
-              /* background: linear-gradient(
-            180deg,
-            #4c99ac 0%,
-            #8ec4c5 100%
-        ); */
+      	background: linear-gradient(-45deg, #4c99ac, #8ec4c5, rgba(1, 133, 115, 0.8), #edff9f);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
     }
+
+    
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
     .title {
         font-family: "Bebas Neue";

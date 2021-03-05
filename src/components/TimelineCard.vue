@@ -1,10 +1,12 @@
 <template>
 <div class="container">
-Hoi Hallo Hallo Hallo Hallo Hallo Hallo Hallo Hallo Hallo Hallo Hallo 
+<h1>{{title}}</h1>
+<p>{{content}}</p>
 </div>
 </template>
 
 <script lang="ts">
+import { Prop } from 'vue-property-decorator';
 import { Vue, Options } from 'vue-class-component'
 
 
@@ -14,6 +16,8 @@ import { Vue, Options } from 'vue-class-component'
     }
 })
 export default class TimelineCard extends Vue {
+  @Prop({required: false}) title!: string;
+  @Prop({required: false}) content!: string;
 
 }
 </script>
@@ -40,16 +44,12 @@ export default class TimelineCard extends Vue {
   width: 800px;
   margin-top: 400px;
 }
-    /* .container {
-        width: 800px; */
-        /* height: fit-content; */
-        /* font-size: 100px;
-        height: 600px;
-        border: 2px solid white;
-        background: white;
-        border-radius: 10px; */
-        /* margin: 100px 10px 100px 10px; */
-        /* margin-top: 400px; */
 
-    /* } */
+h1 {
+  font-family: "Source Sans Pro";
+}
+p {
+  font-family: "Source Sans Pro";
+}
+
 </style>
