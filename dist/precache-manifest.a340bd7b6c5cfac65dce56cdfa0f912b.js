@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f177cabe250d809ef774",
-    "url": "/medialab-one-pager/css/app.0f3c631e.css"
+    "revision": "8ee631292346a8d3a781",
+    "url": "/medialab-one-pager/css/app.1028ef2c.css"
   },
   {
     "revision": "f31bb403285d8a8d6e7f7e893bdbad87",
@@ -12,16 +12,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/medialab-one-pager/img/hero_image.56c45959.jpg"
   },
   {
-    "revision": "bc31a843bd40ed77f91303618dcd65c1",
+    "revision": "bb4c808147e135447dd046ae068ccae8",
     "url": "/medialab-one-pager/index.html"
   },
   {
-    "revision": "f177cabe250d809ef774",
-    "url": "/medialab-one-pager/js/app.d0aeede3.js"
+    "revision": "8ee631292346a8d3a781",
+    "url": "/medialab-one-pager/js/app.01a16d50.js"
   },
   {
-    "revision": "12b72d67e49e84b4a82d",
-    "url": "/medialab-one-pager/js/chunk-vendors.910f5019.js"
+    "revision": "10080c045bb8c6ce587c",
+    "url": "/medialab-one-pager/js/chunk-vendors.f40c0c3b.js"
   },
   {
     "revision": "b92c94dff3ede5176dcc74322fb64b12",
