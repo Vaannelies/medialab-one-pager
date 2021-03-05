@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/medialab-one-pager/precache-manifest.6424a09b18f5743fdf96d26f25712fa2.js"
+  "/medialab-one-pager/precache-manifest.a340bd7b6c5cfac65dce56cdfa0f912b.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "one-pager"});
