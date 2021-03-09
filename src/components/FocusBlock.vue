@@ -1,6 +1,7 @@
 <template>
-    <div id="Ontwerpopgave" class="wide__container">
+    <div id="focus" class="wide__container">
         <div class="content">
+            <p class="subtitle">...besloten we ons te richten op</p>
             <h1 class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
         
             <!-- <Slideshow class="slideshow"/> -->
@@ -23,18 +24,17 @@ export default class FocusBlock extends Vue {
 
 </script>
 
-<style scoped>
-
+<style lang="less" scoped>
+@import (reference) '../variables.less';
     .wide__container {
         width: 100%;
-        min-height: 20vh;
+        min-height: 40vh;
         text-align: center;
-        background-color: white;
+        background-color: @white;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-self: center;
-
     }
 
 
@@ -44,6 +44,7 @@ export default class FocusBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
+        max-width: 800px;
         color: #064554;
     }
     .subtitle { 
@@ -51,7 +52,7 @@ export default class FocusBlock extends Vue {
         font-weight: normal;
         font-size: 20px;
         max-width: 700px;
-        padding: 30px;
+        // padding: 30px;
         text-align: left;
         position: relative;
         margin: 0;

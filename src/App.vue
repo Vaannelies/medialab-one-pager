@@ -12,16 +12,24 @@
   <!-- <router-view/> -->
   <TopBlock/>
   <div id="triangle-box">
-  <div class="triangle">
-  </div>
-
+    <div class="triangle">
+    </div>
   </div>
   <!-- <ConceptBlock/> -->
   <DesignChallengeBlock/>
   <AboutUsBlock/>
   <ColoredBlock/>
   <ResearchBlock/>
+  <div id="triangle-box">
+    <div class="triangle">
+    </div>
+  </div>
   <FocusBlock/>
+  <div id="triangle-box">
+    <div class="triangle --dark">
+    </div>
+  </div>
+  <ProblemBlock/>
   <!-- <SubBlock/> -->
 </template>
 
@@ -31,6 +39,7 @@ import ColoredBlock from './components/ColoredBlock.vue'
 import DesignChallengeBlock from './components/DesignChallengeBlock.vue'
 import AboutUsBlock from './components/AboutUsBlock.vue'
 import FocusBlock from './components/FocusBlock.vue'
+import ProblemBlock from './components/ProblemBlock.vue'
 import ResearchBlock from './components/ResearchBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
@@ -39,6 +48,7 @@ import { Options, Vue } from 'vue-class-component'
       TopBlock,
       AboutUsBlock,
       FocusBlock,
+      ProblemBlock,
       ResearchBlock,
       ColoredBlock,
       DesignChallengeBlock,
@@ -86,6 +96,7 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   margin-top: -10vh;
+  z-index: 2;
 }
 
 .triangle {
@@ -95,6 +106,10 @@ body {
   border-width: 0 0 10vh 100vw;
   overflow: hidden;
   border-color: transparent transparent rgb(237, 237, 237) transparent;
+
+  &.--dark {
+    border-color: transparent transparent rgb(80,80,80) transparent;
+  }
 }
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -115,6 +130,7 @@ html {
     display:flex;
     justify-content: flex-end;
     font-size: 20px;
+    z-index: 4;
 
   .menu {
     transform: translate(-50%,0);

@@ -1,13 +1,7 @@
 <template>
-        <div class="bar">
-                <h1>{{title}}</h1>
-<!-- sdfdsfsdfdsf -->
+        <div class="bar" :class="{'--main': main}">
+            <h1>{{title}}</h1>
         </div>
-            <!-- <div class="content"> -->
-            
-                <!-- <Slideshow class="slideshow"/>
-            </div>
-        </div> -->
 </template>
 
 <script lang="ts">
@@ -17,6 +11,7 @@ import { Prop } from 'vue-property-decorator'
 
 export default class SubjectBar extends Vue {
     @Prop({required: true}) title!: string;
+    @Prop({required: false, default: false}) main: boolean = false;
 }
 
 </script>
@@ -25,19 +20,22 @@ export default class SubjectBar extends Vue {
 @import (reference) '../variables.less';
 
     .bar {
-        width: 80px;
-        // min-width: fit-content;
+        width: fit-content;
+        min-width: 80px;
         padding: 1em 2em 1em 2em;
         height: fit-content;
         background-color: @blue-dark;
         color: white;
-        position: sticky;
+        // position: sticky;
         border-radius: 20px;
         font-family: "Source Sans Pro";
         font-weight: normal;
         font-size: 10px;
-       
 
+        &.--main {
+            background-color: @white;
+            color: @blue-dark;
+        }
     }
 
 

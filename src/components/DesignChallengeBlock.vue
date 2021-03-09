@@ -11,12 +11,20 @@
             </h2>
             <!-- <Slideshow class="slideshow"/> -->
         </div>
+        <img class="arrow" src="../assets/dashed-arrow.png"/>
+        <div data-aos="fade-left" class="letsGo">Let's go!</div>
     </div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
 import Slideshow from './Slideshow.vue'
+const AOS = require('aos')
+import 'aos/dist/aos.css'
+
+
+AOS.init();
+
 
 @Options({
     components: {
@@ -39,10 +47,8 @@ export default class DesignChallengeBlock extends Vue {
         display: flex;
         justify-content: center;
         flex-direction: column;
-
+        position: relative;
     }
-
-
 
     .title {
         font-family: "Bebas Neue";
@@ -59,11 +65,8 @@ export default class DesignChallengeBlock extends Vue {
         padding: 30px;
         text-align: left;
         position: relative;
-        margin: 0;
         color: @grey;
-        /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
-        margin-bottom: 40px;
     }
     
     .content {
@@ -71,6 +74,28 @@ export default class DesignChallengeBlock extends Vue {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        position: relative;
+        height: 100%;
+    }
+
+    .letsGo {
+        background: @blue-dark;
+        padding: 1em 2em 1em 2em;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        right: 30vw;
+        z-index: 1;
+        font-family: 'Source Sans Pro';
+    }
+
+    .arrow {
+        position: absolute;
+        bottom: -100px;
+        right: 30vw;
+        height: 100px;
+        z-index: 1;
+        rotate: 90deg;
     }
 
     @media(max-width: 640px) {
@@ -82,6 +107,10 @@ export default class DesignChallengeBlock extends Vue {
         }
         .title {
          /* font-size: 80px; */
+       }
+
+       .wide__container {
+           padding-bottom: 50px;
        }
     }
 </style>
