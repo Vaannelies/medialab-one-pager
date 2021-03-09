@@ -45,7 +45,7 @@ created() {
 scroll(e, delta) {
 this.scrollLeft -= (delta);
 e.preventDefault();
-console.log(this.scrollLeft);
+// console.log(this.scrollLeft);
     
 }
 
@@ -57,16 +57,6 @@ console.log(this.scrollLeft);
 
 <style scoped>
 
-    .fade {
-        /* width: 100%;
-        height: 50px; */
-        /* margin-top: -50px; */
-        /* background: linear-gradient(
-            180deg,
-            #176477 0%,
-            #4c99ac 100%
-        ) */
-    }
     .wide__container {
         width: 100%;
         /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
@@ -111,37 +101,6 @@ console.log(this.scrollLeft);
     
     body { font-family: Helvetica; }
 
-    /* .timeline__container {
-        display:flex;
-        // flex-direction: row; 
-        justify-content: flex-start;
-        transform: rotate(-90deg);
-        margin-top: -1100px;
-    } */
-    /* div.timeline {
-        width: 800px;
-        height: 100vw;
-        
-        overflow: scroll;
-        scrollbar-width: none; */
-        /* -ms-overflow-style: none;  */
-        /* border-top: 20px solid rgb(0, 255, 0);
-        background-color: red; */
-    /* } */
-
-    .timeline-card {
-        /* border-top: 6px dashed;
-        border-color: rgb(255, 255, 255) !important;
-        margin:0; 
-        padding: 30px; */
-        /* transform:rotate(90deg); */
-    }
-
-    .ultje {
-        margin: 0;
-        display:flex;
-        flex-direction: row;
-    }
 
     li {
         width: fit-content;

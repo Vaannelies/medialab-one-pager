@@ -94,7 +94,7 @@ body {
   border-style: solid;
   border-width: 0 0 10vh 100vw;
   overflow: hidden;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent rgb(237, 237, 237) transparent;
 }
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;

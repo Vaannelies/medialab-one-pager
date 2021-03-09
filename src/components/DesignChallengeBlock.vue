@@ -28,13 +28,14 @@ export default class DesignChallengeBlock extends Vue {
 }
 </script>
 
-<style scoped>
+<style lang="less" scoped>
+@import (reference) '../variables.less';
 
     .wide__container {
         width: 100%;
         min-height: 100vh;
         text-align: center;
-        background-color: white;
+        background-color: @white;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -48,7 +49,7 @@ export default class DesignChallengeBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        color: #064554;
+        color: @blue-dark;
     }
     .subtitle { 
         font-family: "Source Sans Pro";
@@ -59,7 +60,7 @@ export default class DesignChallengeBlock extends Vue {
         text-align: left;
         position: relative;
         margin: 0;
-        color: rgb(80, 80, 80);
+        color: @grey;
         /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
         margin-bottom: 40px;
@@ -79,7 +80,7 @@ export default class DesignChallengeBlock extends Vue {
             padding-bottom: 30px;
 
         }
-       .title {
+        .title {
          /* font-size: 80px; */
        }
     }
