@@ -7,9 +7,7 @@
                         <SubjectBar :title="'Invaliden'" @mouseover="background = 'invaliden'" @mouseleave="background = 'blue'"/>
                         <SubjectBar :title="'Afval'" @mouseover="background = 'afval'" @mouseleave="background = 'blue'"/>
                         <SubjectBar :title="'Overlast'" @mouseover="background = 'overlast'" @mouseleave="background = 'blue'"/>
-                        <div>
-                 
-                        </div>
+                   
                     </ul>
                 </div>
             </div>
