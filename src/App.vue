@@ -97,6 +97,7 @@ body {
   overflow-y: visible;
   margin-top: -10vh;
   z-index: 2;
+  position: relative;
 }
 
 .triangle {

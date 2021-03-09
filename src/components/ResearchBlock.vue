@@ -52,7 +52,7 @@ export default class ResearchBlock extends Vue {
 @import (reference) '../variables.less';
 
     .wide__container {
-        z-index: -4;
+        z-index: 0;
         position: relative;
         padding-top: 60px;
         min-height: 80vh;
