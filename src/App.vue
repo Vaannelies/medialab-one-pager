@@ -2,33 +2,56 @@
   <div id="nav">
     <div class="menu">
       <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
-      <a href="#concept">Concept</a> |
-      <a href="#proces">Proces</a>
+      <a href="#designChallenge">Design challenge</a> |
+      <a href="#aboutUs">Wie zijn wij?</a> |
+      <a href="#research">Research</a> |
+      <a href="#focus">Ontwerpopgave</a>
+      <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
   <!-- <router-view/> -->
   <TopBlock/>
   <div id="triangle-box">
-  <div class="triangle">
+    <div class="triangle">
+    </div>
   </div>
-
+  <!-- <ConceptBlock/> -->
+  <DesignChallengeBlock/>
+  <AboutUsBlock/>
+  <ColoredBlock/>
+  <ResearchBlock/>
+  <div id="triangle-box">
+    <div class="triangle">
+    </div>
   </div>
-  <ConceptBlock/>
-  <ProcessBlock/>
+  <FocusBlock/>
+  <div id="triangle-box">
+    <div class="triangle --dark">
+    </div>
+  </div>
+  <ProblemBlock/>
   <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
 import TopBlock from './components/TopBlock.vue'
-import ConceptBlock from './components/ConceptBlock.vue'
-import ProcessBlock from './components/ProcessBlock.vue'
+import ColoredBlock from './components/ColoredBlock.vue'
+import DesignChallengeBlock from './components/DesignChallengeBlock.vue'
+import AboutUsBlock from './components/AboutUsBlock.vue'
+import FocusBlock from './components/FocusBlock.vue'
+import ProblemBlock from './components/ProblemBlock.vue'
+import ResearchBlock from './components/ResearchBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
   components: {
       TopBlock,
-      ConceptBlock,
-      ProcessBlock
+      AboutUsBlock,
+      FocusBlock,
+      ProblemBlock,
+      ResearchBlock,
+      ColoredBlock,
+      DesignChallengeBlock,
   } 
 })
 
@@ -73,6 +96,8 @@ body {
   overflow-x: hidden;
   overflow-y: visible;
   margin-top: -10vh;
+  z-index: 2;
+  position: relative;
 }
 
 .triangle {
@@ -81,7 +106,11 @@ body {
   border-style: solid;
   border-width: 0 0 10vh 100vw;
   overflow: hidden;
-  border-color: transparent transparent white transparent;
+  border-color: transparent transparent rgb(237, 237, 237) transparent;
+
+  &.--dark {
+    border-color: transparent transparent rgb(80,80,80) transparent;
+  }
 }
 #app {
   // font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -102,6 +131,7 @@ html {
     display:flex;
     justify-content: flex-end;
     font-size: 20px;
+    z-index: 4;
 
   .menu {
     transform: translate(-50%,0);
