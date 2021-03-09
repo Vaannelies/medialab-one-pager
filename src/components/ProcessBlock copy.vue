@@ -3,24 +3,25 @@
     <div class="fade"></div>
     <div class="wide__container">
         <h1 class="title">Proces</h1>
-        <div class="divje">
-            <ul class="ultje">
-                <li>hoi</li>
-                <li>hoi</li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-            </ul>
-        </div>  
-    </div>
+        <sticky-notes/>
+        <!-- <h2 class="subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Ae
+          get dui.</h2> -->
+        <div class="timeline__container">
+            <div class="timeline">
+                    <timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/>
+                    <timeline-card :title="'Week 2'" :content="'We hebben bedacht welke onderwerpen we interessant vinden'" class="timeline-card"/>
+                    <timeline-card :title="'Week 3'" :content="'Enquete en brainstormen en een interview'" class="timeline-card"/>
+                    <timeline-card :title="'Week 4'" :content="'Weet ik nog niet lol'" class="timeline-card"/>
+            </div>
+        </div>
+      </div>
 </div>
 </template>
 
-<script lang="js">
+<script lang="ts">
 import { Vue, Options } from 'vue-class-component'
 import StickyNotes from './StickyNotes.vue'
 import TimelineCard from './TimelineCard.vue'
-// import $ from 'jquery'
 
 
 @Options({
@@ -31,35 +32,13 @@ import TimelineCard from './TimelineCard.vue'
 })
 export default class ProcessBlock extends Vue {
 
-
-created() {
-    window.addEventListener('scroll', this.scroll)
-
-// window.mousewheel(function(e, delta) {
-// this.scrollLeft -= (delta);
-// e.preventDefault();
-// console.log(this.scrollLeft);
-// });
 }
-
-scroll(e, delta) {
-this.scrollLeft -= (delta);
-e.preventDefault();
-console.log(this.scrollLeft);
-    
-}
-
-
-}
-
-
 </script>
-
 <style scoped>
 
     .fade {
-        /* width: 100%;
-        height: 50px; */
+        width: 100%;
+        height: 50px;
         /* margin-top: -50px; */
         /* background: linear-gradient(
             180deg,
@@ -111,42 +90,32 @@ console.log(this.scrollLeft);
     
     body { font-family: Helvetica; }
 
-    /* .timeline__container {
+    .timeline__container {
         display:flex;
-        // flex-direction: row; 
+        /* flex-direction: row; */
         justify-content: flex-start;
         transform: rotate(-90deg);
         margin-top: -1100px;
-    } */
-    /* div.timeline {
+    }
+    div.timeline {
         width: 800px;
         height: 100vw;
         
         overflow: scroll;
-        scrollbar-width: none; */
+        scrollbar-width: none;
         /* -ms-overflow-style: none;  */
         /* border-top: 20px solid rgb(0, 255, 0);
         background-color: red; */
-    /* } */
+    }
 
     .timeline-card {
         /* border-top: 6px dashed;
         border-color: rgb(255, 255, 255) !important;
         margin:0; 
         padding: 30px; */
-        /* transform:rotate(90deg); */
+        transform:rotate(90deg);
     }
 
-    .ultje {
-        margin: 0;
-        display:flex;
-        flex-direction: row;
-    }
-
-    li {
-        width: fit-content;
-        display: list-item;
-    }
 
     @media(max-width: 400px) {
        .title {

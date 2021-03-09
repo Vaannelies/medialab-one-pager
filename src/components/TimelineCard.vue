@@ -23,7 +23,10 @@ export default class TimelineCard extends Vue {
 </script>
 <style scoped>
 
-.container:before {
+body {
+      transform:rotate(90deg);
+}
+/* .container:before {
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(6px) saturate(100%) contrast(45%) brightness(130%);
   content: '';
@@ -31,8 +34,20 @@ export default class TimelineCard extends Vue {
   position: absolute;
   right: 0;
   width: 100%;
-}
+} */
 
+.container {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  font-size: 2rem;
+  height: 80vh;
+  /* overflow: hidden; */
+  /* position: relative; */
+  width: 80vw;
+  /* margin-top: 400px; */
+}
+/* 
 .container {
   border: 1px solid #fff;
   border-radius: 15px;
@@ -43,7 +58,7 @@ export default class TimelineCard extends Vue {
   position: relative;
   width: 800px;
   margin-top: 400px;
-}
+} */
 
 h1 {
   font-family: "Source Sans Pro";

@@ -1,17 +1,13 @@
 <template>
-<div id="proces">
+<div id="colored">
     <div class="fade"></div>
     <div class="wide__container">
-        <h1 class="title">Proces</h1>
-        <div class="divje">
-            <ul class="ultje">
-                <li>hoi</li>
-                <li>hoi</li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-                <li><timeline-card :title="'Week 1'" :content="'Hoi deze week hebben we elkaar ontmoet en het was leuk'" class="timeline-card"/></li>
-            </ul>
-        </div>  
+        <h1 class="title">Design Challenge</h1>
+        <div class="content">
+            <p class="subtitle">
+                De Provincie Zuid-Holland en de Gemeente Den Haag werken samen aan het Smart City Living Lab Scheveningen (LLS) dat vorig jaar september officieel is geopend. In het LLS wordt aan grootstedelijke vraagstukken gewerkt met slimme toepassingen op basis van de nieuwste technologieën. Denk aan een robot die zwerfafval verzamelt, slimme lantarenpalen of digitale polsbandjes waarmee verloren kinderen gemakkelijk kunnen worden teruggevonden. Bij deze innovaties wordt data over burgers en de omgeving waarin burgers zicht bevinden verzameld, verwerkt en toegepast. Daarom is het van belang om ook zeer zorgvuldig om te gaan met onderwerpen als privacy en inclusiviteit. De opdracht van Living Lab Scheveningen is als volgt: hoe kan een slimme toepassing eruitzien, waarmee de leefomgeving en beleving van bewoners wordt verbeterd of verrijkt? Het gaat hierbij om de toepassing van de nieuwste technologieën, dus een mooie kans je te verdiepen in wat er allemaal mogelijk is en hoe jij verwacht dat de stad er in de toekomst uit zou moeten zien.Met deze opdrachtwillen de provincie en de gemeente nieuwe kennis en ervaring opdoen over de inzet van digitale innovaties in de stad, om uiteindelijk een heuse Smart City te realiseren.
+            </p>
+        </div>
     </div>
 </div>
 </template>
@@ -29,7 +25,7 @@ import TimelineCard from './TimelineCard.vue'
         TimelineCard   
     }
 })
-export default class ProcessBlock extends Vue {
+export default class ColoredBlock extends Vue {
 
 
 created() {
@@ -57,18 +53,15 @@ console.log(this.scrollLeft);
 
 <style scoped>
 
-    .fade {
-        /* width: 100%;
-        height: 50px; */
-        /* margin-top: -50px; */
-        /* background: linear-gradient(
-            180deg,
-            #176477 0%,
-            #4c99ac 100%
-        ) */
+        
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
+    
     .wide__container {
-        width: 100%;
+        /* width: 100%; */
         /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
         text-align: center;
       	background: linear-gradient(-45deg, #4c99ac, #8ec4c5, rgba(1, 133, 115, 0.8), #edff9f);
@@ -92,7 +85,7 @@ console.log(this.scrollLeft);
     .title {
         font-family: "Bebas Neue";
         font-weight: normal;
-        font-size: 140px;
+        font-size: 40px;
         margin: 0;
         color: white;
     }
@@ -101,9 +94,9 @@ console.log(this.scrollLeft);
         font-weight: bold;
         font-size: 20px;
         margin: 0;
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-top: 60px;
+        max-width: 700px;
+        position:relative;
+        text-align: left;
         /* padding-bottom: 30px; */
         color: white;
     }
@@ -150,7 +143,7 @@ console.log(this.scrollLeft);
 
     @media(max-width: 400px) {
        .title {
-         font-size: 80px;
+         /* font-size: 80px; */
        }
     }
 </style>

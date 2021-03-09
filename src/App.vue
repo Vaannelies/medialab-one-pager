@@ -2,8 +2,11 @@
   <div id="nav">
     <div class="menu">
       <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
-      <a href="#concept">Concept</a> |
-      <a href="#proces">Proces</a>
+      <a href="#designChallenge">Design challenge</a> |
+      <a href="#aboutUs">Wie zijn wij?</a> |
+      <a href="#research">Research</a> |
+      <a href="#focus">Ontwerpopgave</a>
+      <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
   <!-- <router-view/> -->
@@ -13,22 +16,32 @@
   </div>
 
   </div>
-  <ConceptBlock/>
-  <ProcessBlock/>
+  <!-- <ConceptBlock/> -->
+  <DesignChallengeBlock/>
+  <AboutUsBlock/>
+  <ColoredBlock/>
+  <ResearchBlock/>
+  <FocusBlock/>
   <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
 import TopBlock from './components/TopBlock.vue'
-import ConceptBlock from './components/ConceptBlock.vue'
-import ProcessBlock from './components/ProcessBlock.vue'
+import ColoredBlock from './components/ColoredBlock.vue'
+import DesignChallengeBlock from './components/DesignChallengeBlock.vue'
+import AboutUsBlock from './components/AboutUsBlock.vue'
+import FocusBlock from './components/FocusBlock.vue'
+import ResearchBlock from './components/ResearchBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
   components: {
       TopBlock,
-      ConceptBlock,
-      ProcessBlock
+      AboutUsBlock,
+      FocusBlock,
+      ResearchBlock,
+      ColoredBlock,
+      DesignChallengeBlock,
   } 
 })
 
