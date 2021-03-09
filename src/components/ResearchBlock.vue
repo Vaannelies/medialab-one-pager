@@ -62,8 +62,6 @@ export default class ResearchBlock extends Vue {
         align-self: center;
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top;
-        background-attachment: fixed;
     }
         .blue {
             background-color: @blue-light;
@@ -71,16 +69,13 @@ export default class ResearchBlock extends Vue {
 
         .invaliden {
             background-image: url('../assets/miro_invaliden.png');
-            filter: brightness(40%);
         }
 
         .afval {
             background-image: url('../assets/miro_afval.png');
-            filter: brightness(40%);
         }
         .overlast {
             background-image: url('../assets/miro_overlast.png');
-            filter: brightness(40%);
         }
 
 svg {
