@@ -95,7 +95,7 @@ export default class DesignChallengeBlock extends Vue {
         right: 30vw;
         height: 100px;
         z-index: 1;
-        rotate: 90deg;
+        transform: rotate(90deg);
     }
 
     @media(max-width: 640px) {
