@@ -1,7 +1,7 @@
 <template>
     <div id="focus" class="wide__container">
         <div class="content">
-            <p class="subtitle">...besloten we ons te richten op</p>
+            <p class="subtitle">Toen besloten we ons te richten op</p>
             <h1 class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
         
             <!-- <Slideshow class="slideshow"/> -->
