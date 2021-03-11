@@ -6,15 +6,15 @@
         </h1>
         <div class="content">
             <div class="filling"></div>
-            <div class="marktonderzoek">
+            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
                 <p class="text">
                     We hebben uitgebreid marktonderzoek gedaan. Hierdoor ontdekten we dat er al veel bestaat om mensen of objecten te 'tracken'.
                     De meeste producten zijn gelinkt aan een app. Ook bestaan er al 'wearables' waarmee je een persoon terug kan vinden, zoals horloges.
                 </p>
-                <img data-aos="fade-right" data-aos-offset="200" src="../assets/marktonderzoek.png"/>
+                <img src="../assets/marktonderzoek.png"/>
             </div>
-            <div class="marktonderzoek">
-                <img data-aos="fade-left" data-aos-offset="200" src="../assets/marktonderzoek2.png"/>
+            <div class="marktonderzoek"  data-aos="fade-left" data-aos-offset="200">
+                <img src="../assets/marktonderzoek2.png"/>
                 <p class="text">
                     hoi
                 </p>
