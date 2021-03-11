@@ -15,8 +15,12 @@
             </div>
             <div class="marktonderzoek"  data-aos="fade-left" data-aos-offset="200">
                 <img src="../assets/marktonderzoek2.png"/>
-                <p class="text">
+                <p class="text --right">
                     hoi
+                    <br><br>
+                    Vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
+                    Vertellen over de enquete, interviews, enz.
+                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
                 </p>
             </div>
             <p class="subtitle">
@@ -149,16 +153,18 @@ e.preventDefault();
         color: @grey;
         box-shadow: rgba(0, 40, 43, 0.301) 10px 10px 0px;
         text-align: left;
-      
-        // &.--right {
-        //     justify-content: flex-start;
-        // }
+
     }
 
     .text {
         font-size: max(1vw, 20px);
         padding-right: 3%;
         max-width: 40%;
+              
+        &.--right {
+            padding-left: 3%;
+            padding-right: 0;
+        }
     }
 
     img {
@@ -178,9 +184,11 @@ e.preventDefault();
         display: list-item;
     }
 
-    @media(max-width: 700px) {
+    @media(max-width: 1200px) {
         .text {
             max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
         }
 
         img {
