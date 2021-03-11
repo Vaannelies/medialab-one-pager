@@ -9,16 +9,13 @@
       <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
-  <!-- <router-view/> -->
   <TopBlock/>
   <div id="triangle-box">
     <div class="triangle">
     </div>
   </div>
-  <!-- <ConceptBlock/> -->
   <DesignChallengeBlock/>
   <AboutUsBlock/>
-  <!-- <ColoredBlock/> -->
   <ResearchBlock/>
   <div id="triangle-box">
     <div class="triangle">
@@ -35,7 +32,6 @@
     </div>
   </div>
   <ColoredBlock style="margin-top: -10vh"/>
-  <!-- <SubBlock/> -->
 </template>
 
 <script lang="ts">
@@ -60,11 +56,6 @@ import { Options, Vue } from 'vue-class-component'
   } 
 })
 
-// @Component({
-//   components: {
-//     Block
-//   }
-// })
 export default class App extends Vue {
       conceptSection: boolean = false
 

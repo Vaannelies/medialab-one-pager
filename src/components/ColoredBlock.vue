@@ -13,10 +13,14 @@
                 </p>
                 <img src="../assets/marktonderzoek.png"/>
             </div>
-            <div class="marktonderzoek"  data-aos="fade-left" data-aos-offset="200">
+            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
                 <img src="../assets/marktonderzoek2.png"/>
-                <p class="text">
+                <p class="text --right">
                     hoi
+                    <br><br>
+                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
+                    Vertellen over de enquete, interviews, enz.
+                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
                 </p>
             </div>
             <p class="subtitle">
@@ -136,31 +140,6 @@ e.preventDefault();
         font-family: Helvetica; 
     }
 
-    /* .timeline__container {
-        display:flex;
-        // flex-direction: row; 
-        justify-content: flex-start;
-        transform: rotate(-90deg);
-        margin-top: -1100px;
-    } */
-    /* div.timeline {
-        width: 800px;
-        height: 100vw;
-        
-        overflow: scroll;
-        scrollbar-width: none; */
-        /* -ms-overflow-style: none;  */
-        /* border-top: 20px solid rgb(0, 255, 0);
-        background-color: red; */
-    /* } */
-
-    .timeline-card {
-        /* border-top: 6px dashed;
-        border-color: rgb(255, 255, 255) !important;
-        margin:0; 
-        padding: 30px; */
-        /* transform:rotate(90deg); */
-    }
 
     .marktonderzoek {
         padding: 3%;
@@ -174,21 +153,22 @@ e.preventDefault();
         color: @grey;
         box-shadow: rgba(0, 40, 43, 0.301) 10px 10px 0px;
         text-align: left;
-      
-        // &.--right {
-        //     justify-content: flex-start;
-        // }
+
     }
 
     .text {
         font-size: max(1vw, 20px);
         padding-right: 3%;
-        max-width: 50%;
+        max-width: 40%;
+              
+        &.--right {
+            padding-left: 3%;
+            padding-right: 0;
+        }
     }
 
     img {
-        max-width: 800px;
-        width: 100%;
+        max-width: 60%;
         // max-height: 40vh;
         height: fit-content;
         border-radius: 10px;
@@ -204,13 +184,24 @@ e.preventDefault();
         display: list-item;
     }
 
-    @media(max-width: 700px) {
-      
-    .text {
-        max-width: 100%;
-    }
-    .marktonderzoek {
-        flex-wrap: wrap;
-    }
+    @media(max-width: 1200px) {
+        .text {
+            max-width: 100%;
+            padding-right: 0;
+            padding-left: 0;
+
+       
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .marktonderzoek {
+            flex-wrap: wrap;
+                 &.--right {
+                     flex-wrap: wrap-reverse;
+                 }
+        }
     }
 </style>

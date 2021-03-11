@@ -2,7 +2,7 @@
     <div id="focus" class="wide__container">
         <div class="content">
             <p class="subtitle">Toen besloten we ons te richten op</p>
-            <h1 class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
+            <h1 data-aos="zoom-in" data-aos-offset="100" class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
         
             <!-- <Slideshow class="slideshow"/> -->
         </div>
@@ -11,7 +11,11 @@
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-// import Slideshow from './Slideshow.vue'
+const AOS = require('aos')
+import 'aos/dist/aos.css'
+import SubjectBar from './SubjectBar.vue'
+
+ AOS.init();
 
 @Options({
     components: {
@@ -28,7 +32,7 @@ export default class FocusBlock extends Vue {
 @import (reference) '../variables.less';
     .wide__container {
         width: 100%;
-        min-height: 40vh;
+        min-height: 60vh;
         text-align: center;
         background-color: @white;
         display: flex;
