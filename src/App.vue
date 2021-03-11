@@ -18,7 +18,7 @@
   <!-- <ConceptBlock/> -->
   <DesignChallengeBlock/>
   <AboutUsBlock/>
-  <ColoredBlock/>
+  <!-- <ColoredBlock/> -->
   <ResearchBlock/>
   <div id="triangle-box">
     <div class="triangle">
@@ -30,6 +30,11 @@
     </div>
   </div>
   <ProblemBlock/>
+  <div id="triangle-box">
+    <div class="triangle --mirrored">
+    </div>
+  </div>
+  <ColoredBlock style="margin-top: -10vh"/>
   <!-- <SubBlock/> -->
 </template>
 
@@ -110,6 +115,10 @@ body {
 
   &.--dark {
     border-color: transparent transparent rgb(80,80,80) transparent;
+  }
+  &.--mirrored {
+    margin-top: 10vh;
+    border-color: transparent transparent transparent rgb(80,80,80)   ;
   }
 }
 #app {
