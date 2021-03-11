@@ -1,7 +1,7 @@
 <template>
     <div id="focus" class="wide__container">
         <div class="content">
-            <p class="subtitle">...besloten we ons te richten op</p>
+            <p class="subtitle">Toen besloten we ons te richten op</p>
             <h1 class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
         
             <!-- <Slideshow class="slideshow"/> -->
@@ -55,7 +55,7 @@ export default class FocusBlock extends Vue {
         // padding: 30px;
         text-align: left;
         position: relative;
-        margin: 0;
+        margin: -40px;
         color: rgb(80, 80, 80);
         /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
@@ -71,9 +71,9 @@ export default class FocusBlock extends Vue {
 
     @media(max-width: 640px) {
         .subtitle {
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-bottom: 30px;
+            // padding-left: 10vw;
+            // padding-right: 10vw;
+            // padding-bottom: 30px;
 
         }
        .title {
