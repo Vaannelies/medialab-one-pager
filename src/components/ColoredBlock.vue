@@ -183,11 +183,12 @@ e.preventDefault();
     .text {
         font-size: max(1vw, 20px);
         padding-right: 3%;
-        // max-width: 40vw;
+        max-width: 50%;
     }
 
     img {
-        max-width: 40vw;
+        max-width: 800px;
+        width: 100%;
         // max-height: 40vh;
         height: fit-content;
         border-radius: 10px;
@@ -205,6 +206,9 @@ e.preventDefault();
 
     @media(max-width: 700px) {
       
+    .text {
+        max-width: 100%;
+    }
     .marktonderzoek {
         flex-wrap: wrap;
     }
