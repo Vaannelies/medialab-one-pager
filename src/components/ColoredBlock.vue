@@ -13,12 +13,12 @@
                 </p>
                 <img src="../assets/marktonderzoek.png"/>
             </div>
-            <div class="marktonderzoek"  data-aos="fade-left" data-aos-offset="200">
+            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
                 <img src="../assets/marktonderzoek2.png"/>
                 <p class="text --right">
                     hoi
                     <br><br>
-                    Vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
+                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
                     Vertellen over de enquete, interviews, enz.
                     En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
                 </p>
@@ -189,6 +189,8 @@ e.preventDefault();
             max-width: 100%;
             padding-right: 0;
             padding-left: 0;
+
+       
         }
 
         img {
@@ -197,6 +199,9 @@ e.preventDefault();
 
         .marktonderzoek {
             flex-wrap: wrap;
+                 &.--right {
+                     flex-wrap: wrap-reverse;
+                 }
         }
     }
 </style>

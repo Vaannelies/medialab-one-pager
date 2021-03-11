@@ -29,7 +29,7 @@
                         <SubjectBar :title="'Verdwalende kinderen'" :main="true"/>
                     </div>
                 </div>
-                <div class="then" data-aos-offset="400" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
+                <div class="then" data-aos-offset="200" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
                     En toen...
                 </div>
             </div>
