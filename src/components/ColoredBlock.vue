@@ -1,14 +1,24 @@
 <template>
 <div id="colored">
     <div class="wide__container">
-        <div class="filling"></div>
         <h1 class="title">
             <!-- Design Challenge -->
         </h1>
-        <div class="marktonderzoek">
-            <img data-aos="fade-left" data-aos-offset="300" src="../assets/marktonderzoek.png"/>
-        </div>
         <div class="content">
+            <div class="filling"></div>
+            <div class="marktonderzoek">
+                <p class="text">
+                    We hebben uitgebreid marktonderzoek gedaan. Hierdoor ontdekten we dat er al veel bestaat om mensen of objecten te 'tracken'.
+                    De meeste producten zijn gelinkt aan een app. Ook bestaan er al 'wearables' waarmee je een persoon terug kan vinden, zoals horloges.
+                </p>
+                <img data-aos="fade-right" data-aos-offset="200" src="../assets/marktonderzoek.png"/>
+            </div>
+            <div class="marktonderzoek">
+                <img data-aos="fade-left" data-aos-offset="200" src="../assets/marktonderzoek2.png"/>
+                <p class="text">
+                    hoi
+                </p>
+            </div>
             <p class="subtitle">
                 <!-- Na uitgebreid marktonderzoek  -->
                 <!-- De Provincie Zuid-Holland en de Gemeente Den Haag werken samen aan het Smart City Living Lab Scheveningen (LLS) dat vorig jaar september officieel is geopend. In het LLS wordt aan grootstedelijke vraagstukken gewerkt met slimme toepassingen op basis van de nieuwste technologieën. Denk aan een robot die zwerfafval verzamelt, slimme lantarenpalen of digitale polsbandjes waarmee verloren kinderen gemakkelijk kunnen worden teruggevonden. Bij deze innovaties wordt data over burgers en de omgeving waarin burgers zicht bevinden verzameld, verwerkt en toegepast. Daarom is het van belang om ook zeer zorgvuldig om te gaan met onderwerpen als privacy en inclusiviteit. De opdracht van Living Lab Scheveningen is als volgt: hoe kan een slimme toepassing eruitzien, waarmee de leefomgeving en beleving van bewoners wordt verbeterd of verrijkt? Het gaat hierbij om de toepassing van de nieuwste technologieën, dus een mooie kans je te verdiepen in wat er allemaal mogelijk is en hoe jij verwacht dat de stad er in de toekomst uit zou moeten zien.Met deze opdrachtwillen de provincie en de gemeente nieuwe kennis en ervaring opdoen over de inzet van digitale innovaties in de stad, om uiteindelijk een heuse Smart City te realiseren. -->
@@ -62,15 +72,20 @@ e.preventDefault();
 
 </script>
 
-<style scoped>
+
+<style lang="less" scoped>
+@import (reference) '../variables.less';
+
     .filling {
         height: 10vh;
     }
         
     .content {
-        align-items: center;
+        width: 80%;
+        align-items: space-evenly;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     
     .wide__container {
@@ -80,6 +95,8 @@ e.preventDefault();
       	background: linear-gradient(-45deg, #4c99ac, #8ec4c5, rgba(1, 133, 115, 0.8), #edff9f);
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
+        display: flex;
+        justify-content: center;
     }
 
     
@@ -148,12 +165,32 @@ e.preventDefault();
     .marktonderzoek {
         padding: 3%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.584);
+        height: fit-content;
+        margin: 3%;
+        border-radius: 20px;
+        font-family: 'Source Sans Pro';
+        color: @grey;
+        box-shadow: rgba(0, 40, 43, 0.301) 10px 10px 0px;
+        text-align: left;
+      
+        // &.--right {
+        //     justify-content: flex-start;
+        // }
+    }
+
+    .text {
+        font-size: max(1vw, 20px);
+        padding-right: 3%;
+        // max-width: 40vw;
     }
 
     img {
-        max-width: 80vw;
-        max-height: 80vh;
+        max-width: 40vw;
+        // max-height: 40vh;
+        height: fit-content;
+        border-radius: 10px;
     }
     .ultje {
         margin: 0;
@@ -166,9 +203,10 @@ e.preventDefault();
         display: list-item;
     }
 
-    @media(max-width: 400px) {
-       .title {
-         /* font-size: 80px; */
-       }
+    @media(max-width: 700px) {
+      
+    .marktonderzoek {
+        flex-wrap: wrap;
+    }
     }
 </style>
