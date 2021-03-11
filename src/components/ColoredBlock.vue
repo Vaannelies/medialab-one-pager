@@ -136,31 +136,6 @@ e.preventDefault();
         font-family: Helvetica; 
     }
 
-    /* .timeline__container {
-        display:flex;
-        // flex-direction: row; 
-        justify-content: flex-start;
-        transform: rotate(-90deg);
-        margin-top: -1100px;
-    } */
-    /* div.timeline {
-        width: 800px;
-        height: 100vw;
-        
-        overflow: scroll;
-        scrollbar-width: none; */
-        /* -ms-overflow-style: none;  */
-        /* border-top: 20px solid rgb(0, 255, 0);
-        background-color: red; */
-    /* } */
-
-    .timeline-card {
-        /* border-top: 6px dashed;
-        border-color: rgb(255, 255, 255) !important;
-        margin:0; 
-        padding: 30px; */
-        /* transform:rotate(90deg); */
-    }
 
     .marktonderzoek {
         padding: 3%;
@@ -183,12 +158,11 @@ e.preventDefault();
     .text {
         font-size: max(1vw, 20px);
         padding-right: 3%;
-        max-width: 50%;
+        max-width: 40%;
     }
 
     img {
-        max-width: 800px;
-        width: 100%;
+        max-width: 60%;
         // max-height: 40vh;
         height: fit-content;
         border-radius: 10px;
@@ -205,12 +179,16 @@ e.preventDefault();
     }
 
     @media(max-width: 700px) {
-      
-    .text {
-        max-width: 100%;
-    }
-    .marktonderzoek {
-        flex-wrap: wrap;
-    }
+        .text {
+            max-width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .marktonderzoek {
+            flex-wrap: wrap;
+        }
     }
 </style>
