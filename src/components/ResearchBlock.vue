@@ -5,7 +5,7 @@
                     <h1 class="title">
                         In de eerste weken gingen onze gedachten alle kanten op...
                     </h1>
-                    <ul class="bars">
+                    <ul class="bars --wide">
                         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                             <SubjectBar :title="'Invaliden'" @mouseover="background = 'invaliden'" @mouseleave="background = 'blue'"/>
                         </div>
@@ -14,6 +14,14 @@
                         </div>
                         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                             <SubjectBar :title="'Overlast'" @mouseover="background = 'overlast'" @mouseleave="background = 'blue'"/>
+                        </div>
+                    </ul>
+                    <ul class="bars">
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+                            <SubjectBar :title="'Zeegevaren'" @mouseover="background = 'zeegevaren'" @mouseleave="background = 'blue'"/>
+                        </div>
+                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+                            <SubjectBar :title="'Honden'" @mouseover="background = 'honden'" @mouseleave="background = 'blue'"/>
                         </div>
                         
                     </ul>
@@ -79,6 +87,12 @@ export default class ResearchBlock extends Vue {
         .overlast {
             background-image: url('../assets/miro_overlast.png');
         }
+        .honden {
+            background-image: url('../assets/miro_honden.png');
+        }
+        .zeegevaren {
+            background-image: url('../assets/miro_zeegevaren.png');
+        }
 
 
     .title {
@@ -110,7 +124,11 @@ export default class ResearchBlock extends Vue {
         flex-direction: row;
         margin-top: 30px;
         margin-left: -40px;
-        justify-content: space-around;
+        justify-content: space-evenly;
+
+        &.--wide {
+                  justify-content: space-around;
+        }
     }
 
     .kids {
