@@ -1,9 +1,15 @@
 <template>
     <div id="focus" class="wide__container">
         <div class="content">
-            <p class="subtitle">Toen besloten we ons te richten op</p>
+            <p class="subtitle">Uiteindelijk besloten we ons te richten op</p>
             <h1 data-aos="zoom-in" data-aos-offset="100" class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
-        
+            <p class="subtitle">
+                Helaas komt het op het drukke strand regelmatig voor dat kinderen verdwalen. <br>
+                Ze kunnen hun ouders niet terugvinden en door te zoeken raken ze al snel ver bij hen vandaan.
+                <br><br>
+                Wij gaan ervoor zorgen dat ouders en kinderen elkaar sneller kunnen terugvinden, of dat kinderen überhaupt niet zoekraken.
+            </p>
+    
             <!-- <Slideshow class="slideshow"/> -->
         </div>
     </div>
@@ -32,7 +38,7 @@ export default class FocusBlock extends Vue {
 @import (reference) '../variables.less';
     .wide__container {
         width: 100%;
-        min-height: 60vh;
+        min-height: 40vh;
         text-align: center;
         background-color: @white;
         display: flex;
@@ -48,6 +54,8 @@ export default class FocusBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
         max-width: 800px;
         color: #064554;
     }
@@ -59,11 +67,11 @@ export default class FocusBlock extends Vue {
         // padding: 30px;
         text-align: left;
         position: relative;
-        margin: -40px;
+        // margin: -40px;
         color: rgb(80, 80, 80);
         /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
     }
     
     .content {
@@ -71,6 +79,7 @@ export default class FocusBlock extends Vue {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-bottom: 30px;
     }
 
     @media(max-width: 640px) {

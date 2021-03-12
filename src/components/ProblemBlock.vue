@@ -64,6 +64,7 @@ export default class ProblemBlock extends Vue {
         /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
         margin-bottom: 40px;
+        margin-top: 40px;
         font-weight: bold;
     }
     
