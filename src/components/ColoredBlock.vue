@@ -25,18 +25,18 @@
                 </p>
             </div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <p class="text">
-                      <p class="subtitle">
+                <div class="text">
+                    <p class="subtitle">
                         Enquete
                     </p>
                     We hebben een enquete gestuurd naar ouders van wie de kinderen wel eens zijn zoekgeraakt. We zijn meer te weten gekomen over hun gevoelens, de redenen en hoe ze hun kinderen terug vonden.
-               </p>
+               </div>
                 <img src="../assets/marktonderzoek.png"/>
             </div>
             <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
                 <!-- <img src="../assets/marktonderzoek2.png"/> -->
                 <img src="../assets/marktonderzoek2.png"/>
-                <p class="text --right">
+                <div class="text --right">
                     <p class="subtitle">
                         Interview
                     </p>
@@ -44,7 +44,7 @@
                     Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
                     Vertellen over de enquete, interviews, enz.
                     En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
-                </p>
+                </div>
             </div>
             <p class="subtitle">
                 <!-- Na uitgebreid marktonderzoek  -->
