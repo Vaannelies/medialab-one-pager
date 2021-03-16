@@ -54,7 +54,7 @@
                                 <img src="../assets/cocd_box.png"/>
                             </div>
                         </ul>
-                        <ul class="bars">
+                        <!-- <ul class="bars">
                             <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                                 <SubjectBar :title="'Zeegevaren'" @mouseover="background = 'zeegevaren'" @mouseleave="background = 'blue'"/>
                             </div>
@@ -62,15 +62,15 @@
                                 <SubjectBar :title="'Honden'" @mouseover="background = 'honden'" @mouseleave="background = 'blue'"/>
                             </div>
                             
-                        </ul>
-                        <div class="kids" data-aos="fade-up" data-aos-offset="200">
+                        </ul> -->
+                        <!-- <div class="kids" data-aos="fade-up" data-aos-offset="200">
                             <SubjectBar :title="'Verdwalende kinderen'" :main="true"/>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
-                <div class="then" data-aos-offset="200" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
+                <!-- <div class="then" data-aos-offset="200" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
                     En toen...
-                </div>
+                </div> -->
             </div>
         </div>
 </template>
