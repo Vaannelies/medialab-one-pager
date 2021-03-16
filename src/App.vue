@@ -22,10 +22,10 @@
     </div>
   </div>
   <FocusBlock/>
-  <!-- <div id="triangle-box">
+  <div id="triangle-box">
     <div class="triangle --dark">
     </div>
-  </div> -->
+  </div>
   <ProblemBlock/>
   <div id="triangle-box">
     <div class="triangle --mirrored">
