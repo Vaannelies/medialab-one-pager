@@ -2,64 +2,70 @@
         <div id="research" class="wide__container" :class="background">
             <div class="content">
                 <div class="content-inner">
-                    <h1 class="title">
-                        Marktonderzoek
-                    </h1>
-                    <ul class="bars --wide">
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/marktonderzoek.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/woordweb.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/marktonderzoek2.png"/>
-                        </div>
-                    </ul>
-                    <h1 class="title">
-                        Enquete en interviews
-                    </h1>
-                    <StickyNotes/>
-                    <ul class="bars --wide">
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/marktonderzoek.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/marktonderzoek2.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/woordweb.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/marktonderzoek2.png"/>
-                        </div>
-                    </ul>
-                    <h1 class="title">
-                        Brainstormen
-                    </h1>
-                    <ul class="bars --wide">
+                    <div class="sticky">
+                        <h1 class="title">
+                            Marktonderzoek
+                        </h1>
+                        <ul class="bars --wide">
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/marktonderzoek.png"/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/woordweb.png"/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/marktonderzoek2.png"/>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="sticky">
+                        <h1 class="title">
+                            Enquete en interviews
+                        </h1>
+                    
+                        <ul class="bars --wide">
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <StickyNotes/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                            
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                         
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/draw_something.png"/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="sticky">
+                        <h1 class="title">
+                            Brainstormen
+                        </h1>
+                        <ul class="bars --wide">
+                            
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/draw_something.png"/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/morf_ding.png"/>
+                            </div>
+                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                                <img src="../assets/cocd_box.png"/>
+                            </div>
+                        </ul>
+                        <ul class="bars">
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+                                <SubjectBar :title="'Zeegevaren'" @mouseover="background = 'zeegevaren'" @mouseleave="background = 'blue'"/>
+                            </div>
+                            <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
+                                <SubjectBar :title="'Honden'" @mouseover="background = 'honden'" @mouseleave="background = 'blue'"/>
+                            </div>
+                            
+                        </ul>
+                        <div class="kids" data-aos="fade-up" data-aos-offset="200">
+                            <SubjectBar :title="'Verdwalende kinderen'" :main="true"/>
                         </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/morf_ding.png"/>
-                        </div>
-                        <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <img src="../assets/cocd_box.png"/>
-                        </div>
-                    </ul>
-                    <ul class="bars">
-                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
-                            <SubjectBar :title="'Zeegevaren'" @mouseover="background = 'zeegevaren'" @mouseleave="background = 'blue'"/>
-                        </div>
-                        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
-                            <SubjectBar :title="'Honden'" @mouseover="background = 'honden'" @mouseleave="background = 'blue'"/>
-                        </div>
-                        
-                    </ul>
-                    <div class="kids" data-aos="fade-up" data-aos-offset="200">
-                        <SubjectBar :title="'Verdwalende kinderen'" :main="true"/>
                     </div>
                 </div>
                 <div class="then" data-aos-offset="200" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
@@ -148,6 +154,12 @@ export default class ResearchBlock extends Vue {
         font-size: 40px;
         margin: 0;
         color: @blue-dark;
+        position: sticky;
+        background-color: white;
+        width: fit-content;
+        padding: 1rem;
+        z-index: 4;
+        top: 0;
     }
 
     .content {
@@ -157,7 +169,10 @@ export default class ResearchBlock extends Vue {
         flex-direction: row;
         justify-content: flex-start;
     }
-    .content-inner {
+    // .content-inner {
+     
+    // }
+    .sticky {
         align-items: center;
         display: flex;
         flex-direction: column;
