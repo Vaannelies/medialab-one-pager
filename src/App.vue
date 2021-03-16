@@ -27,10 +27,10 @@
     </div>
   </div>
   <ProblemBlock/>
-  <div id="triangle-box">
+  <!-- <div id="triangle-box">
     <div class="triangle --mirrored">
     </div>
-  </div>
+  </div> -->
   <Research2Block/>
   <ColoredBlock style="margin-top: -10vh"/>
 </template>
