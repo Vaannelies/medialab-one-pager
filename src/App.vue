@@ -31,6 +31,7 @@
     <div class="triangle --mirrored">
     </div>
   </div>
+  <Research2Block/>
   <ColoredBlock style="margin-top: -10vh"/>
 </template>
 
@@ -42,6 +43,7 @@ import AboutUsBlock from './components/AboutUsBlock.vue'
 import FocusBlock from './components/FocusBlock.vue'
 import ProblemBlock from './components/ProblemBlock.vue'
 import ResearchBlock from './components/ResearchBlock.vue'
+import Research2Block from './components/Research2Block.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
@@ -51,6 +53,7 @@ import { Options, Vue } from 'vue-class-component'
       FocusBlock,
       ProblemBlock,
       ResearchBlock,
+      Research2Block,
       ColoredBlock,
       DesignChallengeBlock,
   } 

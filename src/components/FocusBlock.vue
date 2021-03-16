@@ -45,6 +45,8 @@ export default class FocusBlock extends Vue {
         justify-content: center;
         flex-direction: column;
         align-self: center;
+        padding-bottom: 10vh;
+        padding-top: 6vh;
     }
 
 

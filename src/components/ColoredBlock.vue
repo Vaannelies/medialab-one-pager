@@ -77,22 +77,22 @@ AOS.init();
 export default class ColoredBlock extends Vue {
     imgNumber: number = 2;
 
-created() {
-    window.addEventListener('scroll', this.scroll)
+    // created() {
+    //     window.addEventListener('scroll', this.scroll)
 
-// window.mousewheel(function(e, delta) {
-// this.scrollLeft -= (delta);
-// e.preventDefault();
-// console.log(this.scrollLeft);
-// });
-}
+    // // window.mousewheel(function(e, delta) {
+    // // this.scrollLeft -= (delta);
+    // // e.preventDefault();
+    // // console.log(this.scrollLeft);
+    // // });
+    // }
 
-scroll(e, delta) {
-this.scrollLeft -= (delta);
-e.preventDefault();
-// console.log(this.scrollLeft);
-    
-}
+    // scroll(e, delta) {
+    // this.scrollLeft -= (delta);
+    // e.preventDefault();
+    // // console.log(this.scrollLeft);
+        
+    // }
 
 
 }
