@@ -14,9 +14,32 @@
                 <img src="../assets/marktonderzoek.png"/>
             </div>
             <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
+                <!-- <img src="../assets/marktonderzoek2.png"/> -->
                 <img src="../assets/marktonderzoek2.png"/>
                 <p class="text --right">
                     hoi
+                    <br><br>
+                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
+                    Vertellen over de enquete, interviews, enz.
+                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
+                </p>
+            </div>
+            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
+                <p class="text">
+                      <p class="subtitle">
+                        Enquete
+                    </p>
+                    We hebben een enquete gestuurd naar ouders van wie de kinderen wel eens zijn zoekgeraakt. We zijn meer te weten gekomen over hun gevoelens, de redenen en hoe ze hun kinderen terug vonden.
+               </p>
+                <img src="../assets/marktonderzoek.png"/>
+            </div>
+            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
+                <!-- <img src="../assets/marktonderzoek2.png"/> -->
+                <img src="../assets/marktonderzoek2.png"/>
+                <p class="text --right">
+                    <p class="subtitle">
+                        Interview
+                    </p>
                     <br><br>
                     Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
                     Vertellen over de enquete, interviews, enz.
@@ -32,10 +55,11 @@
 </div>
 </template>
 
-<script lang="js">
+<script lang="ts">
 import { Vue, Options } from 'vue-class-component'
 import StickyNotes from './StickyNotes.vue'
 import TimelineCard from './TimelineCard.vue'
+// import martkonderzoek2 from '../assets/marktonderzoek2.png'
 const AOS = require('aos')
 import 'aos/dist/aos.css'
 
@@ -51,24 +75,24 @@ AOS.init();
     }
 })
 export default class ColoredBlock extends Vue {
+    imgNumber: number = 2;
 
+    // created() {
+    //     window.addEventListener('scroll', this.scroll)
 
-created() {
-    window.addEventListener('scroll', this.scroll)
+    // // window.mousewheel(function(e, delta) {
+    // // this.scrollLeft -= (delta);
+    // // e.preventDefault();
+    // // console.log(this.scrollLeft);
+    // // });
+    // }
 
-// window.mousewheel(function(e, delta) {
-// this.scrollLeft -= (delta);
-// e.preventDefault();
-// console.log(this.scrollLeft);
-// });
-}
-
-scroll(e, delta) {
-this.scrollLeft -= (delta);
-e.preventDefault();
-// console.log(this.scrollLeft);
-    
-}
+    // scroll(e, delta) {
+    // this.scrollLeft -= (delta);
+    // e.preventDefault();
+    // // console.log(this.scrollLeft);
+        
+    // }
 
 
 }

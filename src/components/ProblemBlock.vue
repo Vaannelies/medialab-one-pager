@@ -2,7 +2,7 @@
     <div id="focus" class="wide__container">
         <div class="content">
             <h1 class="subtitle">
-                Hier komt een korte toelichting van het probleem te staan <br>
+                <!-- Hier komt een korte toelichting van het probleem te staan <br> -->
                 Als Nederlandse ouders en hun kinderen elkaar tijdens een dagje uit kwijtraken, zijn ze daar niet goed op voorbereid. 
                 Uit onderzoek van het Rode Kruis blijkt dat 63 procent van de kinderen van 4 tot en met 6 jaar het telefoonnummer 
                 van hun vader of moeder niet uit het hoofd kent.
@@ -64,6 +64,7 @@ export default class ProblemBlock extends Vue {
         /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
         margin-bottom: 40px;
+        margin-top: 40px;
         font-weight: bold;
     }
     
