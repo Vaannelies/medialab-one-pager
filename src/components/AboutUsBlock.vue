@@ -30,7 +30,7 @@ export default class AboutUsBlock extends Vue {
 
         width: 100%;
         height: 50vh;
-        background-image: url('../assets/temporary_group_pic.png');
+        background-image: url('../assets/grouppic_onepager_rectangle.png');
         background-attachment: fixed;
         background-position: center;
         text-align: center;
@@ -51,7 +51,7 @@ export default class AboutUsBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        color: #000000;
+        color: white;
     }
     
     
