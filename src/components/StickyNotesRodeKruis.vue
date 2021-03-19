@@ -1,9 +1,9 @@
 <template>
 <div class='container'>
     <p class="title">
-        Hofstad security
+        Het Rode Kruis
         <br>
-        Directeur Cees Hofland
+        Vrijwilliger Cok Taal
     </p>
     <div class="rows">
         <div class="row --one">
@@ -12,7 +12,7 @@
                 <li>
                     <sticky-note 
                         :title="''"      
-                        :content="'Ouders zijn vaak afgeleid door hun telefoon dit kan een oorzaak zijn van het zoek raken van een kind'"
+                        :content="'Ouders weten vaak niet meer wat het kind aan heeft'"
                     />
                 </li>
             </ul>
@@ -30,7 +30,7 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'Het geruststellen van een kind is een heel belangrijk punt in het proces van zoek geraakt kind. Als een kind in paniek is, is het moeilijker om de ouder terug te kunnen vinden.'"
+                        :content="'Het geruststellen van een kind is een heel belangrijk punt in het proces van zoek geraakt kind omdat je met een kind in paniek het moeilijker wordt om de ouder terug te kunnen vinden'"
                     />
                 </li>
                 <li>

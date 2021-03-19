@@ -1,14 +1,14 @@
 <template>
     <div id="focus" class="wide__container">
-        <div class="content">
+        <!-- <div class="content">
             <h1 class="subtitle">
-                <!-- Hier komt een korte toelichting van het probleem te staan <br> -->
+                Hier komt een korte toelichting van het probleem te staan <br>
 
                 Als Nederlandse ouders en hun kinderen elkaar tijdens een dagje uit kwijtraken, zijn ze daar niet goed op voorbereid. 
                 Uit onderzoek van het Rode Kruis blijkt dat 63 procent van de kinderen van 4 tot en met 6 jaar het telefoonnummer 
                 van hun vader of moeder niet uit het hoofd kent.
 <br><br>       
- <!-- Op Scheveningen verdwalen regelmatig kinderen. Vooral in het zomerseizoen:  -->
+ Op Scheveningen verdwalen regelmatig kinderen. Vooral in het zomerseizoen: 
                 Op scheveningen staan in het zomerseizoen 'herkenningspalen' waar de kinderen eventueel naar toe kunnen gaan als zij hun ouders kwijt zijn.
                 Buiten het zomerseizoen staan deze er echter niet, ondanks de drukte.
                 <br><br>
@@ -18,8 +18,8 @@
                 Door het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand, willen wij  de strandwacht ontlasten.
             </h1>
         
-            <!-- <Slideshow class="slideshow"/> -->
-        </div>
+            <Slideshow class="slideshow"/>
+        </div> -->
     </div>
 </template>
 
