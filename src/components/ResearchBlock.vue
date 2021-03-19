@@ -1,5 +1,5 @@
 <template>
-        <div id="research" class="wide__container" :class="background">
+        <div id="firstIdeas" class="wide__container" :class="background">
             <div class="content">
                 <div class="content-inner">
                     <h1 class="title">
@@ -68,6 +68,7 @@ export default class ResearchBlock extends Vue {
         background-color: @blue-light;
         display: flex;
         justify-content: center;
+        border-bottom: 1px solid @white;
         flex-direction: row;
         align-self: center;
         background-repeat: no-repeat;
@@ -125,6 +126,7 @@ export default class ResearchBlock extends Vue {
         margin-top: 30px;
         margin-left: -40px;
         justify-content: space-evenly;
+        z-index: 2;
 
         &.--wide {
                   justify-content: space-around;

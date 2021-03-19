@@ -4,9 +4,48 @@
                 <div class="content-inner">
                     <div class="sticky">
                         <h1 class="title">
-                            Marktonderzoek
+                            Onderzoeksmethodes
+                            <!-- marktonderzoek
+                            deskresearch
+                            field research 
+                            interviews
+                            social media onderzoek 
+
+                            -------
+                            belangrijkste inzichten -->
+
+                            <!-- MIRO BORD -->
+
                         </h1>
-                        <ul class="bars --wide">
+                        <ul class="bars">
+                            <li>
+                                <img class="icon" src="../assets/money.png"/>
+                                Marktonderzoek
+                                <!-- screenshotje? -->
+                            </li>
+                            <li>
+                                <img class="icon" src="../assets/monitor.png"/>
+                                Deskresearch
+                                <!-- screenshotje? -->
+                            </li>
+                            <li>
+                                <img class="icon" src="../assets/binoculars.png"/>
+                                Fieldresearch
+                                <!-- vertellen over bezoek aan scheveningen -->
+                            </li>
+                            <li>
+                                <img class="icon" src="../assets/microphone.png"/>
+                                Interviews
+                                <!-- Vertellen over interview personen -->
+                            </li>
+                            <li>
+                                <img class="icon" src="../assets/share.png"/>
+                                Social media onderzoek
+                                <!-- vertellen over insta -->
+                            </li>
+                        </ul>
+
+                        <!-- <ul class="bars --wide">
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <img src="../assets/marktonderzoek.png"/>
                             </div>
@@ -16,11 +55,11 @@
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <img src="../assets/marktonderzoek2.png"/>
                             </div>
-                        </ul>
+                        </ul> -->
                     </div>
                     <div class="sticky">
                         <h1 class="title">
-                            Enquete en interviews
+                            Belangrijke inzichten
                         </h1>
                     
                         <ul class="bars --wide">
@@ -28,7 +67,7 @@
                                 <StickyNotes/>
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            
+                                <StickyNotesRodeKruis/>
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                         
@@ -80,6 +119,7 @@ const AOS = require('aos')
 import 'aos/dist/aos.css'
 import { Vue, Options } from 'vue-class-component'
 import StickyNotes from './StickyNotes.vue'
+import StickyNotesRodeKruis from './StickyNotes.vue'
 import SubjectBar from './SubjectBar.vue'
 
  AOS.init();
@@ -87,7 +127,8 @@ import SubjectBar from './SubjectBar.vue'
 @Options({
     components: {
         SubjectBar,
-        StickyNotes
+        StickyNotes,
+        StickyNotesRodeKruis
     }
 })
 export default class ResearchBlock extends Vue {
@@ -100,7 +141,7 @@ export default class ResearchBlock extends Vue {
 @import (reference) '../variables.less';
 
     .wide__container {
-        z-index: 0;
+        z-index: -1;
         position: relative;
         // padding-top: 60px;
         min-height: 60vh;
@@ -113,26 +154,17 @@ export default class ResearchBlock extends Vue {
         background-repeat: no-repeat;
         background-size: cover;
     }
-        // .blue {
-        //     background-color: @blue-light;
-        // }
 
-        // .invaliden {
-        //     background-image: url('../assets/miro_invaliden.png');
-        // }
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Source Sans Pro";
+    }
 
-        // .afval {
-        //     background-image: url('../assets/miro_afval.png');
-        // }
-        // .overlast {
-        //     background-image: url('../assets/miro_overlast.png');
-        // }
-        // .honden {
-        //     background-image: url('../assets/miro_honden.png');
-        // }
-        // .zeegevaren {
-        //     background-image: url('../assets/miro_zeegevaren.png');
-        // }
+    .icon {
+        width: 5vw;
+    }
 
         .image { 
             // height: 
@@ -193,6 +225,7 @@ export default class ResearchBlock extends Vue {
         &.--wide {
                   justify-content: space-around;
         }
+
     }
 
     .kids {
@@ -219,6 +252,15 @@ export default class ResearchBlock extends Vue {
             padding-bottom: 30px;
 
         }
+
+        .bars {
+            flex-wrap: wrap;
+        }
+
+        li {
+            padding: 10px;
+        }
+
        .title {
        }
     }

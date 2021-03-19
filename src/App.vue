@@ -5,7 +5,8 @@
       <a href="#designChallenge">Design challenge</a> |
       <a href="#aboutUs">Wie zijn wij?</a> |
       <a href="#research">Research</a> |
-      <a href="#focus">Ontwerpopgave</a>
+      <a href="#guidelines">Ontwerprichtlijnen</a> |
+      <a href="#focus2">Ontwerpopgave</a> 
       <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
@@ -27,11 +28,17 @@
     </div>
   </div>
   <ProblemBlock/>
-  <div id="triangle-box">
+  <!-- <div id="triangle-box">
     <div class="triangle --mirrored">
     </div>
-  </div>
+  </div> -->
   <Research2Block/>
+  <div id="triangle-box">
+    <div class="triangle --blue">
+    </div>
+  </div>
+  <GuideLinesBlock/>
+  <Focus2Block/>
   <ColoredBlock style="margin-top: -10vh"/>
 </template>
 
@@ -41,9 +48,11 @@ import ColoredBlock from './components/ColoredBlock.vue'
 import DesignChallengeBlock from './components/DesignChallengeBlock.vue'
 import AboutUsBlock from './components/AboutUsBlock.vue'
 import FocusBlock from './components/FocusBlock.vue'
+import Focus2Block from './components/Focus2Block.vue'
 import ProblemBlock from './components/ProblemBlock.vue'
 import ResearchBlock from './components/ResearchBlock.vue'
 import Research2Block from './components/Research2Block.vue'
+import GuideLinesBlock from './components/GuideLinesBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
@@ -51,10 +60,12 @@ import { Options, Vue } from 'vue-class-component'
       TopBlock,
       AboutUsBlock,
       FocusBlock,
+      Focus2Block,
       ProblemBlock,
       ResearchBlock,
       Research2Block,
       ColoredBlock,
+      GuideLinesBlock,
       DesignChallengeBlock,
   } 
 })
@@ -100,6 +111,7 @@ body {
 }
 
 .triangle {
+  z-index: 2;
   width: 0;
   height: 0;
   border-style: solid;
@@ -109,6 +121,10 @@ body {
 
   &.--dark {
     border-color: transparent transparent rgb(80,80,80) transparent;
+  }
+
+  &.--blue {
+    border-color: transparent transparent #064554 transparent;
   }
   &.--mirrored {
     margin-top: 10vh;
