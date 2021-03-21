@@ -51,17 +51,6 @@
                             </li>
                         </ul>
 
-                        <!-- <ul class="bars --wide">
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <img src="../assets/marktonderzoek.png"/>
-                            </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <img src="../assets/woordweb.png"/>
-                            </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <img src="../assets/marktonderzoek2.png"/>
-                            </div>
-                        </ul> -->
                     </div>
                     <div class="sticky">
                         <h1 class="title">
@@ -72,15 +61,6 @@
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <StickyNotes/>
                             </div>
-                            <!-- <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <StickyNotesRodeKruis/>
-                            </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                        
-                            </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                
-                            </div> -->
                         </ul>
                     </div>
                     <div class="sticky">
@@ -89,13 +69,13 @@
                         </h1>
                         <ul class="bars --wide">
                             
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                            <div class="image" data-aos="fade-up"  data-aos-offset="200" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <img src="../assets/draw_something.png"/>
                             </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                            <div class="image" data-aos="fade-up"  data-aos-offset="200" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <img src="../assets/cocd_box.png"/>
                             </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                            <div class="image" data-aos="fade-up"  data-aos-offset="200" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <img src="../assets/morf_ding.png"/>
                             </div>
                         </ul>
@@ -162,7 +142,6 @@ export default class ResearchBlock extends Vue {
         align-self: center;
         background-repeat: no-repeat;
         background-size: cover;
-        border-bottom: 1px solid @blue-dark;
     }
 
     li {

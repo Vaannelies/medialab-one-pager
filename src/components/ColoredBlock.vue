@@ -1,9 +1,6 @@
 <template>
 <div id="colored">
     <div class="wide__container">
-        <h1 class="title">
-            <!-- Design Challenge -->
-        </h1>
         <div class="content">
             <div class="filling"></div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
@@ -12,7 +9,7 @@
                     De meeste producten zijn gelinkt aan een app. Ook bestaan er al 'wearables' waarmee je een persoon terug kan vinden, zoals horloges.
                 </p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img src="../assets/marktonderzoek.png"/>
+                <!-- <img src="../assets/marktonderzoek.png"/> -->
             </div>
             <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
                 <!-- <img src="../assets/marktonderzoek2.png"/> -->
@@ -121,7 +118,7 @@ export default class ColoredBlock extends Vue {
         /* width: 100%; */
         /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
         text-align: center;
-      	background: linear-gradient(-45deg, #4c99ac, #8ec4c5, rgba(1, 133, 115, 0.8), #edff9f);
+      	background: linear-gradient(-45deg, rgb(182, 214, 255), @blue-light, #348498, rgba(108, 180, 182, 0.981));
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         display: flex;

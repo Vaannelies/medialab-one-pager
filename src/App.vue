@@ -33,13 +33,13 @@
     </div>
   </div> -->
   <Research2Block/>
+  <Focus2Block/>
   <div id="triangle-box">
     <div class="triangle --blue">
     </div>
   </div>
   <GuideLinesBlock/>
-  <Focus2Block/>
-  <ColoredBlock style="margin-top: -10vh"/>
+  <ColoredBlock/>
 </template>
 
 <script lang="ts">

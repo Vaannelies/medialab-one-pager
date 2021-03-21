@@ -2,32 +2,31 @@
     <div id="guidelines" class="wide__container">
         <div class="title">Ontwerprichtlijnen</div>
         <div class="content">
-            <div class="guideline">
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                 Het product moet het kind geruststellen
             </div>
-            <div class="guideline">
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
                 Het product moet de ouders geruststellen
             </div>
-            <div class="guideline">
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                 Ouders moeten doormiddel van het product betere afspraken maken met hun kinderen
             </div>
-            <div class="guideline">
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
                 Het product moet ervoor zorgen dat het personeel op het strand zich niet meer bezig hoeft te houden met het kalmeren van het kind
             </div>
-        
-            <!-- <Slideshow class="slideshow"/> -->
         </div>
     </div>
-    <div class="filling"></div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-// import Slideshow from './Slideshow.vue'
+const AOS = require('aos')
+import 'aos/dist/aos.css'
+ AOS.init();
+
 
 @Options({
     components: {
-        // Slideshow
     }
 })
 export default class GuideLinesBlock extends Vue {
