@@ -4,50 +4,47 @@
         <div class="content">
             <div class="filling"></div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <p class="text">
-                    We hebben uitgebreid marktonderzoek gedaan. Hierdoor ontdekten we dat er al veel bestaat om mensen of objecten te 'tracken'.
-                    De meeste producten zijn gelinkt aan een app. Ook bestaan er al 'wearables' waarmee je een persoon terug kan vinden, zoals horloges.
-                </p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <!-- <img src="../assets/marktonderzoek.png"/> -->
+                <div class="text">
+                    <p class="title">Concept #1</p>
+                    <p>
+                        Een knuffel die het kind krijgt wanneer hij/zij/hen bij de reddingsbrigade terecht komt.
+                    </p>
+                    <p>
+                        Het vasthouden van de knuffel kan als zorgen voor een geruststellend gevoel.
+                    </p>
+                    <p>
+                        Doormiddel van deze knuffel kunnen de kinderen naar de stem van hun ouders luisteren.
+                    </p>
+                    <p>
+                        Daarbij kan  bijvoorbeeld  het hartje van deze knuffel steeds meer gaan gloeien naarmate de ouder dichterbij komt.
+                    </p>
+                </div>
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <img src="../assets/beer.png"/>
             </div>
             <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
                 <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/marktonderzoek2.png"/>
-                <p class="text --right">
-                    hoi
-                    <br><br>
-                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
-                    Vertellen over de enquete, interviews, enz.
-                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
-                </p>
+                <img src="../assets/shirt.png"/>
+                <div class="text --right">
+                    <p class="title">Concept #2</p>
+                    <p>
+                        Er zit een chip in de kleding van de kinderen. De ouders hebben een app die hiermee in verbinding staat.
+                    </p>
+                    <p>
+                        Het kind draagt kleding waarop een chip is bevestigd waardoor de ouders hun kind kunnen volgen. De ouders kunnen zones uitzetten in een app (geofencing). Als het kind buiten deze zones treedt, ontvangen zij een melding.
+                    </p>
+                </div>
             </div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
                 <div class="text">
-                    <p class="subtitle">
-                        Enquete
+                    <p class="title">Concept #3</p>
+                    <p>
+                        Armbandje dat van kleur kan veranderen of een icoontje kan tonen waardoor het kind weet dat hij bij een herkenningspunt in de buurt is.
                     </p>
-                    We hebben een enquete gestuurd naar ouders van wie de kinderen wel eens zijn zoekgeraakt. We zijn meer te weten gekomen over hun gevoelens, de redenen en hoe ze hun kinderen terug vonden.
-               </div>
-                <img src="../assets/marktonderzoek.png"/>
-            </div>
-            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
-                <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/marktonderzoek2.png"/>
-                <div class="text --right">
-                    <p class="subtitle">
-                        Interview
-                    </p>
-                    <br><br>
-                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
-                    Vertellen over de enquete, interviews, enz.
-                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
+                    <p>Het kindje heeft een armbandje om. Wanneer het kindje dichtbij een herkennningspunt is, gebeurt er iets met het bandje waardoor het kindje weet dat hij of zij daar naar toe moet</p>
                 </div>
+                <img src="../assets/armband.png"/>
             </div>
-            <p class="subtitle">
-                <!-- Na uitgebreid marktonderzoek  -->
-                <!-- De Provincie Zuid-Holland en de Gemeente Den Haag werken samen aan het Smart City Living Lab Scheveningen (LLS) dat vorig jaar september officieel is geopend. In het LLS wordt aan grootstedelijke vraagstukken gewerkt met slimme toepassingen op basis van de nieuwste technologieën. Denk aan een robot die zwerfafval verzamelt, slimme lantarenpalen of digitale polsbandjes waarmee verloren kinderen gemakkelijk kunnen worden teruggevonden. Bij deze innovaties wordt data over burgers en de omgeving waarin burgers zicht bevinden verzameld, verwerkt en toegepast. Daarom is het van belang om ook zeer zorgvuldig om te gaan met onderwerpen als privacy en inclusiviteit. De opdracht van Living Lab Scheveningen is als volgt: hoe kan een slimme toepassing eruitzien, waarmee de leefomgeving en beleving van bewoners wordt verbeterd of verrijkt? Het gaat hierbij om de toepassing van de nieuwste technologieën, dus een mooie kans je te verdiepen in wat er allemaal mogelijk is en hoe jij verwacht dat de stad er in de toekomst uit zou moeten zien.Met deze opdrachtwillen de provincie en de gemeente nieuwe kennis en ervaring opdoen over de inzet van digitale innovaties in de stad, om uiteindelijk een heuse Smart City te realiseren. -->
-            </p>
         </div>
     </div>
 </div>
@@ -168,7 +165,9 @@ export default class ColoredBlock extends Vue {
         display: flex;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.584);
-        height: fit-content;
+        min-height: fit-content;
+        // height: 40vh;
+
         margin: 3%;
         border-radius: 20px;
         font-family: 'Source Sans Pro';
@@ -190,9 +189,10 @@ export default class ColoredBlock extends Vue {
     }
 
     img {
-        max-width: 60%;
+        // width: 60%;
         // max-height: 40vh;
-        height: fit-content;
+        height: 100%;
+        // height: fit-content;
         border-radius: 10px;
     }
     .ultje {
@@ -216,14 +216,17 @@ export default class ColoredBlock extends Vue {
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
         }
 
         .marktonderzoek {
             flex-wrap: wrap;
+            height: fit-content;
                  &.--right {
                      flex-wrap: wrap-reverse;
                  }
+                 
         }
     }
 </style>

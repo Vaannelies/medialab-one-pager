@@ -1,16 +1,8 @@
 <template>
     <div id="focus2" class="wide__container">
         <div class="content">
-            <p class="subtitle">Op basis van onze nieuwe inzichten zijn we tot de volgende ontwerpopgave gekomen:</p>
+            <p class="subtitle">Op basis van onze nieuwe inzichten zijn we tot de volgende <b>ontwerpopgave</b> gekomen:</p>
             <h1 data-aos="zoom-in" data-aos-offset="100" class="title">Het geruststellen van kinderen wanneer zij hun ouders zijn kwijtgeraakt</h1>
-            <!-- <p class="subtitle">
-                Helaas komt het op het drukke strand regelmatig voor dat kinderen verdwalen. <br>
-                Ze kunnen hun ouders niet terugvinden en door te zoeken raken ze al snel ver bij hen vandaan.
-                <br><br>
-                Wij gaan ervoor zorgen dat ouders en kinderen elkaar sneller kunnen terugvinden, of dat kinderen überhaupt niet zoekraken.
-            </p> -->
-    
-            <!-- <Slideshow class="slideshow"/> -->
         </div>
     </div>
 </template>
@@ -80,7 +72,7 @@ export default class FocusBlock extends Vue {
         width: fit-content;
 
         /* border: 2px solid #7FC0BF; */
-        // border-radius: 10px;
+        border-radius: 4px;
         // margin-bottom: 40px;
     }
     

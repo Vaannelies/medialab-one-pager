@@ -5,8 +5,9 @@
       <a href="#designChallenge">Design challenge</a> |
       <a href="#aboutUs">Wie zijn wij?</a> |
       <a href="#research">Research</a> |
+      <a href="#focus2">Ontwerpopgave</a> |
       <a href="#guidelines">Ontwerprichtlijnen</a> |
-      <a href="#focus2">Ontwerpopgave</a> 
+      <a href="#concept">Concept</a>
       <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
@@ -40,6 +41,7 @@
   </div>
   <GuideLinesBlock/>
   <ColoredBlock/>
+  <ConceptBlock/>
 </template>
 
 <script lang="ts">
@@ -53,6 +55,7 @@ import ProblemBlock from './components/ProblemBlock.vue'
 import ResearchBlock from './components/ResearchBlock.vue'
 import Research2Block from './components/Research2Block.vue'
 import GuideLinesBlock from './components/GuideLinesBlock.vue'
+import ConceptBlock from './components/ConceptBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
@@ -67,6 +70,7 @@ import { Options, Vue } from 'vue-class-component'
       ColoredBlock,
       GuideLinesBlock,
       DesignChallengeBlock,
+      ConceptBlock
   } 
 })
 

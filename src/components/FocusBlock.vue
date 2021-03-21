@@ -7,7 +7,7 @@
                 Helaas komt het op het drukke strand regelmatig voor dat kinderen verdwalen. <br>
                 Ze kunnen hun ouders niet terugvinden en door te zoeken raken ze al snel ver bij hen vandaan.
                 <br><br>
-                Wij gaan ervoor zorgen dat ouders en kinderen elkaar sneller kunnen terugvinden, of dat kinderen überhaupt niet zoekraken.
+                Wij willen ervoor zorgen dat ouders en kinderen elkaar sneller kunnen terugvinden, of dat kinderen überhaupt niet zoekraken.
             </p>
     
             <!-- <Slideshow class="slideshow"/> -->

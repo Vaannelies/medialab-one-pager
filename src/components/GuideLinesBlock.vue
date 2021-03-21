@@ -55,6 +55,7 @@ export default class GuideLinesBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin-top: 20px;
+        margin-bottom: 20px;
         color: white;
     }
     .guideline { 
