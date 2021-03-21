@@ -93,10 +93,10 @@
                                 <img src="../assets/draw_something.png"/>
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <img src="../assets/morf_ding.png"/>
+                                <img src="../assets/cocd_box.png"/>
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <img src="../assets/cocd_box.png"/>
+                                <img src="../assets/morf_ding.png"/>
                             </div>
                         </ul>
                         <!-- <ul class="bars">

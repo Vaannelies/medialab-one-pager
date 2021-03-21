@@ -17,36 +17,6 @@
                 </li>
             </ul>
             <ul>
-                <p class="miro_title">Reddingsbrigade</p>
-                <li>
-                    <sticky-note 
-                        :title="''"
-                        :content="'De reddingsbrigade heeft niet genoeg capaciteit om zich naast al zijn andere taken bezig te houden met zoekgeraakte kinderen.'"
-                    />
-                </li>
-            </ul>
-            <ul>
-                <p class="miro_title">Geruststellen</p>
-                <li>
-                    <sticky-note 
-                        :title="''"
-                        :content="'Het geruststellen van een kind is heel belangrijk in het proces van het helpen van een zoekgeraakt kind. Als een kind in paniek is, is het moeilijker om de ouder terug te vinden.'"
-                    />
-                </li>
-                <li>
-                    <sticky-note 
-                        :title="''"      
-                        :content="'Kinderen kunnen zo in paniek zijn dat daar gevaarlijke situaties door kunnen ontstaan zoals stikken door niet te ademen, flauwvallen enz.'"
-                    />
-                </li>
-                <li>
-                    <sticky-note 
-                        :title="''"      
-                        :content="'De ouders weten vaak door de stress niet meer wat het kindje aan had.'"
-                    />
-                </li>
-            </ul>
-            <ul>
                 <p class="miro_title">Huidige situatie</p>
                 <li>
                     <sticky-note 
@@ -74,6 +44,36 @@
                         :content="'Bijna de helft van de ouders maakt niet altijd afspraken met hun kind over wat te doen wanneer ze elkaar uit het oog verliezen.'"
                     />
                         <!-- class="--desk" -->
+                </li>
+            </ul>
+            <ul>
+                <p class="miro_title">Geruststellen</p>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Het geruststellen van een kind is heel belangrijk in het proces van het helpen van een zoekgeraakt kind. Als een kind in paniek is, is het moeilijker om de ouder terug te vinden.'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"      
+                        :content="'Kinderen kunnen zo in paniek zijn dat daar gevaarlijke situaties door kunnen ontstaan zoals stikken door niet te ademen, flauwvallen enz.'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"      
+                        :content="'De ouders weten vaak door de stress niet meer wat het kindje aan had.'"
+                    />
+                </li>
+            </ul>
+            <ul>
+                <p class="miro_title">Reddingsbrigade</p>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'De reddingsbrigade heeft niet genoeg capaciteit om zich naast al zijn andere taken bezig te houden met zoekgeraakte kinderen.'"
+                    />
                 </li>
             </ul>
         </div>
