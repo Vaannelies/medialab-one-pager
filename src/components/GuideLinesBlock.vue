@@ -2,15 +2,18 @@
     <div id="guidelines" class="wide__container">
         <div class="title">Ontwerprichtlijnen</div>
         <div class="content">
-            <h1 class="subtitle">
-                Het product moet het kind en ouders geruststellen
-            </h1>
-            <h1 class="subtitle">
+            <div class="guideline">
+                Het product moet het kind geruststellen
+            </div>
+            <div class="guideline">
+                Het product moet de ouders geruststellen
+            </div>
+            <div class="guideline">
                 Ouders moeten doormiddel van het product betere afspraken maken met hun kinderen
-            </h1>
-            <h1 class="subtitle">
-                Het product zorgt ervoor dat er niet speciaal iemand
-            </h1>
+            </div>
+            <div class="guideline">
+                Het product moet ervoor zorgen dat het personeel op het strand zich niet meer bezig hoeft te houden met het kalmeren van het kind
+            </div>
         
             <!-- <Slideshow class="slideshow"/> -->
         </div>
@@ -55,16 +58,26 @@ export default class GuideLinesBlock extends Vue {
         margin-top: 20px;
         color: white;
     }
-    .subtitle { 
+    .guideline { 
         font-family: "Source Sans Pro";
         font-weight: bold;
         font-size: 100%;
-        max-width: 20vw;
-        height: 20vw;
+        // max-width: 10vw;
+        // width: fit-content;
+        width: 10vw;
+        height: 10vw;
+        // min-height: 10vw;
+        // height: fit-content;
         padding: 30px;
-        text-align: left;
+        text-align: center;
         align-content: center;
-        position: relative;
+        align-items: center;
+        vertical-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        // position: relative;
         margin: 0;
         color: #042F39;
         background-color: @blue-light;
@@ -90,11 +103,22 @@ export default class GuideLinesBlock extends Vue {
         height: 10vh;
     }
 
-    @media(max-width: 640px) {
-        .subtitle {
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-bottom: 30px;
+    @media(max-width: 800px) {
+        .guideline{
+            // padding-left: 10vw;
+            // padding-right: 10vw;
+            // padding: 10px;
+           
+            display: flex;
+            height: 30vw;
+            margin-bottom: 30px;
+            width: 50vw;
+            font-size: 100%;
+
+        }
+
+        .content {
+            flex-direction: column;
 
         }
        .title {

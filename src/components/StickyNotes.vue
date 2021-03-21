@@ -58,22 +58,22 @@
                     <sticky-note 
                         :title="''"
                         :content="'Op het strand staan alleen in het hoogseizoen oriëntatiepalen of vlaggen op het strand of boulevard ondanks dat dit een van de meest besproken punten is waar kinderen naar toe moeten gaan als ze zoek raken'"
-                        class="--observe"
                     />
+                        <!-- class="--observe" -->
                 </li>
                 <li>
                     <sticky-note 
                         :title="''"
                         :content="'Op de boulevard zijn geen speciale herkenningspunten om af te spreken, terwijl hier ook vaak kinderen verdwalen.'"
-                        class="--observe"
                     />
+                        <!-- class="--observe" -->
                 </li>
                 <li>
                     <sticky-note 
                         :title="''"
                         :content="'Bijna de helft van de ouders maakt niet altijd afspraken met hun kind over wat te doen wanneer ze elkaar uit het oog verliezen.'"
-                        class="--desk"
                     />
+                        <!-- class="--desk" -->
                 </li>
             </ul>
         </div>
