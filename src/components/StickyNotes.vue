@@ -1,10 +1,10 @@
 <template>
 <div class='container'>
-    <p class="title">
+    <!-- <p class="title">
         Hofstad security
         <br>
         Directeur Cees Hofland
-    </p>
+    </p> -->
     <div class="rows">
         <div class="row --one">
             <ul>
@@ -21,7 +21,7 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'De reddingsbrigade heeft niet genoeg capaciteit om zich naast al hun andere taken bezig te houden met zoek geraakte kinderen.'"
+                        :content="'De reddingsbrigade heeft niet genoeg capaciteit om zich naast al zijn andere taken bezig te houden met zoekgeraakte kinderen.'"
                     />
                 </li>
             </ul>
@@ -30,13 +30,19 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'Het geruststellen van een kind is een heel belangrijk punt in het proces van zoek geraakt kind. Als een kind in paniek is, is het moeilijker om de ouder terug te kunnen vinden.'"
+                        :content="'Het geruststellen van een kind is heel belangrijk in het proces van het helpen van een zoekgeraakt kind. Als een kind in paniek is, is het moeilijker om de ouder terug te vinden.'"
                     />
                 </li>
                 <li>
                     <sticky-note 
                         :title="''"      
                         :content="'Kinderen kunnen zo in paniek zijn dat daar gevaarlijke situaties door kunnen ontstaan zoals stikken door niet te ademen, flauwvallen enz.'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"      
+                        :content="'De ouders weten vaak door de stress niet meer wat het kindje aan had.'"
                     />
                 </li>
             </ul>
@@ -48,6 +54,27 @@
                         :content="'Afgelopen jaar is het heel vaak gebeurd dat er kinderen zoek raakte'"
                     />
                 </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Op het strand staan alleen in het hoogseizoen oriëntatiepalen of vlaggen op het strand of boulevard ondanks dat dit een van de meest besproken punten is waar kinderen naar toe moeten gaan als ze zoek raken'"
+                        class="--observe"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Op de boulevard zijn geen speciale herkenningspunten om af te spreken, terwijl hier ook vaak kinderen verdwalen.'"
+                        class="--observe"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Bijna de helft van de ouders maakt niet altijd afspraken met hun kind over wat te doen wanneer ze elkaar uit het oog verliezen.'"
+                        class="--desk"
+                    />
+                </li>
             </ul>
         </div>
         <div class="row --two">
@@ -56,7 +83,7 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'Alle stakeholders rondom het strand en de boulevard op Scheveningen zijn nauw met elkaar in contact waardoor iedereen meteen op de hoogte is van een zoek geraakt kind'"
+                        :content="'Alle stakeholders rondom het strand en de boulevard op Scheveningen zijn nauw met elkaar in contact waardoor iedereen meteen op de hoogte is van een zoekgeraakt kind'"
                     />
                 </li>
             </ul>
@@ -86,7 +113,7 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'Een kinderopvang is goed maar het gevaar zit er hierin dat ouders hun kinderen hier gewoon droppen om zelf te kunnen chillen waardoor dit team het weer te druk gaat krijgen om zich met zoek geraakte kinderen bezig te houden'"
+                        :content="'Een kinderopvang is goed maar het gevaar zit er hierin dat ouders hun kinderen hier gewoon droppen om zelf te kunnen chillen waardoor dit team het weer te druk gaat krijgen om zich met zoekgeraakte kinderen bezig te houden'"
                     />
                 </li>
             </ul>
@@ -176,6 +203,14 @@ export default class StickyNotes extends Vue {
         box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
         /* transform: rotate(-6deg); */
         transition: transform .15s linear;
+
+        &.--observe {
+            background: #fcf;
+        }
+
+        &.--desk {
+            background: rgb(170, 201, 255);
+        }
     }
 
     ul li:nth-child(even) a {

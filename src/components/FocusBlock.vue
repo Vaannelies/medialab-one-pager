@@ -2,7 +2,7 @@
     <div id="focus" class="wide__container">
         <div class="content">
             <p class="subtitle">Uiteindelijk besloten we ons te richten op</p>
-            <h1 data-aos="zoom-in" data-aos-offset="100" class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
+            <h1 data-aos="zoom-in" data-aos-offset="300" class="title">Het voorkomen of sneller terugvinden van zoekgeraakte kinderen op de boulevard of het strand.</h1>
             <p class="subtitle">
                 Helaas komt het op het drukke strand regelmatig voor dat kinderen verdwalen. <br>
                 Ze kunnen hun ouders niet terugvinden en door te zoeken raken ze al snel ver bij hen vandaan.

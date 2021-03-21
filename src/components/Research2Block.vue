@@ -33,14 +33,20 @@
                                 Fieldresearch
                                 <!-- vertellen over bezoek aan scheveningen -->
                             </li>
-                            <li>
+                            <li  @mouseover="tooltip = 1" @mouseleave="tooltip = 0">
                                 <img class="icon" src="../assets/microphone.png"/>
                                 Interviews
+                                <!-- <transition v-if="tooltip === 1">
+                                    <Tooltip :text="'Cees Hofland van Hofstad Security, Cok Taal van het Rode Kruis en de moeder van Annelies'"/>
+                                </transition> -->
                                 <!-- Vertellen over interview personen -->
                             </li>
-                            <li>
+                            <li @mouseover="tooltip = 2" @mouseleave="tooltip = 0">
                                 <img class="icon" src="../assets/share.png"/>
                                 Social media onderzoek
+                                <!-- <transition v-if="tooltip === 2">
+                                    <Tooltip :text="'Instagram polls'"/>
+                                </transition> -->
                                 <!-- vertellen over insta -->
                             </li>
                         </ul>
@@ -66,7 +72,7 @@
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <StickyNotes/>
                             </div>
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                            <!-- <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 <StickyNotesRodeKruis/>
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
@@ -74,7 +80,7 @@
                             </div>
                             <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
                                 
-                            </div>
+                            </div> -->
                         </ul>
                     </div>
                     <div class="sticky">
@@ -119,8 +125,9 @@ const AOS = require('aos')
 import 'aos/dist/aos.css'
 import { Vue, Options } from 'vue-class-component'
 import StickyNotes from './StickyNotes.vue'
-import StickyNotesRodeKruis from './StickyNotes.vue'
+import StickyNotesRodeKruis from './StickyNotesRodeKruis.vue'
 import SubjectBar from './SubjectBar.vue'
+import Tooltip from './Tooltip.vue'
 
  AOS.init();
 
@@ -128,11 +135,13 @@ import SubjectBar from './SubjectBar.vue'
     components: {
         SubjectBar,
         StickyNotes,
-        StickyNotesRodeKruis
+        StickyNotesRodeKruis,
+        Tooltip
     }
 })
 export default class ResearchBlock extends Vue {
     background: string = ""
+    tooltip: number = 0
 }
 
 </script>
@@ -141,7 +150,7 @@ export default class ResearchBlock extends Vue {
 @import (reference) '../variables.less';
 
     .wide__container {
-        z-index: -1;
+        // z-index: 2;
         position: relative;
         // padding-top: 60px;
         min-height: 60vh;
@@ -153,17 +162,22 @@ export default class ResearchBlock extends Vue {
         align-self: center;
         background-repeat: no-repeat;
         background-size: cover;
+        border-bottom: 1px solid @blue-dark;
     }
 
     li {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: "Source Sans Pro";
+        font-family: "Bebas Neue";
+        width: 20%;
     }
 
     .icon {
         width: 5vw;
+        max-width: 70px;
+        margin-bottom: 18px;
     }
 
         .image { 
