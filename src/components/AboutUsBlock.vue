@@ -66,5 +66,12 @@ export default class AboutUsBlock extends Vue {
     
     body { font-family: Helvetica; }
 
+    @media(max-width: 900px) {
+        .wide__container {
+            background-image: url('../assets/grouppic_onepager_square.png');
+            background-position: top; 
+        }
+    }
+
 
 </style>
