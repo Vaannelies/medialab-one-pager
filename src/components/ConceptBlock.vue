@@ -63,7 +63,7 @@ export default class ConceptBlock extends Vue {
 
     .visuals {
         position:relative;
-        overflow: hidden;
+        // overflow: hidden;
         width: 50%;
         max-width: 700px;
     }

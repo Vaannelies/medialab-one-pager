@@ -166,7 +166,8 @@ export default class ResearchBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        margin-top: 30px;
+        // margin-top: 30px;
+        transform: translate(0, 26px);
         color: @blue-dark;
         position: sticky;
         background-color: white;
@@ -180,7 +181,7 @@ export default class ResearchBlock extends Vue {
         position: relative;
         align-items: center;
         display: flex;
-        width: 100vw;
+        width: 100%;
         flex-direction: row;
         justify-content: flex-start;
     }

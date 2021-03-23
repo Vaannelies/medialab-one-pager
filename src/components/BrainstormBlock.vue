@@ -1,5 +1,5 @@
 <template>
-        <div id="research" class="wide__container" :class="background">
+        <div id="brainstorm" class="wide__container" :class="background">
             <div class="content">
                 <div class="content-inner">
                 
@@ -106,10 +106,11 @@ export default class BrainstormBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        margin-top: 30px;
+        // margin-top: 30px;
         color: @blue-dark;
         position: sticky;
         background-color: white;
+        transform: translate(0, 26px);
         width: fit-content;
         padding: 1rem;
         z-index: 4;
