@@ -97,7 +97,8 @@ export default class ColoredBlock extends Vue {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 70vh;
+        height: fit-content;
+        min-height: 70vh;
         width: 100%;
         position: relative;
     }
@@ -209,10 +210,19 @@ export default class ColoredBlock extends Vue {
 
         img {
             width: 100%;
+            max-width: 700px;
             height: auto;
         }
 
+        .content {
+            flex-wrap: wrap;
+        }
+
         .marktonderzoek {
+            max-width: 100%;
+            //    height: 40vh;
+            min-width: 0px;
+
             flex-wrap: wrap;
             height: fit-content;
                  &.--right {
