@@ -1,50 +1,26 @@
 <template>
 <div id="colored">
     <div class="wide__container">
+        <!-- <div class="header">
+        </div> -->
         <div class="content">
+
             <div class="filling"></div>
+            <img src="../assets/Documentscans-1.jpg"/>
+            <img src="../assets/rudy1.png"/>
+
+
+            <!-- <div class="filling"></div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
                 <div class="text">
-                    <p class="title">Concept #1</p>
-                    <p>
-                        Een knuffel die het kind krijgt wanneer hij/zij/hen bij de reddingsbrigade terecht komt.
-                    </p>
-                    <p>
-                        Het vasthouden van de knuffel kan als zorgen voor een geruststellend gevoel.
-                    </p>
-                    <p>
-                        Doormiddel van deze knuffel kunnen de kinderen naar de stem van hun ouders luisteren.
-                    </p>
-                    <p>
-                        Daarbij kan  bijvoorbeeld  het hartje van deze knuffel steeds meer gaan gloeien naarmate de ouder dichterbij komt.
-                    </p>
-                </div>
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-                <img src="../assets/beer.png"/>
-            </div>
-            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
-                <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/shirt.png"/>
-                <div class="text --right">
-                    <p class="title">Concept #2</p>
-                    <p>
-                        Er zit een chip in de kleding van de kinderen. De ouders hebben een app die hiermee in verbinding staat.
-                    </p>
-                    <p>
-                        Het kind draagt kleding waarop een chip is bevestigd waardoor de ouders hun kind kunnen volgen. De ouders kunnen zones uitzetten in een app (geofencing). Als het kind buiten deze zones treedt, ontvangen zij een melding.
-                    </p>
+                    <img src="../assets/rudy1.png"/>
                 </div>
             </div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
                 <div class="text">
-                    <p class="title">Concept #3</p>
-                    <p>
-                        Armbandje dat van kleur kan veranderen of een icoontje kan tonen waardoor het kind weet dat hij bij een herkenningspunt in de buurt is.
-                    </p>
-                    <p>Het kindje heeft een armbandje om. Wanneer het kindje dichtbij een herkennningspunt is, gebeurt er iets met het bandje waardoor het kindje weet dat hij of zij daar naar toe moet</p>
+                    <img src="../assets/Documentscans-1.jpg"/>
                 </div>
-                <img src="../assets/armband.png"/>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
@@ -71,25 +47,6 @@ AOS.init();
 })
 export default class ColoredBlock extends Vue {
     imgNumber: number = 2;
-
-    // created() {
-    //     window.addEventListener('scroll', this.scroll)
-
-    // // window.mousewheel(function(e, delta) {
-    // // this.scrollLeft -= (delta);
-    // // e.preventDefault();
-    // // console.log(this.scrollLeft);
-    // // });
-    // }
-
-    // scroll(e, delta) {
-    // this.scrollLeft -= (delta);
-    // e.preventDefault();
-    // // console.log(this.scrollLeft);
-        
-    // }
-
-
 }
 
 
@@ -99,6 +56,13 @@ export default class ColoredBlock extends Vue {
 <style lang="less" scoped>
 @import (reference) '../variables.less';
 
+    .header {
+        width: 100vw;
+        height: 30vh;
+        margin-left: 0;
+        background: rgba(255, 255, 255, 0.529);
+    }
+
     .filling {
         height: 10vh;
     }
@@ -107,7 +71,7 @@ export default class ColoredBlock extends Vue {
         width: 80%;
         align-items: space-evenly;
         display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         justify-content: center;
     }
     
@@ -119,6 +83,7 @@ export default class ColoredBlock extends Vue {
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
@@ -147,7 +112,7 @@ export default class ColoredBlock extends Vue {
         font-weight: bold;
         font-size: 20px;
         margin: 0;
-        max-width: 700px;
+        // max-width: 700px;
         position:relative;
         text-align: left;
         /* padding-bottom: 30px; */
@@ -165,9 +130,9 @@ export default class ColoredBlock extends Vue {
         display: flex;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.584);
-        min-height: fit-content;
+        // min-height: fit-content;
         // height: 40vh;
-
+        width: fit-content;
         margin: 3%;
         border-radius: 20px;
         font-family: 'Source Sans Pro';
@@ -178,9 +143,9 @@ export default class ColoredBlock extends Vue {
     }
 
     .text {
-        font-size: max(1vw, 20px);
+        // font-size: max(1vw, 20px);
         padding-right: 3%;
-        max-width: 40%;
+        // max-width: 40%;
               
         &.--right {
             padding-left: 3%;
@@ -191,8 +156,12 @@ export default class ColoredBlock extends Vue {
     img {
         // width: 60%;
         // max-height: 40vh;
-        height: 100%;
+        // height: 100%;
         // height: fit-content;
+        // height: 30%;
+      
+        max-width: 20%;
+        // height: auto;
         border-radius: 10px;
     }
     .ultje {
@@ -202,7 +171,7 @@ export default class ColoredBlock extends Vue {
     }
 
     li {
-        width: fit-content;
+        // width: fit-content;
         display: list-item;
     }
 

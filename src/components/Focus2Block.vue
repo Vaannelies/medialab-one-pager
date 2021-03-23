@@ -1,6 +1,7 @@
 <template>
     <div id="focus2" class="wide__container">
         <div class="content">
+            <!-- <h1 class="title --white">Ontwerpopgave</h1> -->
             <p class="subtitle">Op basis van onze nieuwe inzichten zijn we tot de volgende <b>ontwerpopgave</b> gekomen:</p>
             <h1 data-aos="zoom-in" data-aos-offset="100" class="title">Het geruststellen van kinderen wanneer zij hun ouders zijn kwijtgeraakt</h1>
         </div>
@@ -54,6 +55,10 @@ export default class FocusBlock extends Vue {
         // margin-bottom: 30px;
         max-width: 800px;
         color: #064554;
+
+        &.--white {
+            color: white;
+        }
     }
     .subtitle { 
         font-family: "Source Sans Pro";
@@ -63,7 +68,7 @@ export default class FocusBlock extends Vue {
         padding: 1em;
         
         // padding: 30px;
-        margin: 20px;
+        margin: 20px 20px 40px 20px;
         text-align: left;
         position: relative;
         // margin: -40px;

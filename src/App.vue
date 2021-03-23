@@ -18,16 +18,17 @@
   </div>
   <DesignChallengeBlock/>
   <AboutUsBlock/>
-  <ResearchBlock/>
+  <ConceptBlock/>
+  <div id="triangle-box" :class="blue ? '--blue-light' : '--white'">
+    <div class="triangle --mirrored-blue">
+    </div>
+  </div>
+  <ResearchBlock @blue="blue = true" @white="blue = false"/>
   <div id="triangle-box">
     <div class="triangle">
     </div>
   </div>
   <FocusBlock/>
-  <div id="triangle-box">
-    <div class="triangle --dark">
-    </div>
-  </div>
   <ProblemBlock/>
   <!-- <div id="triangle-box">
     <div class="triangle --mirrored">
@@ -40,8 +41,8 @@
     </div>
   </div>
   <GuideLinesBlock/>
+  <BrainstormBlock/>
   <ColoredBlock/>
-  <ConceptBlock/>
 </template>
 
 <script lang="ts">
@@ -56,6 +57,7 @@ import ResearchBlock from './components/ResearchBlock.vue'
 import Research2Block from './components/Research2Block.vue'
 import GuideLinesBlock from './components/GuideLinesBlock.vue'
 import ConceptBlock from './components/ConceptBlock.vue'
+import BrainstormBlock from './components/BrainstormBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
@@ -70,33 +72,14 @@ import { Options, Vue } from 'vue-class-component'
       ColoredBlock,
       GuideLinesBlock,
       DesignChallengeBlock,
-      ConceptBlock
+      ConceptBlock,
+      BrainstormBlock
   } 
 })
 
 export default class App extends Vue {
       conceptSection: boolean = false
-
-      // created() {
-      //   window.addEventListener('scroll', this.checkConceptSection)
-      // }
-//       checkConceptSection() {
-//         const rect = document.querySelector('#concept')?.getBoundingClientRect(); 
-//         // console.log(document.querySelector('#concept'))
-//         if(rect) {
-//         //   console.log( rect.top >= 0 &&
-//         //         // rect.left >= 0 &&
-//         //         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-//         //         // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//         //  )
-//            this.conceptSection = 
-//                 rect.top <= 0 ||
-//                 // rect.left >= 0 &&
-//                 rect.top >= (window.innerHeight)
-//                 // rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            
-//         }
-//     }
+      blue: boolean = true;
 }
 </script>
 <style lang="scss">
@@ -112,6 +95,12 @@ body {
   margin-top: -10vh;
   z-index: 2;
   position: relative;
+  &.--blue-light {
+    background: #7FC0BF;
+  }
+  &.--white {
+    background: white;
+  }
 }
 
 .triangle {
@@ -130,9 +119,20 @@ body {
   &.--blue {
     border-color: transparent transparent #064554 transparent;
   }
+  &.--blue-light {
+    border-color: transparent transparent #7FC0BF transparent;
+  }
   &.--mirrored {
     margin-top: 10vh;
     border-color: transparent transparent transparent rgb(80,80,80)   ;
+  }
+  &.--mirrored-light {
+    margin-top: 10vh;
+    border-color: transparent transparent transparent rgb(237, 237, 237)  ;
+  }
+  &.--mirrored-blue {
+    // margin-top: 10vh;
+    border-color: transparent transparent transparent #064554   ;
   }
 }
 #app {
