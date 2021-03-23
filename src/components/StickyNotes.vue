@@ -265,35 +265,37 @@ export default class StickyNotes extends Vue {
     }
     
 
-    @media(max-width: 400px) {
+    @media(max-width: 640px) {
         ul {
           height: 300px;
-          overflow: scroll;
-          flex-direction: column;
+        //   overflow: scroll;
           display:flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          color: red;
           scrollbar-width: 100px;
-          /* align-self: center; */
-
+        //   /* align-self: center; */
         }
 
-        ul li:nth-child(1) a {
-            transform:rotate(4deg);
-            position:relative;
-            top:5px;
-            /* transform-origin: (-50%,0); */
-          margin-left: 25vw;
-        }
-        ul li a {
-        text-decoration:none;
-        color:#000;
-        background:#ffc;
-        display:block;
-        height:10em;
-        width:10em;
-        padding:1em;
-        box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
-        transform: rotate(-6deg);
-        transition: transform .15s linear;
-    }
+        // ul li:nth-child(1) a {
+        //     transform:rotate(4deg);
+        //     position:relative;
+        //     top:5px;
+        //     /* transform-origin: (-50%,0); */
+        //     margin-left: 25vw;
+        // }
+        // ul li a {
+        //     text-decoration:none;
+        //     color:#000;
+        //     background:#ffc;
+        //     display:block;
+        //     height:10em;
+        //     width:10em;
+        //     padding:1em;
+        //     box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
+        //     transform: rotate(-6deg);
+        //     transition: transform .15s linear;
+        //     flex-wrap: wrap;
+        // }
     }
 </style>
