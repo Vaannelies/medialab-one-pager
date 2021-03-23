@@ -45,6 +45,7 @@
   <GuideLinesBlock/>
   <BrainstormBlock/>
   <ColoredBlock/>
+  <CompareBlock/>
 </template>
 
 <script lang="ts">
@@ -60,6 +61,7 @@ import Research2Block from './components/Research2Block.vue'
 import GuideLinesBlock from './components/GuideLinesBlock.vue'
 import ConceptBlock from './components/ConceptBlock.vue'
 import BrainstormBlock from './components/BrainstormBlock.vue'
+import CompareBlock from './components/CompareBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 @Options({
@@ -75,7 +77,8 @@ import { Options, Vue } from 'vue-class-component'
       GuideLinesBlock,
       DesignChallengeBlock,
       ConceptBlock,
-      BrainstormBlock
+      BrainstormBlock,
+      CompareBlock
   } 
 })
 

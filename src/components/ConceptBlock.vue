@@ -18,6 +18,7 @@
 		        </a>
             </div>
         </div>
+     
     </div>
 </template>
 
@@ -31,7 +32,6 @@ import { Vue, Options } from 'vue-class-component'
     }
 })
 export default class ConceptBlock extends Vue {
-
 }
 
 </script>
@@ -72,6 +72,8 @@ export default class ConceptBlock extends Vue {
         display: block;
         content: '';
     }
+
+
 
     .title {
         font-family: "Bebas Neue";
