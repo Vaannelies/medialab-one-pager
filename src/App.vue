@@ -150,13 +150,14 @@ html {
 }
 
 #nav {
-    padding-top: 30px;
+    // padding-top: 15px 15px;
     width: 100vw;
     position: fixed;
     display:flex;
     justify-content: center;
     font-size: 20px;
     z-index: 4;
+    background: rgba(0, 0, 0, 0.371);
 
   .menu {
     // transform: translate(-50%,0);
