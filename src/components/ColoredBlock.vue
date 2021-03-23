@@ -203,9 +203,7 @@ export default class ColoredBlock extends Vue {
         .text {
             max-width: 100%;
             padding-right: 0;
-            padding-left: 0;
-
-       
+            padding-left: 0;     
         }
 
         img {
