@@ -1,5 +1,5 @@
 <template>
-<div id="colored">
+<div id="customer-journeys">
     <div class="wide__container">
        <h1 class="title">
             customer journeys
@@ -97,7 +97,8 @@ export default class ColoredBlock extends Vue {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 70vh;
+        height: fit-content;
+        min-height: 70vh;
         width: 100%;
         position: relative;
     }
@@ -160,7 +161,7 @@ export default class ColoredBlock extends Vue {
         min-width: fit-content;
 
         margin: 3%;
-        border-radius: 20px;
+        border-radius: 10px;
         font-family: 'Source Sans Pro';
         color: @grey;
         box-shadow: rgba(0, 40, 43, 0.301) 10px 10px 0px;
@@ -202,17 +203,24 @@ export default class ColoredBlock extends Vue {
         .text {
             max-width: 100%;
             padding-right: 0;
-            padding-left: 0;
-
-       
+            padding-left: 0;     
         }
 
         img {
             width: 100%;
+            max-width: 700px;
             height: auto;
         }
 
+        .content {
+            flex-wrap: wrap;
+        }
+
         .marktonderzoek {
+            max-width: 100%;
+            //    height: 40vh;
+            min-width: 0px;
+
             flex-wrap: wrap;
             height: fit-content;
                  &.--right {
