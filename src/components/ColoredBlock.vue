@@ -160,7 +160,7 @@ export default class ColoredBlock extends Vue {
         min-width: fit-content;
 
         margin: 3%;
-        border-radius: 20px;
+        border-radius: 10px;
         font-family: 'Source Sans Pro';
         color: @grey;
         box-shadow: rgba(0, 40, 43, 0.301) 10px 10px 0px;
