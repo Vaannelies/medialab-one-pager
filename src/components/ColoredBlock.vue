@@ -1,26 +1,20 @@
 <template>
 <div id="colored">
     <div class="wide__container">
-        <!-- <div class="header">
-        </div> -->
         <div class="content">
-
             <div class="filling"></div>
-            <img src="../assets/Documentscans-1.jpg"/>
-            <img src="../assets/rudy1.png"/>
-
-
-            <!-- <div class="filling"></div>
-            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <div class="text">
-                    <img src="../assets/rudy1.png"/>
-                </div>
+            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="100">
+            <!-- <div class="marktonderzoek"> -->
+       
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <img src="../assets/rudy1.png"/>
             </div>
-            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <div class="text">
-                    <img src="../assets/Documentscans-1.jpg"/>
-                </div>
-            </div> -->
+            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="100">
+            <!-- <div class="marktonderzoek --right" > -->
+                <!-- <img src="../assets/marktonderzoek2.png"/> -->
+                <img src="../assets/zone.png"/>
+        
+            </div>
         </div>
     </div>
 </div>
@@ -47,6 +41,25 @@ AOS.init();
 })
 export default class ColoredBlock extends Vue {
     imgNumber: number = 2;
+
+    // created() {
+    //     window.addEventListener('scroll', this.scroll)
+
+    // // window.mousewheel(function(e, delta) {
+    // // this.scrollLeft -= (delta);
+    // // e.preventDefault();
+    // // console.log(this.scrollLeft);
+    // // });
+    // }
+
+    // scroll(e, delta) {
+    // this.scrollLeft -= (delta);
+    // e.preventDefault();
+    // // console.log(this.scrollLeft);
+        
+    // }
+
+
 }
 
 
@@ -56,13 +69,6 @@ export default class ColoredBlock extends Vue {
 <style lang="less" scoped>
 @import (reference) '../variables.less';
 
-    .header {
-        width: 100vw;
-        height: 30vh;
-        margin-left: 0;
-        background: rgba(255, 255, 255, 0.529);
-    }
-
     .filling {
         height: 10vh;
     }
@@ -71,8 +77,10 @@ export default class ColoredBlock extends Vue {
         width: 80%;
         align-items: space-evenly;
         display: flex;
-        // flex-direction: column;
+        // height: 40vh;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
     
     .wide__container {
@@ -83,8 +91,9 @@ export default class ColoredBlock extends Vue {
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         display: flex;
-        flex-direction: column;
         justify-content: center;
+        height: 70vh;
+        width: 100vw;
     }
 
     
@@ -112,7 +121,7 @@ export default class ColoredBlock extends Vue {
         font-weight: bold;
         font-size: 20px;
         margin: 0;
-        // max-width: 700px;
+        max-width: 700px;
         position:relative;
         text-align: left;
         /* padding-bottom: 30px; */
@@ -126,13 +135,15 @@ export default class ColoredBlock extends Vue {
 
 
     .marktonderzoek {
-        padding: 3%;
+        padding: 1.5%;
         display: flex;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.584);
-        // min-height: fit-content;
-        // height: 40vh;
-        width: fit-content;
+        // min-height: 100%;
+        // max-width: 700px;
+        height: 40vh;
+        min-width: fit-content;
+
         margin: 3%;
         border-radius: 20px;
         font-family: 'Source Sans Pro';
@@ -143,9 +154,9 @@ export default class ColoredBlock extends Vue {
     }
 
     .text {
-        // font-size: max(1vw, 20px);
+        font-size: max(1vw, 20px);
         padding-right: 3%;
-        // max-width: 40%;
+        max-width: 40%;
               
         &.--right {
             padding-left: 3%;
@@ -156,12 +167,9 @@ export default class ColoredBlock extends Vue {
     img {
         // width: 60%;
         // max-height: 40vh;
-        // height: 100%;
+        // width: 100%;
+        height: 100%;
         // height: fit-content;
-        // height: 30%;
-      
-        max-width: 20%;
-        // height: auto;
         border-radius: 10px;
     }
     .ultje {
@@ -171,7 +179,7 @@ export default class ColoredBlock extends Vue {
     }
 
     li {
-        // width: fit-content;
+        width: fit-content;
         display: list-item;
     }
 
