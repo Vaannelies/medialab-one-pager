@@ -1,5 +1,5 @@
 <template>
-    <div id="designChallenge" class="wide__container">
+    <div id="design-challenge" class="wide__container">
         <h1 class="title">Design Challenge</h1>
         <div class="content">
             <h2 class="subtitle"> 

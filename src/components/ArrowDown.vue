@@ -1,6 +1,6 @@
 <template>
     <transition name="fade-fast">
-		<a href="#designChallenge" v-if="attentionScrollDown">
+		<a href="#design-challenge" v-if="attentionScrollDown">
 			<img class="arrow" :class="{'--shake': attentionScrollDown}" src="../assets/arrow_down_white.png"/>
 		</a>
     </transition>

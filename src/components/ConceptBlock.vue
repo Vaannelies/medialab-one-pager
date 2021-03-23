@@ -12,7 +12,7 @@
                 <p class="subtitle">
                     Rudy is gekoppeld aan een Rudy-app, die kan een melding sturen naar de ouders. Hierdoor weten zij waar hun kind is. De ouders kunnen ook vanuit de app praten tegen het kind. De stem van de ouders komt via de Rudy-knuffel bij het kind terecht en zal hierdoor minder in paniek raken. Door het delen van de livelocatie van de app en Rudy kan het hartje van de knuffel meer gaan gloeien naar mate de ouder hun kind nadert.
                 </p>
-        		<a href="#colored" class="shortcut">
+        		<a href="#customer-journeys" class="shortcut">
                     <img class="arrow" src="../assets/dashed-arrow.png"/>
                     <div data-aos="fade-left" class="letsGo">Customer journeys</div>
 		        </a>

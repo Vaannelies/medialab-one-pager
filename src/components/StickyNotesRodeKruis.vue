@@ -45,7 +45,7 @@
                 <li>
                     <sticky-note 
                         :title="''"
-                        :content="'Afgelopen jaar is het heel vaak gebeurd dat er kinderen zoek raakte'"
+                        :content="'Afgelopen jaar is het heel vaak gebeurd dat er kinderen zoek raakten'"
                     />
                 </li>
             </ul>

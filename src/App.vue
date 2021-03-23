@@ -2,14 +2,14 @@
   <div id="nav">
     <div class="menu">
       <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
-      <a href="#designChallenge">Design challenge</a> |
-      <a href="#aboutUs">Wie zijn wij?</a> |
+      <a href="#design-challenge">Design challenge</a> |
+      <a href="#about-us">Wie zijn wij?</a> |
       <a href="#concept">Concept</a> |
       <a href="#research">Research</a> |
-      <a href="#focus2">Ontwerpopgave</a> |
-      <a href="#guidelines">Ontwerprichtlijnen</a> |
+      <a href="#ontwerpopgave">Ontwerpopgave</a> |
+      <a href="#ontwerprichtlijnen">Ontwerprichtlijnen</a> |
       <a href="#brainstorm">Brainstorm</a> |
-      <a href="#colored">Customer journeys</a>
+      <a href="#customer-journeys">Customer journeys</a>
       <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
@@ -156,7 +156,7 @@ html {
     display:flex;
     justify-content: center;
     font-size: 20px;
-    z-index: 4;
+    z-index: 10;
     background: rgba(0, 0, 0, 0.371);
 
   .menu {

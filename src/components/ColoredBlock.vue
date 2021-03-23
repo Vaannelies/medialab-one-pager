@@ -1,5 +1,5 @@
 <template>
-<div id="colored">
+<div id="customer-journeys">
     <div class="wide__container">
        <h1 class="title">
             customer journeys

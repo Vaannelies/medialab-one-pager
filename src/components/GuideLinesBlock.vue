@@ -1,5 +1,5 @@
 <template>
-    <div id="guidelines" class="wide__container">
+    <div id="ontwerprichtlijnen" class="wide__container">
         <div class="title">Ontwerprichtlijnen</div>
         <div class="content">
             <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">

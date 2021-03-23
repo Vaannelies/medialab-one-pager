@@ -1,5 +1,5 @@
 <template>
-<div id="aboutUs">
+<div id="about-us">
     <div class="title">  
         Pinacoladames
     </div> 
@@ -59,7 +59,7 @@ export default class AboutUsBlock extends Vue {
         transform: translate(-50%,-50%);
     }
 
-    #aboutUs {
+    #about-us {
         position: relative;
     }
     

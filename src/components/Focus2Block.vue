@@ -1,5 +1,5 @@
 <template>
-    <div id="focus2" class="wide__container">
+    <div id="ontwerpopgave" class="wide__container">
         <div class="content">
             <!-- <h1 class="title --white">Ontwerpopgave</h1> -->
             <p class="subtitle">Op basis van onze nieuwe inzichten zijn we tot de volgende <b>ontwerpopgave</b> gekomen:</p>
