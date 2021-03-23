@@ -1,6 +1,9 @@
 <template>
 <div id="colored">
     <div class="wide__container">
+       <h1 class="title">
+            customer journeys
+        </h1>
         <div class="content">
             <div class="filling"></div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="100">
@@ -92,8 +95,11 @@ export default class ColoredBlock extends Vue {
         animation: gradient 15s ease infinite;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
         height: 70vh;
         width: 100%;
+        position: relative;
     }
 
     
@@ -114,8 +120,17 @@ export default class ColoredBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        color: white;
+        // margin-top: 30px;
+        color: @blue-dark;
+        position: absolute;
+        background-color: white;
+        // transform: translate(0, 26px);
+        width: fit-content;
+        padding: 1rem;
+        z-index: 4;
+        top: 0;
     }
+
     .subtitle {
         font-family: "Source Sans Pro";
         font-weight: bold;
