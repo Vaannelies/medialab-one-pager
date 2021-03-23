@@ -2,68 +2,8 @@
         <div id="research" class="wide__container" :class="background">
             <div class="content">
                 <div class="content-inner">
+                
                     <div class="sticky">
-                        <h1 class="title">
-                            Onderzoeksmethodes
-                            <!-- marktonderzoek
-                            deskresearch
-                            field research 
-                            interviews
-                            social media onderzoek 
-
-                            -------
-                            belangrijkste inzichten -->
-
-                            <!-- MIRO BORD -->
-
-                        </h1>
-                        <ul class="bars">
-                            <li>
-                                <img class="icon" src="../assets/money.png"/>
-                                Marktonderzoek
-                                <!-- screenshotje? -->
-                            </li>
-                            <li>
-                                <img class="icon" src="../assets/monitor.png"/>
-                                Deskresearch
-                                <!-- screenshotje? -->
-                            </li>
-                            <li>
-                                <img class="icon" src="../assets/binoculars.png"/>
-                                Fieldresearch
-                                <!-- vertellen over bezoek aan scheveningen -->
-                            </li>
-                            <li  @mouseover="tooltip = 1" @mouseleave="tooltip = 0">
-                                <img class="icon" src="../assets/microphone.png"/>
-                                Interviews
-                                <!-- <transition v-if="tooltip === 1">
-                                    <Tooltip :text="'Cees Hofland van Hofstad Security, Cok Taal van het Rode Kruis en de moeder van Annelies'"/>
-                                </transition> -->
-                                <!-- Vertellen over interview personen -->
-                            </li>
-                            <li @mouseover="tooltip = 2" @mouseleave="tooltip = 0">
-                                <img class="icon" src="../assets/share.png"/>
-                                Social media onderzoek
-                                <!-- <transition v-if="tooltip === 2">
-                                    <Tooltip :text="'Instagram polls'"/>
-                                </transition> -->
-                                <!-- vertellen over insta -->
-                            </li>
-                        </ul>
-
-                    </div>
-                    <div class="sticky">
-                        <h1 class="title">
-                            Belangrijke inzichten
-                        </h1>
-                    
-                        <ul class="bars --wide">
-                            <div class="image" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                                <StickyNotes/>
-                            </div>
-                        </ul>
-                    </div>
-                    <!-- <div class="sticky">
                         <h1 class="title">
                             Brainstormen
                         </h1>
@@ -79,7 +19,7 @@
                                 <img src="../assets/morf_ding.png"/>
                             </div>
                         </ul>
-                    </div> -->
+                    </div>
                 </div>
                 <!-- <div class="then" data-aos-offset="200" data-aos="fade-left" data-aos-anchor-placement="right-right" data-aos-duration="1500" >
                     En toen...
@@ -107,7 +47,7 @@ import Tooltip from './Tooltip.vue'
         Tooltip
     }
 })
-export default class ResearchBlock extends Vue {
+export default class BrainstormBlock extends Vue {
     background: string = ""
     tooltip: number = 0
 }
@@ -180,13 +120,12 @@ export default class ResearchBlock extends Vue {
         position: relative;
         align-items: center;
         display: flex;
-        width: 100vw;
         flex-direction: row;
         justify-content: flex-start;
     }
-    .content-inner {
-        width: 100vw;
-    }
+    // .content-inner {
+     
+    // }
     .sticky {
         align-items: center;
         display: flex;

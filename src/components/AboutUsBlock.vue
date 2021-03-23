@@ -1,9 +1,9 @@
 <template>
 <div id="aboutUs">
-    <div class="wide__container">
     <div class="title">  
         Pinacoladames
     </div> 
+    <div class="wide__container">
   </div>
 </div>
 </template>
@@ -51,11 +51,27 @@ export default class AboutUsBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        color: white;
+        color: white;  
+        position: absolute;
+        z-index: 10;
+        left: 50vw;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #aboutUs {
+        position: relative;
     }
     
     
     body { font-family: Helvetica; }
+
+    @media(max-width: 900px) {
+        .wide__container {
+            background-image: url('../assets/grouppic_onepager_square.png');
+            background-position: top; 
+        }
+    }
 
 
 </style>

@@ -1,55 +1,20 @@
 <template>
 <div id="colored">
     <div class="wide__container">
-        <h1 class="title">
-            <!-- Design Challenge -->
-        </h1>
         <div class="content">
             <div class="filling"></div>
-            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <p class="text">
-                    We hebben uitgebreid marktonderzoek gedaan. Hierdoor ontdekten we dat er al veel bestaat om mensen of objecten te 'tracken'.
-                    De meeste producten zijn gelinkt aan een app. Ook bestaan er al 'wearables' waarmee je een persoon terug kan vinden, zoals horloges.
-                </p>
-                <img src="../assets/marktonderzoek.png"/>
+            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="100">
+            <!-- <div class="marktonderzoek"> -->
+       
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                <img src="../assets/rudy1.png"/>
             </div>
-            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
+            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="100">
+            <!-- <div class="marktonderzoek --right" > -->
                 <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/marktonderzoek2.png"/>
-                <p class="text --right">
-                    hoi
-                    <br><br>
-                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
-                    Vertellen over de enquete, interviews, enz.
-                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
-                </p>
+                <img src="../assets/zone.png"/>
+        
             </div>
-            <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="200">
-                <div class="text">
-                    <p class="subtitle">
-                        Enquete
-                    </p>
-                    We hebben een enquete gestuurd naar ouders van wie de kinderen wel eens zijn zoekgeraakt. We zijn meer te weten gekomen over hun gevoelens, de redenen en hoe ze hun kinderen terug vonden.
-               </div>
-                <img src="../assets/marktonderzoek.png"/>
-            </div>
-            <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="200">
-                <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/marktonderzoek2.png"/>
-                <div class="text --right">
-                    <p class="subtitle">
-                        Interview
-                    </p>
-                    <br><br>
-                    Hierna vertellen over sus team en over de oriëntatiepalen die er alleen in het zomerseizoen staan.
-                    Vertellen over de enquete, interviews, enz.
-                    En ik denk dat dit plaatje beter gewoon bij dat andere plaatje kan, ipv in een apart blok.
-                </div>
-            </div>
-            <p class="subtitle">
-                <!-- Na uitgebreid marktonderzoek  -->
-                <!-- De Provincie Zuid-Holland en de Gemeente Den Haag werken samen aan het Smart City Living Lab Scheveningen (LLS) dat vorig jaar september officieel is geopend. In het LLS wordt aan grootstedelijke vraagstukken gewerkt met slimme toepassingen op basis van de nieuwste technologieën. Denk aan een robot die zwerfafval verzamelt, slimme lantarenpalen of digitale polsbandjes waarmee verloren kinderen gemakkelijk kunnen worden teruggevonden. Bij deze innovaties wordt data over burgers en de omgeving waarin burgers zicht bevinden verzameld, verwerkt en toegepast. Daarom is het van belang om ook zeer zorgvuldig om te gaan met onderwerpen als privacy en inclusiviteit. De opdracht van Living Lab Scheveningen is als volgt: hoe kan een slimme toepassing eruitzien, waarmee de leefomgeving en beleving van bewoners wordt verbeterd of verrijkt? Het gaat hierbij om de toepassing van de nieuwste technologieën, dus een mooie kans je te verdiepen in wat er allemaal mogelijk is en hoe jij verwacht dat de stad er in de toekomst uit zou moeten zien.Met deze opdrachtwillen de provincie en de gemeente nieuwe kennis en ervaring opdoen over de inzet van digitale innovaties in de stad, om uiteindelijk een heuse Smart City te realiseren. -->
-            </p>
         </div>
     </div>
 </div>
@@ -112,19 +77,23 @@ export default class ColoredBlock extends Vue {
         width: 80%;
         align-items: space-evenly;
         display: flex;
-        flex-direction: column;
+        // height: 40vh;
+        flex-direction: row;
         justify-content: center;
+        align-items: center;
     }
     
     .wide__container {
         /* width: 100%; */
         /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
         text-align: center;
-      	background: linear-gradient(-45deg, #4c99ac, #8ec4c5, rgba(1, 133, 115, 0.8), #edff9f);
+      	background: linear-gradient(-45deg, rgb(182, 214, 255), @blue-light, #348498, rgba(108, 180, 182, 0.981));
         background-size: 400% 400%;
         animation: gradient 15s ease infinite;
         display: flex;
         justify-content: center;
+        height: 70vh;
+        width: 100vw;
     }
 
     
@@ -166,11 +135,15 @@ export default class ColoredBlock extends Vue {
 
 
     .marktonderzoek {
-        padding: 3%;
+        padding: 1.5%;
         display: flex;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.584);
-        height: fit-content;
+        // min-height: 100%;
+        // max-width: 700px;
+        height: 40vh;
+        min-width: fit-content;
+
         margin: 3%;
         border-radius: 20px;
         font-family: 'Source Sans Pro';
@@ -192,9 +165,11 @@ export default class ColoredBlock extends Vue {
     }
 
     img {
-        max-width: 60%;
+        // width: 60%;
         // max-height: 40vh;
-        height: fit-content;
+        // width: 100%;
+        height: 100%;
+        // height: fit-content;
         border-radius: 10px;
     }
     .ultje {
@@ -218,14 +193,17 @@ export default class ColoredBlock extends Vue {
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: auto;
         }
 
         .marktonderzoek {
             flex-wrap: wrap;
+            height: fit-content;
                  &.--right {
                      flex-wrap: wrap-reverse;
                  }
+                 
         }
     }
 </style>

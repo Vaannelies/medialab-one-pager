@@ -2,29 +2,31 @@
     <div id="guidelines" class="wide__container">
         <div class="title">Ontwerprichtlijnen</div>
         <div class="content">
-            <h1 class="subtitle">
-                Het product moet het kind en ouders geruststellen
-            </h1>
-            <h1 class="subtitle">
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
+                Het product moet het kind geruststellen
+            </div>
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
+                Het product moet de ouders geruststellen
+            </div>
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300">
                 Ouders moeten doormiddel van het product betere afspraken maken met hun kinderen
-            </h1>
-            <h1 class="subtitle">
-                Het product zorgt ervoor dat er niet speciaal iemand
-            </h1>
-        
-            <!-- <Slideshow class="slideshow"/> -->
+            </div>
+            <div class="guideline" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400">
+                Het product moet ervoor zorgen dat het personeel op het strand zich niet meer bezig hoeft te houden met het kalmeren van het kind
+            </div>
         </div>
     </div>
-    <div class="filling"></div>
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-// import Slideshow from './Slideshow.vue'
+const AOS = require('aos')
+import 'aos/dist/aos.css'
+ AOS.init();
+
 
 @Options({
     components: {
-        // Slideshow
     }
 })
 export default class GuideLinesBlock extends Vue {
@@ -53,26 +55,38 @@ export default class GuideLinesBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin-top: 20px;
+        margin-bottom: 20px;
         color: white;
     }
-    .subtitle { 
+    .guideline { 
         font-family: "Source Sans Pro";
         font-weight: bold;
         font-size: 100%;
-        max-width: 20vw;
-        height: 20vw;
+        // max-width: 10vw;
+        // width: fit-content;
+        width: 10vw;
+        min-width: 120px;
+        height: 10vw;
+        min-height: 120px;
+        // min-height: 10vw;
+        // height: fit-content;
         padding: 30px;
-        text-align: left;
+        text-align: center;
         align-content: center;
-        position: relative;
+        align-items: center;
+        vertical-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        // position: relative;
         margin: 0;
         color: #042F39;
         background-color: @blue-light;
         box-shadow: 3px -3px 0 3px white;
         /* border: 2px solid #7FC0BF; */
         border-radius: 5px;
-        margin-bottom: 10vh;
-        margin-top: 10vh;
+        margin: 2vh 2vh 4vh 2vh;
         // font-weight: bold;
     }
     
@@ -84,17 +98,30 @@ export default class GuideLinesBlock extends Vue {
         flex-direction: row;
         width: 100%;
         flex-wrap: wrap;
+        flex-basis: 50%;
     }
 
     .filling {
         height: 10vh;
     }
 
-    @media(max-width: 640px) {
-        .subtitle {
-            padding-left: 10vw;
-            padding-right: 10vw;
-            padding-bottom: 30px;
+    @media(max-width: 800px) {
+        .guideline{
+            // padding-left: 10vw;
+            // // padding-right: 10vw;
+            // // padding: 10px;
+           
+            // display: flex;
+            // height: 15vh;
+            // margin-top: 2vh;
+            // margin-bottom: 2vh;
+            // width: 50vw;
+            // font-size: 100%;
+
+        }
+
+        .content {
+            // flex-direction: column;
 
         }
        .title {

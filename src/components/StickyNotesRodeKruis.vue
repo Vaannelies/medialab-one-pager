@@ -1,10 +1,10 @@
 <template>
 <div class='container'>
-    <p class="title">
+    <!-- <p class="title">
         Het Rode Kruis
         <br>
         Vrijwilliger Cok Taal
-    </p>
+    </p> -->
     <div class="rows">
         <div class="row --one">
             <ul>

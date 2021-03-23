@@ -7,7 +7,7 @@
                     </h1>
                     <ul class="bars --wide">
                         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="100">
-                            <SubjectBar :title="'Invaliden'" @mouseover="background = 'invaliden'" @mouseleave="background = 'blue'"/>
+                            <SubjectBar :title="'Invaliden'" @mouseover="background = 'invaliden'; $emit('white')" @mouseleave="background = 'blue'; $emit('blue')"/>
                         </div>
                         <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200">
                             <SubjectBar :title="'Afval'" @mouseover="background = 'afval'" @mouseleave="background = 'blue'"/>
@@ -62,7 +62,7 @@ export default class ResearchBlock extends Vue {
     .wide__container {
         z-index: 0;
         position: relative;
-        padding-top: 60px;
+        // padding-top: 60px;
         min-height: 80vh;
         text-align: center;
         background-color: @blue-light;

@@ -42,9 +42,14 @@ export default class ProblemBlock extends Vue {
 @import (reference) '../variables.less';
     .wide__container {
         width: 100%;
-        min-height: 20vh;
+        height: 30vh;
         text-align: center;
-        background-color: @grey;
+        background-image: url('../assets/miro_overview.png');
+        // position: fixed;
+        background-attachment: fixed;
+        filter:brightness(50%);
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         flex-direction: column;
