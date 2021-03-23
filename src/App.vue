@@ -4,10 +4,12 @@
       <a href="#home" :class="{'--dark': conceptSection}">Home</a> |
       <a href="#designChallenge">Design challenge</a> |
       <a href="#aboutUs">Wie zijn wij?</a> |
+      <a href="#concept">Concept</a> |
       <a href="#research">Research</a> |
       <a href="#focus2">Ontwerpopgave</a> |
       <a href="#guidelines">Ontwerprichtlijnen</a> |
-      <a href="#concept">Concept</a>
+      <a href="#brainstorm">Brainstorm</a> |
+      <a href="#colored">Customer journeys</a>
       <!-- <a href="#concept">Concept</a> | -->
     </div>
   </div>
@@ -148,16 +150,16 @@ html {
 }
 
 #nav {
-    padding: 30px;
+    padding-top: 30px;
     width: 100vw;
     position: fixed;
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     font-size: 20px;
     z-index: 4;
 
   .menu {
-    transform: translate(-50%,0);
+    // transform: translate(-50%,0);
     color: white;
 
   }

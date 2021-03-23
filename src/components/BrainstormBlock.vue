@@ -1,5 +1,5 @@
 <template>
-        <div id="research" class="wide__container" :class="background">
+        <div id="brainstorm" class="wide__container" :class="background">
             <div class="content">
                 <div class="content-inner">
                 

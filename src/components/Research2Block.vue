@@ -180,7 +180,7 @@ export default class ResearchBlock extends Vue {
         position: relative;
         align-items: center;
         display: flex;
-        width: 100vw;
+        width: 100%;
         flex-direction: row;
         justify-content: flex-start;
     }
