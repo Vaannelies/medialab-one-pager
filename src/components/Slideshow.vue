@@ -1,7 +1,7 @@
 <template>
 <div class="outer">
         <img class="left" @click="left" src="../assets/arrow_down_white.png"/>
-            <div class="image" :class="'--'+index"/>
+            <div class="image" :class="'--i'+index"/>
         <img class="right" @click="right" src="../assets/arrow_down_white.png"/>
 </div>
             <!-- <arrow-down/> -->
@@ -70,52 +70,52 @@ export default class Slideshow extends Vue {
 
         // Since I can't change the image source using TS...
        
-        &.--0 {
+        &.--i0 {
             background-image: url("../assets/wf0.png");
         }
-        &.--1 {
+        &.--i1 {
             background-image: url("../assets/wf1.png");
         }
-        &.--2 {
+        &.--i2 {
             background-image: url("../assets/wf2.png");
-        }
-        &.--3 {
+        };
+        &.--i3 {
             background-image: url("../assets/wf3.png");
         }
-        &.--4 {
+        &.--i4 {
             background-image: url("../assets/wf4.png");
         }
-        &.--5 {
+        &.--i5 {
             background-image: url("../assets/wf5.png");
         }
-        &.--6 {
+        &.--i6 {
             background-image: url("../assets/wf6.png");
         }
-        &.--7 {
+        &.--i7 {
             background-image: url("../assets/wf7.png");
         }
-        &.--8 {
+        &.--i8 {
             background-image: url("../assets/wf8.png");
         }
-        &.--9 {
+        &.--i9 {
             background-image: url("../assets/wf9.png");
         }
-        &.--10 {
+        &.--i10 {
             background-image: url("../assets/wf10.png");
         }
-        &.--11 {
+        &.--i11 {
             background-image: url("../assets/wf11.png");
         }
-        &.--12 {
+        &.--i12 {
             background-image: url("../assets/wf12.png");
         }
-        &.--13 {
+        &.--i13 {
             background-image: url("../assets/wf13.png");
         }
-        &.--14 {
+        &.--i14 {
             background-image: url("../assets/wf14.png");
         }
-        &.--15 {
+        &.--i15 {
             background-image: url("../assets/wf15.png");
         }
 
