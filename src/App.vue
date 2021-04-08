@@ -16,10 +16,6 @@
   </div>
   <transition name="slide">
     <Sidebar class="sidebar" v-if="sideBarActive" @toggle="closeSidebar()">
-        <!-- <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li> -->
-      <!-- <div class="menu"> -->
       <ul class="sidebar-panel-nav">
         <li>
           <a href="#home">Home</a>
@@ -74,10 +70,6 @@
   </div>
   <FocusBlock/>
   <ProblemBlock/>
-  <!-- <div id="triangle-box">
-    <div class="triangle --mirrored">
-    </div>
-  </div> -->
   <Research2Block/>
   <Focus2Block/>
   <div id="triangle-box">
@@ -92,8 +84,8 @@
   <div class="blue-block"></div>
   <div class="blue-block--light"></div>
   <WireframesBackgroundBlock style="z-index: -2"/>
-  <WireframesBlock style="z-index: 1; margin-top: -80vh"/>
-  <!-- <WireframesBlock/> -->
+  <WireframesBlock style="z-index: 1; margin-top: -100vh"/>
+  <BottomBlock/>
 </template>
 
 <script lang="ts">
@@ -114,6 +106,7 @@ import Burger from './components/Burger.vue'
 import Sidebar from './components/Sidebar.vue'
 import WireframesBackgroundBlock from './components/WireframesBackgroundBlock.vue'
 import WireframesBlock from './components/WireframesBlock.vue'
+import BottomBlock from './components/BottomBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 
@@ -136,6 +129,7 @@ import { Options, Vue } from 'vue-class-component'
       Sidebar,
       WireframesBackgroundBlock,
       WireframesBlock,
+      BottomBlock,
   } 
 })
 
@@ -209,14 +203,6 @@ export default class App extends Vue {
       border-color: transparent transparent transparent #064554   ;
     }
   }
-  #app {
-    // font-family: Avenir, Helvetica, Arial, sans-serif;
-    // -webkit-font-smoothing: antialiased;
-    // -moz-osx-font-smoothing: grayscale;
-    // text-align: center;
-    // color: #2c3e50;
-  }
-
   
   .blue-block {
     z-index: -2;
@@ -240,7 +226,6 @@ export default class App extends Vue {
   }
 
   #nav {
-      // padding-top: 15px 15px;
       width: 100vw;
       position: fixed;
       display:flex;
@@ -278,13 +263,11 @@ export default class App extends Vue {
         vertical-align: center;
         margin: 0;
         color: white;  
-        // background-color: green;
         height: 0;
         display: inline;
         position: sticky;
         z-index: 1;
         transform: translate(10%, 0);
-        // left: 100%;
         top: 25%;
         float:left;
      
@@ -328,29 +311,29 @@ export default class App extends Vue {
   }
 
 
-    .slide-enter-active,
-    .slide-leave-active
-    {
-        transition: transform 0.2s ease;
+  .slide-enter-active,
+  .slide-leave-active
+  {
+      transition: transform 0.2s ease;
+  }
+
+  .slide-enter,
+  .slide-leave-to {
+      transform: translateX(100%);
+      transition: all 150ms ease-in 0s
+  }
+
+  @media(max-width: 1050px) {
+    #nav {
+      visibility: hidden;
     }
 
-    .slide-enter,
-    .slide-leave-to {
-        transform: translateX(100%);
-        transition: all 150ms ease-in 0s
+    .burger {
+      visibility: visible;
     }
 
-    @media(max-width: 1050px) {
-      #nav {
-        visibility: hidden;
-      }
-
-      .burger {
-        visibility: visible;
-      }
-
-      .sidebar {
-        visibility: visible;
-      }
+    .sidebar {
+      visibility: visible;
     }
+  }
 </style>

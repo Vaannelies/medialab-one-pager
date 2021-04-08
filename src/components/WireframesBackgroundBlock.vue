@@ -30,7 +30,7 @@ export default class WireframesBackgroundBlock extends Vue {
         z-index: +10;
         /* margin-top: -80vh; */
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         background-image: url('../assets/wireframes_wp.png');
         background-attachment: fixed;
         background-position: top;
