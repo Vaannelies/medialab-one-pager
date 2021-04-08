@@ -1,10 +1,7 @@
 <template>
-    <div class="wide__container">
-           <div class="content">
-            <h1 class="title">Wireframes</h1>
-            <Slideshow/>
-        </div>
-    </div>
+      <div class="wide__container">
+         <Slideshow/>
+  </div>
 </template>
 
 <script lang="ts">
@@ -23,21 +20,19 @@ export default class WireframesBlock extends Vue {
 
 <style lang="less" scoped>
 @import (reference) '../variables.less';
-
     .wide__container {
         width: 100%;
-        min-height: 20vh;
+        height: 80vh;
+        background: #0000004f;
         text-align: center;
-        background-color: @white;
+        // z-index: 10;
+        
         display: flex;
-        justify-content: center;
         flex-direction: row;
-        align-self: center;
-        border-top: 3px solid @white;
-        position: relative;
+        justify-content: center;
+        align-items: center;
+        position:relative;
     }
-
-
 
     table {
         border-collapse: collapse;

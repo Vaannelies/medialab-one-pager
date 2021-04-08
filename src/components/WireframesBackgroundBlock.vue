@@ -1,9 +1,8 @@
 <template>
-<div id="about-us">
-    <div class="wide__container">
-         <Slideshow/>
-  </div>
+<div id="wireframes">
+
     <div class="wide__container--background">
+        <!-- <h class="title">Wireframes</h> -->
     </div>
 </div>
 </template>
@@ -26,22 +25,10 @@ export default class WireframesBackgroundBlock extends Vue {
 
 <style scoped>
 
-    .wide__container {
-        width: 100%;
-        height: 80vh;
-        background: transparent;
-        text-align: center;
-        z-index: 1;
-        
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-    }
+
     .wide__container--background {
-        z-index: 0;
-        margin-top: -80vh;
+        z-index: +10;
+        /* margin-top: -80vh; */
         width: 100%;
         height: 80vh;
         background-image: url('../assets/wireframes_wp.png');
@@ -63,7 +50,8 @@ export default class WireframesBackgroundBlock extends Vue {
     .title {
         font-family: "Bebas Neue";
         font-weight: normal;
-        font-size: 40px;
+        font-size: 20vw;
+        vertical-align: center;
         margin: 0;
         color: white;  
         position: absolute;
