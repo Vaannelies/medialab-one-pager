@@ -66,6 +66,13 @@
                         :content="'De ouders weten vaak door de stress niet meer wat het kindje aan had.'"
                     />
                 </li>
+                <li>
+                    <sticky-note 
+                        class="--pink" 
+                        :title="''"      
+                        :content="'Als een knuffel plotseling tegen een kind begint te praten, zou het kind daar juist van kunnen schrikken.'"
+                    />
+                </li>
             </ul>
             <ul>
                 <p class="miro_title">Reddingsbrigade</p>
@@ -84,6 +91,13 @@
                     <sticky-note 
                         :title="''"
                         :content="'Alle stakeholders rondom het strand en de boulevard op Scheveningen zijn nauw met elkaar in contact waardoor iedereen meteen op de hoogte is van een zoekgeraakt kind'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        class="--pink"
+                        :title="''"
+                        :content="'De horeca op Scheveningen wil de verantwoordelijkheid voor het kind niet. Rudy zou wel werk uit handen nemen, maar als ze officieel Rudy-hotspots worden, komen er misschien nóg meer kinderen dan nu.'"
                     />
                 </li>
             </ul>
@@ -107,6 +121,13 @@
                         :content="'Maak een foto van het kind op de dag zelf dan kun je als ouder aantonen hoe het kind eruit ziet dit is belangrijk om het proces van het zoeken naar het kind makkelijker te maken'"
                     />
                 </li>
+                <li>
+                    <sticky-note 
+                        class="--pink"
+                        :title="''"
+                        :content="'Het kind blij maken met een knuffel die hij of zij mag houden wanneer de ouders weer gevonden zijn, kan ertoe leiden dat het kind later expres verdwaald raakt omdat hij of zij dan weer een \'beloning\' denkt te krijgen '"
+                    />
+                </li>
             </ul>
             <ul>
                 <p class="miro_title">Kinderopvang</p>
@@ -118,8 +139,47 @@
                 </li>
             </ul>
         </div>
-    </div>
     
+        <div class="row --three">
+            <ul>
+                <p class="miro_title">Privacy</p>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'De database zou kunnen lekken, dat is een gevaar'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Zorgen dat er geen onnodige data wordt verzameld'"
+                    />
+                </li>
+           </ul>
+            <ul>
+                <p class="miro_title">Duidelijkheid</p>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Rudy hotspots moeten herkenbaar zijn op Scheveningen'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'De Rudy beer moet in de app en bij de hotspots herkenbaar zijn en een eigen \'look\' hebben, zodat ouders en kinderen weten dat het Rudy is en niet zomaar een beer.'"
+                    />
+                </li>
+                <li>
+                    <sticky-note 
+                        :title="''"
+                        :content="'Op een zonnige dag op het strand kun je de app misschien slecht zien door het zonlicht. Hij moet dan dus ook duidelijk zijn.'"
+                    />
+                </li>
+            </ul>
+        </div>
+   
+    </div>
 </div>
             <!-- <arrow-down/> -->
 </template>
@@ -172,6 +232,17 @@ export default class StickyNotes extends Vue {
         &.--two {
             margin-left: 10px;
         }
+        &.--three {
+            margin-left: 10px;
+            ul {
+                // background: red;
+                min-width: 230px;
+                width: 20vw;
+            }
+            ul li a {
+                background: #FFD4E4;
+            }
+        }
     }
 
     * {
@@ -185,9 +256,11 @@ export default class StickyNotes extends Vue {
 
     ul {
         display: flex;
-        /* flex-wrap: wrap; */
+        flex-wrap: wrap; 
         justify-content: flex-start;
-        width: 60%;
+        // min-width: fit-content;
+        // background: grey;
+        width: 30vw;
         flex-direction: row;
     }
 
@@ -196,16 +269,17 @@ export default class StickyNotes extends Vue {
         color:#000;
         background:#ffc;
         display:block;
-        
         min-height: 8vh;
         width:8vh;
+        flex-basis: fit-content;
         padding:1vh;
         box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
         /* transform: rotate(-6deg); */
         transition: transform .15s linear;
 
-        &.--observe {
-            background: #fcf;
+
+        &.--pink {
+            background: #FFD4E4;
         }
 
         &.--desk {
@@ -265,18 +339,32 @@ export default class StickyNotes extends Vue {
     }
     
 
-    @media(max-width: 640px) {
+    @media(max-width: 740px) {
         ul {
-          height: 300px;
-        //   overflow: scroll;
-          display:flex;
-          flex-direction: column;
-          flex-wrap: wrap;
-          color: red;
-          scrollbar-width: 100px;
-        //   /* align-self: center; */
+            display:flex;
+            height: fit-content;
+            flex-direction: row;     
+            flex-wrap: wrap;
+            margin-right: 20px;
+            width: fit-content;
+            scrollbar-width: 100px;
         }
 
+        li {
+            width: fit-content;
+            width: fit-content;
+            flex-basis: fit-content;
+        }
+
+        .rows {
+            flex-direction: column;
+        }
+
+        .row {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100vw;
+        }
         // ul li:nth-child(1) a {
         //     transform:rotate(4deg);
         //     position:relative;

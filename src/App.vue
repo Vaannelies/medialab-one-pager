@@ -10,7 +10,8 @@
       <a href="#ontwerpopgave">Ontwerpopgave</a> |
       <a href="#ontwerprichtlijnen">Ontwerprichtlijnen</a> |
       <a href="#brainstorm">Brainstorm</a> |
-      <a href="#customer-journeys">Customer journeys</a>
+      <a href="#customer-journeys">Customer journeys</a> |
+      <a href="#wireframes">Wireframes</a>
     </div>
   </div>
   <transition name="slide">
@@ -46,6 +47,9 @@
         </li>
         <li>
           <a href="#customer-journeys">Customer journeys</a>
+        </li>
+        <li>
+          <a href="#wireframes">Wireframes</a>
         </li>
       </ul>
     </Sidebar>
@@ -84,6 +88,12 @@
   <BrainstormBlock/>
   <ColoredBlock/>
   <CompareBlock/>
+  <h class="title--wf">Wireframes</h>
+  <div class="blue-block"></div>
+  <div class="blue-block--light"></div>
+  <WireframesBackgroundBlock style="z-index: -2"/>
+  <WireframesBlock style="z-index: 1; margin-top: -80vh"/>
+  <!-- <WireframesBlock/> -->
 </template>
 
 <script lang="ts">
@@ -102,6 +112,8 @@ import BrainstormBlock from './components/BrainstormBlock.vue'
 import CompareBlock from './components/CompareBlock.vue'
 import Burger from './components/Burger.vue'
 import Sidebar from './components/Sidebar.vue'
+import WireframesBackgroundBlock from './components/WireframesBackgroundBlock.vue'
+import WireframesBlock from './components/WireframesBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 
@@ -121,7 +133,9 @@ import { Options, Vue } from 'vue-class-component'
       BrainstormBlock,
       CompareBlock,
       Burger,
-      Sidebar
+      Sidebar,
+      WireframesBackgroundBlock,
+      WireframesBlock,
   } 
 })
 
@@ -203,6 +217,24 @@ export default class App extends Vue {
     // color: #2c3e50;
   }
 
+  
+  .blue-block {
+    z-index: -2;
+    width: 100%;
+    height: 40vh;
+    background: #064554;
+  }
+  
+  .blue-block--light {
+    z-index: -11;
+    opacity: 50%;
+    width: 100%;
+    margin-top: -21vw;
+    height: 21vw;
+    background: #064554;
+  }
+
+
   html {
     scroll-behavior: smooth;
   }
@@ -238,6 +270,25 @@ export default class App extends Vue {
       }
     }
   }
+ 
+    .title--wf {
+        font-family: "Bebas Neue";
+        font-weight: normal;
+        font-size: 20vw;
+        vertical-align: center;
+        margin: 0;
+        color: white;  
+        // background-color: green;
+        height: 0;
+        display: inline;
+        position: sticky;
+        z-index: 1;
+        transform: translate(10%, 0);
+        // left: 100%;
+        top: 25%;
+        float:left;
+     
+    }
 
   .burger {
     right: 10px;
@@ -289,7 +340,7 @@ export default class App extends Vue {
         transition: all 150ms ease-in 0s
     }
 
-    @media(max-width: 1000px) {
+    @media(max-width: 1050px) {
       #nav {
         visibility: hidden;
       }

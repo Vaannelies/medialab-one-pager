@@ -10,7 +10,7 @@
             </div>
             <div class="wide__container --second">
                 <h1 class="title">Hey bezoeker</h1>
-                <h2 class="subtitle">Welkom op deze pagina ;)</h2>
+                <h2 class="subtitle">Welkom bij ons project ;)</h2>
             </div>
         </div>
     </div>
