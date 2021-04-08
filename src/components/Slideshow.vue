@@ -1,6 +1,6 @@
 <template>
 <div class="outer">
-    <ul>
+    <!-- <ul>
         <li>
             <div class="frame">
                 <span class="frame--inner"></span>
@@ -25,7 +25,11 @@
                 <img class="image" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1353&q=80"/>
             </div>
         </li>
-    </ul>
+    </ul> -->
+        <button class="left" @click="left">Links</button>
+        <img class="image" :src="'./assets/wf' + index + '.png'"/>
+         <!-- <img src="../assets/morf_ding.png"/> -->
+        <button class="right" @click="right">Rechts</button>
 </div>
             <!-- <arrow-down/> -->
 </template>
@@ -43,38 +47,62 @@ import { Vue, Options } from 'vue-class-component'
 })
 
 export default class Slideshow extends Vue {
-    
+    index: number = 0;
+    images: number = 15;
+    left() {
+        this.index > 0 ? this.index-- : this.index = (this.images - 1);
+        console.log(this.index)
+    }
 
+    right() {
+        this.index < (this.images - 1) ? this.index++ : this.index = 0;
+        console.log(this.index)
+    }
 }
 
 </script>
-<style scoped>
-/* https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
-   
+<style scoped lang="less">
+@import (reference) '../variables.less';
 
+    button {
+        position: absolute;
+        &.left {
+            top: 50%;
+            left: 20%;
+            transform: translate(50%, 0);
+        }
+
+        &.right {
+            transform: translate(-50%, 0);
+            top: 50%;
+            right: 20%;
+        }
+    }
 
     .image {
         /* /* max-width: 100%; */
-        max-height: 100%;
-        max-width: 100%;
+        /* height: 100vh; */
+        height: 70vh; // temporary, height has to gooo
+        width: 50vw;
         /* display:block; */
         /* object-fit:contain;  */
     }
 
+
     .frame {
-        width: 300px;
-        height: 400px;
-        overflow: hidden;
-        object-fit: contain;
-        background-color: grey;
-        border-radius: 10px;
-        box-shadow: 5px 5px 15px rgba(41, 41, 41, 0.221);
-        position: relative;
-        margin-bottom: 40px;
+        /* width: 100vw; */
+        /* height: 100vh; */
+        /* overflow: hidden; */
+        /* object-fit: cover; */
+        /* background-color: grey; */
+        /* border-radius: 10px; */
+        /* box-shadow: 5px 5px 15px rgba(41, 41, 41, 0.221); */
+        /* position: relative; */
+        /* margin-bottom: 40px; */
     }
     
     .frame--inner {
-        /* margin: 10px; */
+        /* margin: 10px;
         
         height: 90%;
         width: 85%;
@@ -83,7 +111,7 @@ export default class Slideshow extends Vue {
         position: absolute;
         top: 4%;
         left: 6.5%;
-        
+         */
     }
 
     * {
@@ -100,6 +128,7 @@ export default class Slideshow extends Vue {
     }
 
     .outer {
+        position: relative;
         display: flex;
         width: 100%;
         justify-content: center;

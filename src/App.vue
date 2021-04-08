@@ -84,6 +84,8 @@
   <BrainstormBlock/>
   <ColoredBlock/>
   <CompareBlock/>
+  <WireframesBackgroundBlock/>
+  <!-- <WireframesBlock/> -->
 </template>
 
 <script lang="ts">
@@ -102,6 +104,8 @@ import BrainstormBlock from './components/BrainstormBlock.vue'
 import CompareBlock from './components/CompareBlock.vue'
 import Burger from './components/Burger.vue'
 import Sidebar from './components/Sidebar.vue'
+import WireframesBackgroundBlock from './components/WireframesBackgroundBlock.vue'
+import WireframesBlock from './components/WireframesBlock.vue'
 import { Options, Vue } from 'vue-class-component'
 
 
@@ -121,7 +125,9 @@ import { Options, Vue } from 'vue-class-component'
       BrainstormBlock,
       CompareBlock,
       Burger,
-      Sidebar
+      Sidebar,
+      WireframesBackgroundBlock,
+      WireframesBlock,
   } 
 })
 
