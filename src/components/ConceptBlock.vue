@@ -23,14 +23,8 @@
 </template>
 
 <script lang="ts">
-import { Vue, Options } from 'vue-class-component'
-// import Slideshow from './Slideshow.vue'
+import { Vue } from 'vue-class-component'
 
-@Options({
-    components: {
-        // Slideshow
-    }
-})
 export default class ConceptBlock extends Vue {
 }
 
@@ -63,17 +57,14 @@ export default class ConceptBlock extends Vue {
 
     .visuals {
         position:relative;
-        // overflow: hidden;
         width: 50%;
         max-width: 700px;
     }
     .visuals::after {
-	padding-top: 56.25%;
+	    padding-top: 56.25%;
         display: block;
         content: '';
     }
-
-
 
     .title {
         font-family: "Bebas Neue";
@@ -96,20 +87,14 @@ export default class ConceptBlock extends Vue {
         font-weight: normal;
         font-size: 20px;
         max-width: 700px;
-        // padding: 30px;
         text-align: left;
         position: relative;
         margin: 0;
         color: @white;
         padding-bottom: 5vh;
-        // background-color: @grey-dark;
-        // box-shadow: 5px -5px 0 5px grey;
-        /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
         margin-bottom: 10vh;
         position:relative;
-        // margin-top: 10vh;
-        // font-weight: bold;
     }
     
     .content {
@@ -121,7 +106,6 @@ export default class ConceptBlock extends Vue {
     }
 
     .video {
-        // box-shadow: 5px -5px 0 5px white;
         border-radius: 6px;
         border: 3px solid @white;
     }
@@ -143,8 +127,6 @@ export default class ConceptBlock extends Vue {
         padding: 1em 2em 1em 2em;
         color: @blue-dark;
         position: relative;
-        // top: 100%;
-        // left: 100%;
         text-decoration: none;
         z-index: 1;
         font-family: 'Source Sans Pro';
@@ -152,8 +134,6 @@ export default class ConceptBlock extends Vue {
 
     .arrow {
         position: relative;
-        // top: 40%;
-        // left: 100%;
         margin-left: -120px;
         height: 70px;
         z-index: 1;
@@ -165,10 +145,7 @@ export default class ConceptBlock extends Vue {
  
         .shortcut {
             position: relative;
-            // bottom: -10;
-            // bottom: -40%;
             left: 0%;
-            // left: -70%;
             text-decoration: none;
     
         }
@@ -178,20 +155,14 @@ export default class ConceptBlock extends Vue {
             padding: 1em 2em 1em 2em;
             color: @blue-dark;
             position: relative;
-            // top: 100%;
-            // left: 100%;
             text-decoration: none;
             z-index: 5;
             font-family: 'Source Sans Pro';
-            // transform: translate(-100%, -50%);
-            // width: 50vw;
-            // left: 20%;
         }
 
         .arrow {
             position: relative;
             margin-top: -50px;
-            // left: 100%;
             margin-left: 20px;
             height: 70px;
             z-index: 1;
@@ -207,8 +178,5 @@ export default class ConceptBlock extends Vue {
             padding-bottom: 30px;
 
         }
-       .title {
-         /* font-size: 80px; */
-       }
     }
 </style>

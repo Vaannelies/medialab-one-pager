@@ -288,21 +288,16 @@ export default class StickyNotes extends Vue {
     }
 
     ul li:nth-child(even) a {
-        /* transform:rotate(4deg); */
         position:relative;
         top:5px;
     }
 
     ul li:nth-child(3n) a {
-        /* transform:rotate(-3deg); */
         position:relative;
-        /* top:-5px; */
     }
 
     ul li:nth-child(5n) a {
-        /* transform:rotate(5deg); */
         position:relative;
-        /* top:-10px; */
     } 
 
     ul li {
@@ -365,25 +360,5 @@ export default class StickyNotes extends Vue {
             flex-wrap: wrap;
             width: 100vw;
         }
-        // ul li:nth-child(1) a {
-        //     transform:rotate(4deg);
-        //     position:relative;
-        //     top:5px;
-        //     /* transform-origin: (-50%,0); */
-        //     margin-left: 25vw;
-        // }
-        // ul li a {
-        //     text-decoration:none;
-        //     color:#000;
-        //     background:#ffc;
-        //     display:block;
-        //     height:10em;
-        //     width:10em;
-        //     padding:1em;
-        //     box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
-        //     transform: rotate(-6deg);
-        //     transition: transform .15s linear;
-        //     flex-wrap: wrap;
-        // }
     }
 </style>

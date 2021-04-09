@@ -66,14 +66,10 @@ export default class FocusBlock extends Vue {
         font-weight: normal;
         font-size: 20px;
         max-width: 700px;
-        // padding: 30px;
         text-align: left;
         position: relative;
-        // margin: -40px;
         color: rgb(80, 80, 80);
-        /* border: 2px solid #7FC0BF; */
         border-radius: 10px;
-        // margin-bottom: 40px;
     }
     
     .content {
@@ -82,17 +78,5 @@ export default class FocusBlock extends Vue {
         flex-direction: column;
         justify-content: center;
         padding-bottom: 30px;
-    }
-
-    @media(max-width: 640px) {
-        .subtitle {
-            // padding-left: 10vw;
-            // padding-right: 10vw;
-            // padding-bottom: 30px;
-
-        }
-       .title {
-         /* font-size: 80px; */
-       }
     }
 </style>

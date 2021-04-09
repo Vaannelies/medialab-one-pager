@@ -99,18 +99,14 @@ export default class BottomBlock extends Vue {
     }
 
     .section__logos {
-        // background: rgb(255, 255, 76);
         display: flex;
         width: 30%;
         min-width: fit-content;
         max-height: 80px;
     }
     .section__names {
-        // background: rgb(255, 0, 89);
         display: flex;
         width: fit-content;
-        // max-width: fit-content;
-        // min-width: 400px;
         justify-content: left;
         text-align: left;
         align-items: left;
@@ -128,7 +124,6 @@ export default class BottomBlock extends Vue {
         justify-content: flex-start;
         align-items: left;
         text-align: left;
-        // background-color: rgb(101, 255, 101);
         display: flex;
         flex-direction: column;
     }
