@@ -158,7 +158,6 @@ export default class StickyNotes extends Vue {
 
     ul {
         display: flex;
-        /* flex-wrap: wrap; */
         justify-content: flex-start;
         width: 60%;
         flex-direction: row;
@@ -168,32 +167,25 @@ export default class StickyNotes extends Vue {
         text-decoration:none;
         color:#000;
         background:#ffc;
-        display:block;
-        
+        display:block;  
         min-height: 8vh;
         width:8vh;
         padding:1vh;
         box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
-        /* transform: rotate(-6deg); */
         transition: transform .15s linear;
     }
 
     ul li:nth-child(even) a {
-        /* transform:rotate(4deg); */
         position:relative;
         top:5px;
     }
 
     ul li:nth-child(3n) a {
-        /* transform:rotate(-3deg); */
         position:relative;
-        /* top:-5px; */
     }
 
     ul li:nth-child(5n) a {
-        /* transform:rotate(5deg); */
         position:relative;
-        /* top:-10px; */
     } 
 
     ul li {
@@ -215,7 +207,6 @@ export default class StickyNotes extends Vue {
         height: fit-content;
         padding-left: 10px;
         padding-right: 10px;
-        // margin-left: 20px;
     }
 
  
@@ -223,7 +214,6 @@ export default class StickyNotes extends Vue {
         font-family: "Bebas Neue";
         font-weight: normal;
         font-size: 20px;
-        // margin: 20px;
         color: #000000;
         text-align: left;
         margin-bottom: 20px;
@@ -237,28 +227,25 @@ export default class StickyNotes extends Vue {
           flex-direction: column;
           display:flex;
           scrollbar-width: 100px;
-          /* align-self: center; */
-
         }
 
         ul li:nth-child(1) a {
             transform:rotate(4deg);
             position:relative;
             top:5px;
-            /* transform-origin: (-50%,0); */
-          margin-left: 25vw;
+            margin-left: 25vw;
         }
         ul li a {
-        text-decoration:none;
-        color:#000;
-        background:#ffc;
-        display:block;
-        height:10em;
-        width:10em;
-        padding:1em;
-        box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
-        transform: rotate(-6deg);
-        transition: transform .15s linear;
-    }
+            text-decoration:none;
+            color:#000;
+            background:#ffc;
+            display:block;
+            height:10em;
+            width:10em;
+            padding:1em;
+            box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.378);
+            transform: rotate(-6deg);
+            transition: transform .15s linear;
+        }
     }
 </style>

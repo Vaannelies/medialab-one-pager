@@ -62,14 +62,10 @@ export default class GuideLinesBlock extends Vue {
         font-family: "Source Sans Pro";
         font-weight: bold;
         font-size: 100%;
-        // max-width: 10vw;
-        // width: fit-content;
         width: 10vw;
         min-width: 120px;
         height: 10vw;
         min-height: 120px;
-        // min-height: 10vw;
-        // height: fit-content;
         padding: 30px;
         text-align: center;
         align-content: center;
@@ -77,17 +73,13 @@ export default class GuideLinesBlock extends Vue {
         vertical-align: center;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
-        // position: relative;
+        justify-content: center;;
         margin: 0;
         color: #042F39;
         background-color: @blue-light;
         box-shadow: 3px -3px 0 3px white;
-        /* border: 2px solid #7FC0BF; */
         border-radius: 5px;
         margin: 2vh 2vh 4vh 2vh;
-        // font-weight: bold;
     }
     
     .content {
@@ -105,27 +97,4 @@ export default class GuideLinesBlock extends Vue {
         height: 10vh;
     }
 
-    @media(max-width: 800px) {
-        .guideline{
-            // padding-left: 10vw;
-            // // padding-right: 10vw;
-            // // padding: 10px;
-           
-            // display: flex;
-            // height: 15vh;
-            // margin-top: 2vh;
-            // margin-bottom: 2vh;
-            // width: 50vw;
-            // font-size: 100%;
-
-        }
-
-        .content {
-            // flex-direction: column;
-
-        }
-       .title {
-         /* font-size: 80px; */
-       }
-    }
 </style>

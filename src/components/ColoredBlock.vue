@@ -7,16 +7,10 @@
         <div class="content">
             <div class="filling"></div>
             <div class="marktonderzoek" data-aos="fade-right" data-aos-offset="100">
-            <!-- <div class="marktonderzoek"> -->
-       
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/95FGy9YYfyI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 <img src="../assets/rudy1.png"/>
             </div>
             <div class="marktonderzoek --right"  data-aos="fade-left" data-aos-offset="100">
-            <!-- <div class="marktonderzoek --right" > -->
-                <!-- <img src="../assets/marktonderzoek2.png"/> -->
-                <img src="../assets/zone.png"/>
-        
+                <img src="../assets/zone.png"/>  
             </div>
         </div>
     </div>
@@ -27,7 +21,6 @@
 import { Vue, Options } from 'vue-class-component'
 import StickyNotes from './StickyNotes.vue'
 import TimelineCard from './TimelineCard.vue'
-// import martkonderzoek2 from '../assets/marktonderzoek2.png'
 const AOS = require('aos')
 import 'aos/dist/aos.css'
 
@@ -44,25 +37,6 @@ AOS.init();
 })
 export default class ColoredBlock extends Vue {
     imgNumber: number = 2;
-
-    // created() {
-    //     window.addEventListener('scroll', this.scroll)
-
-    // // window.mousewheel(function(e, delta) {
-    // // this.scrollLeft -= (delta);
-    // // e.preventDefault();
-    // // console.log(this.scrollLeft);
-    // // });
-    // }
-
-    // scroll(e, delta) {
-    // this.scrollLeft -= (delta);
-    // e.preventDefault();
-    // // console.log(this.scrollLeft);
-        
-    // }
-
-
 }
 
 
@@ -87,8 +61,6 @@ export default class ColoredBlock extends Vue {
     }
     
     .wide__container {
-        /* width: 100%; */
-        /* background-image: url('https://images.unsplash.com/photo-1496805713444-03e7b6eca934?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1268&q=80'); */
         text-align: center;
       	background: linear-gradient(-45deg, rgb(182, 214, 255), @blue-light, #348498, rgba(108, 180, 182, 0.981));
         background-size: 400% 400%;
@@ -121,11 +93,9 @@ export default class ColoredBlock extends Vue {
         font-weight: normal;
         font-size: 40px;
         margin: 0;
-        // margin-top: 30px;
         color: @blue-dark;
         position: absolute;
         background-color: white;
-        // transform: translate(0, 26px);
         width: fit-content;
         padding: 1rem;
         z-index: 4;
@@ -140,7 +110,6 @@ export default class ColoredBlock extends Vue {
         max-width: 700px;
         position:relative;
         text-align: left;
-        /* padding-bottom: 30px; */
         color: white;
     }
 
@@ -155,8 +124,6 @@ export default class ColoredBlock extends Vue {
         display: flex;
         justify-content: space-between;
         background: rgba(255, 255, 255, 0.584);
-        // min-height: 100%;
-        // max-width: 700px;
         height: 40vh;
         min-width: fit-content;
 
@@ -181,11 +148,7 @@ export default class ColoredBlock extends Vue {
     }
 
     img {
-        // width: 60%;
-        // max-height: 40vh;
-        // width: 100%;
         height: 100%;
-        // height: fit-content;
         border-radius: 10px;
     }
     .ultje {
@@ -218,7 +181,6 @@ export default class ColoredBlock extends Vue {
 
         .marktonderzoek {
             max-width: 100%;
-            //    height: 40vh;
             min-width: 0px;
 
             flex-wrap: wrap;

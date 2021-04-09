@@ -87,19 +87,9 @@ export default class BrainstormBlock extends Vue {
         margin-bottom: 18px;
     }
 
-        .image { 
-            // height: 
-            // width: 20%;
-            // height: auto;
-            // z-index: 100;
-            // background: @grey;
-        }
-        img {
-            width: 90%;
-            // margin-left: 10px;
-        
-        }
-
+    img {
+        width: 90%;
+    }
 
     .title {
         font-family: "Bebas Neue";
@@ -124,9 +114,7 @@ export default class BrainstormBlock extends Vue {
         flex-direction: row;
         justify-content: flex-start;
     }
-    // .content-inner {
-     
-    // }
+
     .sticky {
         align-items: center;
         display: flex;

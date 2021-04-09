@@ -70,7 +70,6 @@ export default class WireframesBackgroundBlock extends Vue {
 
     @media(max-width: 900px) {
         .wide__container {
-            /* background-image: url('../assets/grouppic_onepager_square.png'); */
             background-position: top; 
         }
     }

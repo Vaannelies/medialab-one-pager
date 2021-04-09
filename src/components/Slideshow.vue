@@ -1,31 +1,17 @@
 <template>
 <div ref="slideshow" class="outer">
-        <img class="left" @click="left" src="../assets/arrow_down_white.png"/>
-        <div class="images">
-            <div class="image --preview" @click="left" :class="'--i'+ (index > 0 ? index-1 : images)"/>
-            <div class="image" :class="'--i'+index"/>
-            <div class="image --preview" @click="right" :class="'--i'+ (index < images ? index+1 : 0)"/>
-        </div>
-        <img class="right" @click="right" src="../assets/arrow_down_white.png"/>
-
-        <!-- <div class="images">
-            <div class="image --preview" :class="'--i'+ (index < images ? index+1 : 0)"/>
-            <div class="image --preview" :class="'--i'+index"/>
-            <div class="image --preview" :class="'--i'+ (index > 0 ? index-1 : images)"/>
-        </div> -->
+    <img class="left" @click="left" src="../assets/arrow_down_white.png"/>
+    <div class="images">
+        <div class="image --preview" @click="left" :class="'--i'+ (index > 0 ? index-1 : images)"/>
+        <div class="image" :class="'--i'+index"/>
+        <div class="image --preview" @click="right" :class="'--i'+ (index < images ? index+1 : 0)"/>
+    </div>
+    <img class="right" @click="right" src="../assets/arrow_down_white.png"/>
 </div>
-            <!-- <arrow-down/> -->
 </template>
 
 <script lang="ts">
 import { Vue, Options } from 'vue-class-component'
-@Options({
-    components: {
-        // StickyNote,
-        // ArrowDown
-    },
- 
-})
 
 export default class Slideshow extends Vue {
     $refs!: {
@@ -167,9 +153,7 @@ export default class Slideshow extends Vue {
         &.--i15 {
             background-image: url("../assets/wf15.png");
         }
-
     }
-
 
     * {
         margin:0;
