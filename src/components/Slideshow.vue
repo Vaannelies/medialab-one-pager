@@ -1,8 +1,18 @@
 <template>
-<div class="outer">
+<div ref="slideshow" class="outer">
         <img class="left" @click="left" src="../assets/arrow_down_white.png"/>
+        <div class="images">
+            <div class="image --preview" @click="left" :class="'--i'+ (index > 0 ? index-1 : images)"/>
             <div class="image" :class="'--i'+index"/>
+            <div class="image --preview" @click="right" :class="'--i'+ (index < images ? index+1 : 0)"/>
+        </div>
         <img class="right" @click="right" src="../assets/arrow_down_white.png"/>
+
+        <!-- <div class="images">
+            <div class="image --preview" :class="'--i'+ (index < images ? index+1 : 0)"/>
+            <div class="image --preview" :class="'--i'+index"/>
+            <div class="image --preview" :class="'--i'+ (index > 0 ? index-1 : images)"/>
+        </div> -->
 </div>
             <!-- <arrow-down/> -->
 </template>
@@ -13,25 +23,47 @@ import { Vue, Options } from 'vue-class-component'
     components: {
         // StickyNote,
         // ArrowDown
-    }
+    },
+ 
 })
 
 export default class Slideshow extends Vue {
+    $refs!: {
+        slideshow: HTMLElement
+    }
+
     index: number = 0;
     images: number = 15;
     
     get imageString() : string {
         return "../assets/wf" + this.index.toString() + ".png";
     }
-    
+
+    created() {
+        window.addEventListener('keydown', this.navigate)
+    }
+
+    navigate(e: KeyboardEvent) {
+        const s = this.$refs.slideshow
+        let bottom = s.getBoundingClientRect().bottom
+        let top = s.getBoundingClientRect().top
+   
+        // check if slideshow is in viewport
+        if(top < window.innerHeight && bottom > 0) {
+            if(e.key === 'ArrowLeft') {    
+                this.left();
+            } else if (e.key === 'ArrowRight') {
+                this.right();
+            }
+        }
+    }
+
     left() {
         this.index > 0 ? this.index-- : this.index = (this.images - 1);
-        console.log(this.index)
     }
 
     right() {
         this.index < (this.images - 1) ? this.index++ : this.index = 0;
-        console.log(this.index)
     }
 }
 
@@ -61,13 +93,30 @@ export default class Slideshow extends Vue {
         filter: brightness(70%);
     }
 
-    .image {
+    .images {
+        display: flex;
+        flex-direction: row;
         height: 70vh;
+        // background: red;
+        width: 50%;
+        margin-top: 30px;
+    }
+    .image {
+        height: 100%;
         width: 100vw;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
+        margin: 0 20px;
 
+        &.--preview {
+            height: 30%;
+            width: 100%;
+            transform: translate(0, -10%);
+            margin: 0;
+            align-self: center;
+            
+        }
         // Since I can't change the image source using TS...
        
         &.--i0 {
@@ -138,12 +187,23 @@ export default class Slideshow extends Vue {
     .outer {
         position: relative;
         display: flex;
+        flex-direction: column;
         width: 100%;
         justify-content: center;
+        align-items: center;
     }
 
+    @media(max-width: 1110px) {
+        img {
+            &.left {
+                left: 7%;
+            }
 
-
+            &.right {
+                right: 7%;
+            }
+        }
+    }
 
     @media(max-width: 640px) {
         img {
@@ -153,6 +213,12 @@ export default class Slideshow extends Vue {
 
             &.right {
                 right: 5%;
+            }
+        }
+
+        .image {
+            &.--preview {
+                display: none;  
             }
         }
     }
