@@ -186,7 +186,7 @@ export default class ResearchBlock extends Vue {
         justify-content: flex-start;
     }
     .content-inner {
-        width: 100vw;
+        width: 100%;
     }
     .sticky {
         align-items: center;

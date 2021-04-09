@@ -176,17 +176,25 @@ export default class BottomBlock extends Vue {
 
     @media(max-width: 900px) {
         .sections {
-            flex-direction: column;
+            flex-direction: row;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
         }
 
         .section__names {
             margin-bottom: 20px;
+            width: 50vw;
         }
 
         .section__logos {
+            width: 50vw;
             margin-bottom: 20px;
+        }
+
+        .section__info {
+            width: 50vw;
+            max-width: 100vw;
         }
 
         a{
