@@ -120,13 +120,6 @@ export default class StickyNotes extends Vue {
 @import (reference) '../variables.less';
 /* https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
    
-
-    body {
-        // margin: 20px auto;
-        background:#666;
-        color:#fff;
-    }
-    
     .container {
         display: flex;
         flex-direction: column;

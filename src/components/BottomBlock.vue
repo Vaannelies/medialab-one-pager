@@ -13,10 +13,10 @@
                     <a href="#about-us"><h class="subtitle">Pinacoladames</h></a>
                     <ul>
                         <!-- <li class="subtitle"><b>Pinacoladames</b></li> -->
-                        <li>Suzie van Antwerpen</li>
-                        <li>Naomi Voogt</li>
-                        <li>Chantal Louwers</li>
-                        <li>Annelies Vaandrager</li>
+                        <a href="#about-us"><li>Suzie van Antwerpen</li></a>
+                        <a href="#about-us"><li>Naomi Voogt</li></a>
+                        <a href="#about-us"><li>Chantal Louwers</li></a>
+                        <a href="#about-us"><li>Annelies Vaandrager</li></a>
                     </ul>
                 </div>
                 <div class="section__logos">
@@ -140,10 +140,8 @@ export default class BottomBlock extends Vue {
     }
 
     li {
+        font-family: "Bebas Neue";
         margin-right: 8px;
-        &:hover {
-            color: rgb(160, 160, 160);
-        }
     }
 
     .hr {
@@ -159,6 +157,9 @@ export default class BottomBlock extends Vue {
         color: @grey;
         max-width: 300px;
         font-family: "Source Sans Pro";
+        &:hover {
+            color: rgb(160, 160, 160);
+        }
     }
     .gh {
         transform: translate(0, 25%);

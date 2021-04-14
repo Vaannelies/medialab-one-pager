@@ -23,7 +23,7 @@ export default class WireframesBlock extends Vue {
     .wide__container {
         width: 100%;
         height: 100vh;
-        background: #0000004f;
+        background: #00000087;
         text-align: center;
         // z-index: 10;
         

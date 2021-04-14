@@ -14,12 +14,6 @@ export default class StickyNote extends Vue {
 }
 </script>
 <style scoped>
-    body {
-    /* margin: 20px auto; */
-    font-family: 'Lato';
-    background:#666;
-    color:#fff;
-    }
     
     *{
     margin:0;
