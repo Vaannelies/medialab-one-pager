@@ -1,10 +1,15 @@
 <template>
 <div class='container'>
-    <!-- <p class="title">
-        Hofstad security
-        <br>
-        Directeur Cees Hofland
-    </p> -->
+    <div class="legend">
+        <div class="legend-item">
+            <div class="yellow"></div>
+            voor de tussenpresentatie        
+        </div>
+        <div class="legend-item">
+            <div class="pink"></div>
+            na de tussenpresentatie
+        </div>
+    </div>
     <div class="rows">
         <div class="row --one">
             <ul>
@@ -178,7 +183,6 @@
                 </li>
             </ul>
         </div>
-   
     </div>
 </div>
             <!-- <arrow-down/> -->
@@ -206,24 +210,50 @@ export default class StickyNotes extends Vue {
 <style lang="less" scoped>
 @import (reference) '../variables.less';
 /* https://code.tutsplus.com/tutorials/create-a-sticky-note-effect-in-5-easy-steps-with-css3-and-html5--net-13934 */
-   
-
-    body {
-        // margin: 20px auto;
-        background:#666;
-        color:#fff;
-    }
-    
+       
     .container {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        align-items: center;
     }
 
     .rows {
         display: flex;
         justify-content: flex-start;
     }
+
+    .legend {
+        width: fit-content;
+        color: @grey;
+        font-family: "Source Sans Pro";
+        // font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        line-height: 50%;
+        height: 40px;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+
+        .yellow {
+            height: 10px;
+            width: 20px;
+            display: inline-block;
+            background: #ffc;
+            margin-right: 5px;
+        }
+        .pink {
+            height: 10px;
+            width: 20px;
+            display: inline-block;
+            background: #FFD4E4;
+            margin-right: 5px;
+        }
+    }
+
+    .legend-item {
+        display: flex;
+    }
+
     .row {
         display: flex;
         flex-direction: column;
